@@ -10,9 +10,9 @@ A static, three-page marketing site for QuikShot. Designed to publish on GitHub 
 
 ## Publish to GitHub Pages
 
-1. Push this `site/` folder to a repo (or move its contents to the repo root).
+1. Push the site files to the `quikshot` repo root.
 2. In the repo, **Settings → Pages**.
-3. Source: **Deploy from a branch**. Branch: `main`, folder: `/site` (or `/` if you moved files to root).
+3. Source: **Deploy from a branch**. Branch: `main`, folder: `/`.
 4. Save. The site will publish at `https://<user>.github.io/<repo>/`.
 
 A `.nojekyll` file is included so GitHub Pages serves the files as-is without running Jekyll.
@@ -20,7 +20,7 @@ A `.nojekyll` file is included so GitHub Pages serves the files as-is without ru
 ## Files
 
 ```
-site/
+quikshot/
 ├── index.html
 ├── release-notes.html
 ├── privacy.html
