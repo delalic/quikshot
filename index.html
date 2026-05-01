@@ -203,10 +203,12 @@
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 18px;
   }
-  .f-card .ic--energy {
-    background: var(--energy-soft);
-    color: var(--energy);
-  }
+  .f-card .ic--mineral { background: var(--mineral-soft);            color: var(--lane-mineral); }
+  .f-card .ic--moss    { background: rgba(31, 143, 95, 0.12);         color: var(--lane-moss); }
+  .f-card .ic--ochre   { background: rgba(208, 138, 42, 0.14);        color: var(--lane-ochre); }
+  .f-card .ic--plum    { background: rgba(126, 79, 163, 0.12);        color: var(--lane-plum); }
+  .f-card .ic--teal    { background: rgba(42, 142, 150, 0.12);        color: var(--lane-teal); }
+  .f-card .ic--clay    { background: rgba(194, 74, 61, 0.12);         color: var(--lane-clay); }
   .accent-dot { color: var(--energy); }
   .f-card h3 {
     font-size: 19px; font-weight: 600; margin: 0 0 8px;
@@ -430,32 +432,32 @@
 
     <div class="feature-grid">
       <div class="f-card">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" fill="#FF5B3A" stroke="none"/></svg></div>
+        <div class="ic ic--mineral"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></div>
         <h3>Today, not yesterday</h3>
         <p>One screen answers what's due, what's logged, and where you should inject next. Advanced fields stay tucked away until you need them.</p>
       </div>
       <div class="f-card">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6L4 19a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-6-10V3"/><path d="M6.5 14h11"/></svg></div>
+        <div class="ic ic--moss"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6L4 19a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-6-10V3"/><path d="M6.5 14h11"/></svg></div>
         <h3>Reconstitution math</h3>
         <p>Save vial amount and BAC water. QuikShot calculates concentration and draw amount from your saved values — no mental arithmetic at the bench.</p>
       </div>
       <div class="f-card">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13c2 0 3-6 5-6s2 12 4 12 3-9 5-9 2 4 4 4"/></svg></div>
+        <div class="ic ic--ochre"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13c2 0 3-6 5-6s2 12 4 12 3-9 5-9 2 4 4 4"/></svg></div>
         <h3>Estimated levels</h3>
         <p>Confidence-aware curves built from your logged doses. Estimates are clearly labeled — never overclaimed.</p>
       </div>
       <div class="f-card">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a6 6 0 0 1 6 6c0 5-6 12-6 12S6 13 6 8a6 6 0 0 1 6-6z"/><circle cx="12" cy="8" r="2" fill="#FF5B3A" stroke="none"/></svg></div>
+        <div class="ic ic--plum"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a6 6 0 0 1 6 6c0 5-6 12-6 12S6 13 6 8a6 6 0 0 1 6-6z"/><circle cx="12" cy="8" r="2"/></svg></div>
         <h3>Site rotation, suggested</h3>
         <p>Body-map history shows least-recently-used sites at a glance. The next site is suggested, never prescribed.</p>
       </div>
       <div class="f-card">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/></svg></div>
+        <div class="ic ic--teal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/></svg></div>
         <h3>Inventory & schedules</h3>
         <p>Recurring doses, vial-level inventory, and overdue states that warn without alarming.</p>
       </div>
       <div class="f-card">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <div class="ic ic--clay"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
         <h3>Yours, locally</h3>
         <p>Your data lives on your device. No required account. No ads. No analytics. Optional iCloud sync, when you want it.</p>
       </div>
