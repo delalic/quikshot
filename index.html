@@ -203,6 +203,11 @@
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 18px;
   }
+  .f-card .ic--energy {
+    background: var(--energy-soft);
+    color: var(--energy);
+  }
+  .accent-dot { color: var(--energy); }
   .f-card h3 {
     font-size: 19px; font-weight: 600; margin: 0 0 8px;
     letter-spacing: -0.012em;
@@ -345,7 +350,7 @@
 <div class="container">
   <section class="hero">
     <div>
-      <h1>Track peptides, GLP-1s, and every shot in between.</h1>
+      <h1>Track peptides, GLP-1s, and every shot in between<span class="accent-dot">.</span></h1>
       <p class="lede">A private, Apple-native protocol tracker. Calm, precise, and built for the way you actually run your stack.</p>
       <div class="cta-row">
         <a href="#download" class="btn btn-primary btn-lg">Download for iPhone</a>
@@ -410,7 +415,7 @@
 <!-- ───────── Stats strip ───────── -->
 <section class="strip">
   <div class="container strip-grid">
-    <div class="stat"><div class="num-big">100%</div>Local-first storage</div>
+    <div class="stat"><div class="num-big" style="color: var(--energy)">100%</div>Local-first storage</div>
     <div class="stat"><div class="num-big">0</div>Required accounts</div>
     <div class="stat"><div class="num-big">0</div>Ads, ever</div>
     <div class="stat"><div class="num-big">iOS 16+</div>iPhone-first</div>
@@ -435,7 +440,7 @@
         <p>Save vial amount and BAC water. QuikShot calculates concentration and draw amount from your saved values — no mental arithmetic at the bench.</p>
       </div>
       <div class="f-card">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13c2 0 3-6 5-6s2 12 4 12 3-9 5-9 2 4 4 4"/></svg></div>
+        <div class="ic ic--energy"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13c2 0 3-6 5-6s2 12 4 12 3-9 5-9 2 4 4 4"/></svg></div>
         <h3>Estimated levels</h3>
         <p>Confidence-aware curves built from your logged doses. Estimates are clearly labeled — never overclaimed.</p>
       </div>

@@ -34,13 +34,17 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   padding: 14px 0;
 }
 .site-brand {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 19px; font-weight: 600; letter-spacing: -0.014em;
+  display: flex; align-items: center; gap: 12px;
+  font-size: 24px; font-weight: 700; letter-spacing: -0.018em;
   color: var(--ink);
 }
-.site-brand img { display: block; }
+.site-brand img { display: block; width: 36px; height: 36px; }
 .site-brand:hover { text-decoration: none; }
 .site-brand .brand-accent { color: var(--mineral); }
+
+/* Footer brand reads small — explicit override */
+.site-foot .site-brand { font-size: 14px; font-weight: 600; gap: 10px; }
+.site-foot .site-brand img { width: 22px; height: 22px; }
 
 .site-links {
   display: flex; gap: 28px;
