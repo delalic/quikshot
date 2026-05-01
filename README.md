@@ -1,5 +1,15 @@
 # QuikShot — Marketing Site
 
+This is the canonical local repository for the QuikShot marketing website.
+
+Local path:
+
+`/Users/haris/Documents/shots_tracker/quikshot`
+
+GitHub repository:
+
+`delalic/quikshot`
+
 This is the source code for the [QuikShot](https://delalic.github.io/quikshot/) marketing website.
 
 ## Live Site
@@ -9,6 +19,15 @@ Visit the live site here: **[https://delalic.github.io/quikshot/](https://delali
 ## About
 
 QuikShot is a simple, no-build-step static site consisting of HTML and CSS.
+
+## Related Repositories
+
+The native iOS app lives in a separate repository:
+
+- Local path: `/Users/haris/Documents/shots_tracker/quikshot_code`
+- GitHub repository: `delalic/quikshot_code`
+
+The parent folder `/Users/haris/Documents/shots_tracker` is only a workspace container and is not a Git repository. The sibling folder `/Users/haris/Documents/shots_tracker/site` is not the canonical marketing site repo.
 
 ## Files
 
