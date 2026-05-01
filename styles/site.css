@@ -35,11 +35,12 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .site-brand {
   display: flex; align-items: center; gap: 10px;
-  font-size: 18px; font-weight: 600; letter-spacing: -0.014em;
+  font-size: 19px; font-weight: 600; letter-spacing: -0.014em;
   color: var(--ink);
 }
 .site-brand img { display: block; }
 .site-brand:hover { text-decoration: none; }
+.site-brand .brand-accent { color: var(--mineral); }
 
 .site-links {
   display: flex; gap: 28px;
