@@ -27,7 +27,9 @@ The native iOS app lives in a separate repository:
 - Local path: `/Users/haris/Documents/shots_tracker/quikshot_code`
 - GitHub repository: `delalic/quikshot_code`
 
-The parent folder `/Users/haris/Documents/shots_tracker` is only a workspace container and is not a Git repository. The sibling folder `/Users/haris/Documents/shots_tracker/site` is not the canonical marketing site repo.
+The parent folder `/Users/haris/Documents/shots_tracker` is only a workspace container and is not a Git repository.
+
+The original website source was archived at `/Users/haris/Documents/shots_tracker/archive/original-site-source` for reference only. Do not use it for ongoing website updates.
 
 ## Files
 

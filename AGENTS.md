@@ -23,7 +23,7 @@ The native iOS app lives in a separate repository:
 
 The parent folder `/Users/haris/Documents/shots_tracker` is only a workspace container and is not a Git repository.
 
-The sibling folder `/Users/haris/Documents/shots_tracker/site` is not a Git repository. Do not treat it as the canonical website repo unless the user explicitly asks to work there.
+The original website source was archived at `/Users/haris/Documents/shots_tracker/archive/original-site-source` for reference only. Do not use it for ongoing website updates, GitHub Pages publishing, issues, commits, or pushes.
 
 Before marketing-site work, run:
 
