@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Release Notes — QuikShot</title>
+<meta name="description" content="What changed, what's new, and what's on deck for QuikShot.">
+<link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<style>
+  /* ───────── Release notes layout ───────── */
+  .notes-wrap {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 64px;
+    padding: 16px 0 96px;
+  }
+  .notes-toc {
+    position: sticky; top: 80px;
+    align-self: start;
+    border-left: 1px solid var(--mist);
+    padding: 4px 0 4px 16px;
+  }
+  .notes-toc .label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.10em;
+    color: var(--silver); text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+  .notes-toc ul { list-style: none; padding: 0; margin: 0; }
+  .notes-toc li { margin-bottom: 8px; }
+  .notes-toc a {
+    font-size: 14px; color: var(--steel);
+    display: flex; gap: 10px; align-items: baseline;
+    line-height: 1.4;
+  }
+  .notes-toc a:hover { color: var(--ink); text-decoration: none; }
+  .notes-toc .ver {
+    font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
+    font-size: 12px; color: var(--silver); flex: 0 0 36px;
+  }
+
+  /* ───────── A single release ───────── */
+  .release {
+    border-top: 1px solid var(--mist);
+    padding: 40px 0;
+  }
+  .release:first-of-type { border-top: 0; padding-top: 0; }
+
+  .release-head {
+    display: flex; align-items: baseline; gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .release-version {
+    font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
+    font-size: 28px; font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .release-tag {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 9px; border-radius: 999px;
+  }
+  .tag-current { background: var(--mineral-soft); color: var(--mineral); }
+  .tag-beta    { background: var(--state-overdue-soft); color: var(--state-overdue); }
+  .tag-tested  { background: var(--state-taken-soft); color: var(--state-taken); }
+  .release-date {
+    font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
+    font-size: 13px; color: var(--silver);
+    margin-left: auto;
+  }
+  .release h2 {
+    font-size: 24px; font-weight: 600;
+    letter-spacing: -0.014em;
+    margin: 0 0 18px;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .release p.summary {
+    font-size: 16px; line-height: 1.55;
+    color: var(--steel);
+    margin: 0 0 24px;
+    max-width: 620px;
+    text-wrap: pretty;
+  }
+
+  /* ───────── Change groups ───────── */
+  .changes { display: flex; flex-direction: column; gap: 22px; }
+  .change-group {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  .change-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding-top: 4px;
+  }
+  .label-new      { color: var(--mineral); }
+  .label-improved { color: var(--state-taken); }
+  .label-fixed    { color: var(--state-overdue); }
+  .label-removed  { color: var(--steel); }
+
+  .change-list {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .change-list li {
+    font-size: 15px; line-height: 1.55;
+    color: var(--ink);
+    padding-left: 16px;
+    position: relative;
+    text-wrap: pretty;
+  }
+  .change-list li::before {
+    content: ''; position: absolute;
+    left: 0; top: 9px;
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--mist);
+  }
+  .change-list li strong { font-weight: 600; }
+
+  /* ───────── On-deck card ───────── */
+  .ondeck {
+    background: var(--snow);
+    border-radius: 20px;
+    padding: 28px;
+    border: 1px solid var(--mist);
+    margin-top: 48px;
+  }
+  .ondeck .eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.10em;
+    color: var(--mineral); text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  .ondeck h3 {
+    font-size: 22px; font-weight: 600;
+    letter-spacing: -0.012em;
+    margin: 0 0 8px;
+  }
+  .ondeck p {
+    font-size: 15px; color: var(--steel);
+    margin: 0 0 18px; line-height: 1.55;
+    text-wrap: pretty;
+  }
+  .ondeck-grid {
+    list-style: none; padding: 0; margin: 0;
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+  }
+  .ondeck-grid li {
+    font-size: 14px; color: var(--ink);
+    padding: 12px 14px;
+    background: var(--paper);
+    border-radius: 12px;
+    display: flex; gap: 10px; align-items: center;
+  }
+  .ondeck-grid .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--silver); flex: 0 0 auto;
+  }
+
+  @media (max-width: 880px) {
+    .notes-wrap { grid-template-columns: 1fr; gap: 32px; }
+    .notes-toc { position: static; border-left: 0; padding-left: 0;
+      border-top: 1px solid var(--mist); padding-top: 24px;
+      order: 2;
+    }
+    .change-group { grid-template-columns: 1fr; gap: 8px; }
+    .release-date { margin-left: 0; }
+    .ondeck-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container site-nav-inner">
+    <a href="index.html" class="site-brand">
+      <img src="assets/logo.svg" width="28" height="28" alt="">
+      QuikShot
+    </a>
+    <nav class="site-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#privacy">Privacy</a>
+      <a href="release-notes.html" class="is-current">Release notes</a>
+    </nav>
+    <a href="index.html#download" class="nav-cta">Download</a>
+  </div>
+</header>
+
+<div class="container-narrow">
+  <div class="page-header">
+    <p class="eyebrow">Release notes</p>
+    <h1>What changed, what's new.</h1>
+    <p class="lede">A running log of every QuikShot build. Versions follow <span class="num">major.minor.patch</span>; dates are when the build cleared TestFlight review.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="notes-wrap">
+
+    <aside class="notes-toc">
+      <p class="label">Versions</p>
+      <ul>
+        <li><a href="#v1-2-0"><span class="ver">1.2.0</span><span>Reconstitution profiles</span></a></li>
+        <li><a href="#v1-1-1"><span class="ver">1.1.1</span><span>Stability</span></a></li>
+        <li><a href="#v1-1-0"><span class="ver">1.1.0</span><span>Site rotation</span></a></li>
+        <li><a href="#v1-0-2"><span class="ver">1.0.2</span><span>Notification fix</span></a></li>
+        <li><a href="#v1-0-1"><span class="ver">1.0.1</span><span>Calendar polish</span></a></li>
+        <li><a href="#v1-0-0"><span class="ver">1.0.0</span><span>Launch</span></a></li>
+      </ul>
+    </aside>
+
+    <main>
+
+      <!-- ───────── 1.2.0 ───────── -->
+      <article class="release" id="v1-2-0">
+        <div class="release-head">
+          <span class="release-version">1.2.0</span>
+          <span class="release-tag tag-current">Current</span>
+          <span class="release-date">April 22, 2026</span>
+        </div>
+        <h2>Reconstitution profiles, saved per vial.</h2>
+        <p class="summary">Save vial amount and BAC water once; QuikShot calculates concentration and draw amount from your saved values. Plus a quieter calendar and a new estimated-level chart.</p>
+
+        <div class="changes">
+          <div class="change-group">
+            <div class="change-label label-new">New</div>
+            <ul class="change-list">
+              <li><strong>Reconstitution profiles.</strong> Save vial mg and BAC water mL per compound. Draw amount is computed live from your last saved values.</li>
+              <li><strong>Estimated active level.</strong> A confidence-aware curve on the Levels tab. Always labeled as an estimate, never a measurement.</li>
+              <li><strong>Compound lanes.</strong> Six muted lane colors (mineral, moss, ochre, plum, teal, clay) for visual differentiation in dose rows.</li>
+            </ul>
+          </div>
+
+          <div class="change-group">
+            <div class="change-label label-improved">Improved</div>
+            <ul class="change-list">
+              <li>Calendar dots are now lane-colored. Past dates fade to silver; future scheduled doses sit at full opacity.</li>
+              <li>Tabular numerics across every dose row, time, and draw-amount column. No more jitter when numbers change.</li>
+              <li>The Today hero card now uses a single radial halo behind the active-level glyph — the only gradient anywhere in the app.</li>
+            </ul>
+          </div>
+
+          <div class="change-group">
+            <div class="change-label label-fixed">Fixed</div>
+            <ul class="change-list">
+              <li>Reminders no longer fire twice when iCloud sync resolves a conflict during the notification window.</li>
+              <li>Logging a dose at exactly midnight no longer assigns it to the previous day.</li>
+              <li>Custom-compound rows respect the long-press menu on iPad.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───────── 1.1.1 ───────── -->
+      <article class="release" id="v1-1-1">
+        <div class="release-head">
+          <span class="release-version">1.1.1</span>
+          <span class="release-date">March 9, 2026</span>
+        </div>
+        <h2>Stability and small polish.</h2>
+        <p class="summary">A maintenance release. No new features — just fewer rough edges.</p>
+
+        <div class="changes">
+          <div class="change-group">
+            <div class="change-label label-fixed">Fixed</div>
+            <ul class="change-list">
+              <li>The body-map view occasionally rendered with the wrong rotation on iPhone SE.</li>
+              <li>Pull-to-refresh on the Today tab no longer overshoots into the status bar.</li>
+              <li>Inventory counts updated correctly when a dose was edited from the Calendar view.</li>
+            </ul>
+          </div>
+          <div class="change-group">
+            <div class="change-label label-improved">Improved</div>
+            <ul class="change-list">
+              <li>Cold-launch time reduced by roughly 110 ms on A14 and newer.</li>
+              <li>VoiceOver labels for dose rows now read state, compound, and dose in that order.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───────── 1.1.0 ───────── -->
+      <article class="release" id="v1-1-0">
+        <div class="release-head">
+          <span class="release-version">1.1.0</span>
+          <span class="release-date">February 18, 2026</span>
+        </div>
+        <h2>Injection-site rotation and inventory.</h2>
+        <p class="summary">QuikShot now suggests the least-recently-used site, tracks vial-level inventory, and adds an overdue state that warns without alarming.</p>
+
+        <div class="changes">
+          <div class="change-group">
+            <div class="change-label label-new">New</div>
+            <ul class="change-list">
+              <li><strong>Body-map history.</strong> Tap a region on the body map to see when you last used it. Suggested next site appears as a soft mineral chip.</li>
+              <li><strong>Vial inventory.</strong> Track stock per compound; QuikShot estimates days remaining from your active schedule.</li>
+              <li><strong>Overdue state.</strong> A warm-ochre badge for doses past their window — never bright red, never alarming.</li>
+            </ul>
+          </div>
+          <div class="change-group">
+            <div class="change-label label-improved">Improved</div>
+            <ul class="change-list">
+              <li>The Skip flow now records a reason (optional, never required) so future runs can show patterns without judgment.</li>
+              <li>Reduced motion users get instant state changes; everyone else gets the 240 ms mineral fill.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───────── 1.0.2 ───────── -->
+      <article class="release" id="v1-0-2">
+        <div class="release-head">
+          <span class="release-version">1.0.2</span>
+          <span class="release-date">January 27, 2026</span>
+        </div>
+        <h2>Notification reliability.</h2>
+        <p class="summary">A targeted fix for users on iOS 17.4+ whose reminders occasionally drifted by a few minutes.</p>
+
+        <div class="changes">
+          <div class="change-group">
+            <div class="change-label label-fixed">Fixed</div>
+            <ul class="change-list">
+              <li>Local reminders now schedule against the wall clock instead of a relative interval, so DST transitions and Focus changes no longer shift the time.</li>
+              <li>Editing a recurring schedule cancels and re-schedules notifications atomically.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───────── 1.0.1 ───────── -->
+      <article class="release" id="v1-0-1">
+        <div class="release-head">
+          <span class="release-version">1.0.1</span>
+          <span class="release-date">January 14, 2026</span>
+        </div>
+        <h2>Calendar polish.</h2>
+        <p class="summary">First post-launch refinement. Small things, in the right places.</p>
+
+        <div class="changes">
+          <div class="change-group">
+            <div class="change-label label-improved">Improved</div>
+            <ul class="change-list">
+              <li>The week strip on Today now scrolls smoothly between months without flashing.</li>
+              <li>Long-press on a calendar dot opens the dose detail sheet (previously required two taps).</li>
+              <li>Empty states use sentence-case labels everywhere. No more stray ALL CAPS.</li>
+            </ul>
+          </div>
+          <div class="change-group">
+            <div class="change-label label-fixed">Fixed</div>
+            <ul class="change-list">
+              <li>Dragging a recurring schedule across the daylight-saving boundary preserved the time-of-day correctly.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───────── 1.0.0 ───────── -->
+      <article class="release" id="v1-0-0">
+        <div class="release-head">
+          <span class="release-version">1.0.0</span>
+          <span class="release-tag tag-tested">Launch</span>
+          <span class="release-date">January 6, 2026</span>
+        </div>
+        <h2>QuikShot is live on the App Store.</h2>
+        <p class="summary">The first public release. A calm, Apple-native protocol tracker for peptides, GLP-1s, custom compounds, and recurring oral routines.</p>
+
+        <div class="changes">
+          <div class="change-group">
+            <div class="change-label label-new">New</div>
+            <ul class="change-list">
+              <li><strong>Today.</strong> Next dose, what's logged, what's overdue — at a glance.</li>
+              <li><strong>Protocol.</strong> Recurring schedules per compound with simple and advanced lanes.</li>
+              <li><strong>Calendar.</strong> A monthly view showing logged, due, skipped, and missed doses.</li>
+              <li><strong>Local reminders.</strong> Per-compound notification timing, fully on-device.</li>
+              <li><strong>Local-first storage.</strong> No account, no sync requirement, no analytics.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───────── On deck ───────── -->
+      <aside class="ondeck">
+        <p class="eyebrow">On deck</p>
+        <h3>What's next.</h3>
+        <p>Approximate roadmap for the next two minor releases. Order and scope can shift.</p>
+        <ul class="ondeck-grid">
+          <li><span class="dot"></span>HealthKit (read-only, opt-in)</li>
+          <li><span class="dot"></span>iPad three-pane workspace</li>
+          <li><span class="dot"></span>Apple Watch quick-log complication</li>
+          <li><span class="dot"></span>iCloud sync (optional)</li>
+          <li><span class="dot"></span>Home-screen widgets</li>
+          <li><span class="dot"></span>CSV export for personal records</li>
+        </ul>
+      </aside>
+
+    </main>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="container site-foot-inner">
+    <div class="site-brand" style="font-size: 14px; color: var(--steel)">
+      <img src="assets/logo.svg" width="20" height="20" alt="">
+      QuikShot
+    </div>
+    <div class="foot-links">
+      <a href="release-notes.html">Release notes</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="privacy.html#disclaimer">Disclaimer</a>
+      <span>© 2026 QuikShot</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

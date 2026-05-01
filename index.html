@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuikShot — Track peptides, GLP-1s, and every shot in between.</title>
+<meta name="description" content="QuikShot is a private, Apple-native protocol tracker for peptides, GLP-1s, and custom compounds. Calm, precise, and built for the way you actually run your stack.">
+<link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<style>
+  /* ───────── Hero ───────── */
+  .hero {
+    padding: 80px 0 96px;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 68px;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    margin: 0 0 24px;
+    text-wrap: balance;
+  }
+  .hero p.lede {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--steel);
+    margin: 0 0 32px;
+    max-width: 480px;
+    text-wrap: pretty;
+  }
+  .hero .cta-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .hero .meta {
+    font-size: 13px; color: var(--silver);
+    margin-top: 24px;
+    font-feature-settings: 'tnum' 1;
+  }
+  .hero .meta .dot { display: inline-block; width: 3px; height: 3px; border-radius: 50%; background: var(--silver); margin: 0 8px; vertical-align: middle; }
+
+  /* ───────── Device mockup ───────── */
+  .device-stage {
+    display: flex; justify-content: center;
+    position: relative;
+  }
+  .device-stage::before {
+    content: ''; position: absolute; inset: -40px -20px;
+    background: radial-gradient(60% 50% at 50% 40%, rgba(43,92,230,0.10), transparent 70%);
+    pointer-events: none; z-index: 0;
+  }
+  .device {
+    position: relative; z-index: 1;
+    width: 300px; height: 612px;
+    background: var(--ink);
+    border-radius: 56px;
+    padding: 14px;
+    box-shadow:
+      0 40px 80px rgba(11,16,32,.18),
+      0 8px 24px rgba(11,16,32,.10),
+      inset 0 0 0 2px #2A3148;
+  }
+  .device .screen {
+    width: 100%; height: 100%;
+    background: var(--paper);
+    border-radius: 44px;
+    padding: 44px 14px 14px;
+    overflow: hidden;
+    position: relative;
+  }
+  .device .notch {
+    position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
+    width: 96px; height: 28px; background: var(--ink); border-radius: 16px;
+  }
+  .today-card {
+    background: var(--snow);
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: var(--shadow-1);
+    position: relative;
+    overflow: hidden;
+  }
+  .today-card::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(80% 60% at 50% 0%, rgba(43,92,230,0.06), transparent 70%);
+    pointer-events: none;
+  }
+  .today-card .eyebrow {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.10em;
+    color: var(--mineral); text-transform: uppercase;
+    position: relative;
+  }
+  .today-card .num-row {
+    display: flex; align-items: baseline; gap: 6px;
+    margin-top: 6px; position: relative;
+  }
+  .today-card .num-big {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 38px; font-weight: 600;
+    letter-spacing: -0.024em;
+    color: var(--ink);
+  }
+  .today-card .unit { font-size: 18px; color: var(--steel); font-weight: 600; }
+  .today-card .compound {
+    font-size: 16px; font-weight: 600;
+    margin-top: 2px; position: relative;
+  }
+  .today-card .due {
+    font-size: 13px; color: var(--steel);
+    margin-top: 4px; position: relative;
+  }
+  .today-card .actions {
+    display: flex; gap: 6px; margin-top: 14px; position: relative;
+  }
+  .today-card .actions button {
+    flex: 1; font-family: inherit; font-size: 13px; font-weight: 600;
+    border: 0; border-radius: 10px; padding: 11px;
+    cursor: pointer;
+  }
+  .today-card .actions .log {
+    flex: 2; background: var(--mineral); color: var(--snow);
+  }
+  .today-card .actions .skip {
+    background: var(--mineral-soft); color: var(--mineral);
+  }
+
+  .dose-row {
+    background: var(--snow);
+    border-radius: 14px;
+    padding: 11px 12px;
+    display: flex; align-items: center; gap: 10px;
+    box-shadow: var(--shadow-1);
+    margin-top: 8px;
+  }
+  .dose-row .lane { width: 6px; height: 22px; border-radius: 2px; flex: 0 0 auto; }
+  .dose-row .body { flex: 1; min-width: 0; }
+  .dose-row .title { font-size: 13px; font-weight: 600; color: var(--ink); }
+  .dose-row .sub { font-size: 11px; color: var(--steel); margin-top: 2px; font-feature-settings: 'tnum' 1; }
+  .dose-row .badge {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.06em;
+    padding: 3px 7px; border-radius: 4px; text-transform: uppercase;
+  }
+  .badge-taken { color: var(--state-taken); background: var(--state-taken-soft); }
+  .badge-skip { color: var(--silver); background: var(--mist); }
+  .badge-due { color: var(--mineral); background: var(--mineral-soft); }
+
+  /* ───────── Stats strip ───────── */
+  .strip {
+    background: var(--snow);
+    border-top: 1px solid var(--mist);
+    border-bottom: 1px solid var(--mist);
+    padding: 48px 0;
+  }
+  .strip-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
+  }
+  .strip-grid .stat {
+    font-size: 14px; color: var(--steel); line-height: 1.4;
+  }
+  .strip-grid .num-big {
+    font-family: var(--font-mono); font-variant-numeric: tabular-nums;
+    font-size: 34px; font-weight: 600; color: var(--ink);
+    margin-bottom: 6px; letter-spacing: -0.022em;
+  }
+
+  /* ───────── Features ───────── */
+  .features { padding: 96px 0; }
+  .section-title {
+    font-size: 44px;
+    line-height: 1.08;
+    letter-spacing: -0.024em;
+    font-weight: 600;
+    margin: 0 0 14px;
+    max-width: 720px;
+    text-wrap: balance;
+  }
+  .section-lede {
+    font-size: 18px; line-height: 1.5; color: var(--steel);
+    max-width: 580px; margin: 0 0 56px; text-wrap: pretty;
+  }
+  .feature-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  }
+  .f-card {
+    background: var(--snow);
+    border-radius: 24px;
+    padding: 28px;
+    border: 1px solid var(--mist);
+    transition: box-shadow var(--dur-2) var(--ease), transform var(--dur-2) var(--ease);
+  }
+  .f-card:hover {
+    box-shadow: var(--shadow-2);
+    transform: translateY(-2px);
+  }
+  .f-card .ic {
+    width: 40px; height: 40px;
+    border-radius: 11px;
+    background: var(--mineral-soft);
+    color: var(--mineral);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 18px;
+  }
+  .f-card h3 {
+    font-size: 19px; font-weight: 600; margin: 0 0 8px;
+    letter-spacing: -0.012em;
+  }
+  .f-card p {
+    font-size: 15px; color: var(--steel); margin: 0;
+    line-height: 1.55; text-wrap: pretty;
+  }
+
+  /* ───────── Lanes section ───────── */
+  .lanes {
+    padding: 96px 0;
+    background: var(--snow);
+    border-top: 1px solid var(--mist);
+    border-bottom: 1px solid var(--mist);
+  }
+  .lane-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  }
+  .lane-card {
+    background: var(--paper);
+    border-radius: 18px;
+    padding: 22px;
+    border: 1px solid var(--mist);
+  }
+  .lane-card .swatch {
+    width: 8px; height: 32px; border-radius: 3px;
+    margin-bottom: 14px;
+  }
+  .lane-card h4 {
+    font-size: 16px; font-weight: 600; margin: 0 0 4px;
+    letter-spacing: -0.008em;
+  }
+  .lane-card p {
+    font-size: 13px; color: var(--steel); margin: 0;
+    line-height: 1.5;
+  }
+
+  /* ───────── Privacy section ───────── */
+  .privacy-section {
+    background: var(--ink);
+    color: var(--snow);
+    padding: 96px 0;
+  }
+  .privacy-section h2 {
+    font-size: 44px; letter-spacing: -0.024em;
+    font-weight: 600; margin: 0 0 16px;
+    max-width: 720px; line-height: 1.08;
+    text-wrap: balance;
+  }
+  .privacy-section p {
+    font-size: 18px; color: #B0B6C6;
+    max-width: 560px; line-height: 1.55;
+    margin: 0; text-wrap: pretty;
+  }
+  .privacy-list {
+    list-style: none; padding: 0;
+    margin: 40px 0 0;
+    display: grid; grid-template-columns: repeat(2,1fr);
+    gap: 16px; max-width: 720px;
+  }
+  .privacy-list li {
+    display: flex; gap: 12px; align-items: center;
+    font-size: 16px; color: var(--mist);
+  }
+  .check {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--state-taken);
+    display: inline-flex; align-items: center; justify-content: center;
+    flex: 0 0 auto;
+  }
+  .privacy-section .footer-cta {
+    margin-top: 48px;
+    display: flex; gap: 12px; flex-wrap: wrap;
+  }
+  .privacy-section .footer-cta .btn-ink-on-dark {
+    background: var(--snow); color: var(--ink);
+  }
+  .privacy-section .footer-cta .btn-ink-on-dark:hover { background: #E5E8EF; }
+  .privacy-section .footer-cta .btn-ghost-on-dark {
+    background: transparent; color: var(--snow);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.18);
+  }
+  .privacy-section .footer-cta .btn-ghost-on-dark:hover { background: rgba(255,255,255,0.06); }
+
+  /* ───────── FAQ ───────── */
+  .faq { padding: 96px 0; }
+  .faq-grid {
+    display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px;
+    align-items: start;
+  }
+  .faq-item {
+    border-top: 1px solid var(--mist);
+    padding: 22px 0;
+  }
+  .faq-item:last-child { border-bottom: 1px solid var(--mist); }
+  .faq-item h4 {
+    font-size: 17px; font-weight: 600; margin: 0 0 6px;
+    letter-spacing: -0.008em;
+  }
+  .faq-item p {
+    font-size: 15px; color: var(--steel); margin: 0;
+    line-height: 1.55; text-wrap: pretty;
+  }
+
+  /* ───────── Responsive ───────── */
+  @media (max-width: 920px) {
+    .hero { grid-template-columns: 1fr; gap: 48px; padding: 56px 0 64px; }
+    .hero h1 { font-size: 44px; }
+    .hero .device-stage { order: -1; }
+    .strip-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .feature-grid { grid-template-columns: 1fr; }
+    .lane-grid { grid-template-columns: repeat(2, 1fr); }
+    .section-title { font-size: 32px; }
+    .privacy-section h2 { font-size: 32px; }
+    .privacy-list { grid-template-columns: 1fr; }
+    .faq-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ───────── Nav ───────── -->
+<header class="site-nav">
+  <div class="container site-nav-inner">
+    <a href="index.html" class="site-brand">
+      <img src="assets/logo.svg" width="28" height="28" alt="">
+      QuikShot
+    </a>
+    <nav class="site-links">
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="release-notes.html">Release notes</a>
+    </nav>
+    <a href="#download" class="nav-cta">Download</a>
+  </div>
+</header>
+
+<!-- ───────── Hero ───────── -->
+<div class="container">
+  <section class="hero">
+    <div>
+      <h1>Track peptides, GLP-1s, and every shot in between.</h1>
+      <p class="lede">A private, Apple-native protocol tracker. Calm, precise, and built for the way you actually run your stack.</p>
+      <div class="cta-row">
+        <a href="#download" class="btn btn-primary btn-lg">Download for iPhone</a>
+        <a href="#features" class="btn btn-ghost btn-lg">See how it works</a>
+      </div>
+      <div class="meta">
+        Free<span class="dot"></span>iPhone<span class="dot"></span>iOS 16+<span class="dot"></span>No account required
+      </div>
+    </div>
+
+    <div class="device-stage">
+      <div class="device">
+        <div class="screen">
+          <div class="notch"></div>
+
+          <div class="today-card">
+            <div class="eyebrow">Next dose</div>
+            <div class="num-row">
+              <span class="num-big">0.25</span>
+              <span class="unit">mg</span>
+            </div>
+            <div class="compound">Semaglutide</div>
+            <div class="due">Due today at 8:00 PM.</div>
+            <div class="actions">
+              <button class="log">Log dose</button>
+              <button class="skip">Skip</button>
+            </div>
+          </div>
+
+          <div class="dose-row">
+            <span class="lane" style="background: var(--lane-moss)"></span>
+            <div class="body">
+              <div class="title">BPC-157 250 µg</div>
+              <div class="sub">Logged 8:04 AM</div>
+            </div>
+            <span class="badge badge-taken">Taken</span>
+          </div>
+
+          <div class="dose-row">
+            <span class="lane" style="background: var(--lane-ochre)"></span>
+            <div class="body">
+              <div class="title">Metformin 500 mg</div>
+              <div class="sub">Skipped today</div>
+            </div>
+            <span class="badge badge-skip">Skip</span>
+          </div>
+
+          <div class="dose-row">
+            <span class="lane" style="background: var(--lane-teal)"></span>
+            <div class="body">
+              <div class="title">Tirzepatide 5 mg</div>
+              <div class="sub">Due Sat at 9:00 AM</div>
+            </div>
+            <span class="badge badge-due">Due</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ───────── Stats strip ───────── -->
+<section class="strip">
+  <div class="container strip-grid">
+    <div class="stat"><div class="num-big">100%</div>Local-first storage</div>
+    <div class="stat"><div class="num-big">0</div>Required accounts</div>
+    <div class="stat"><div class="num-big">0</div>Ads, ever</div>
+    <div class="stat"><div class="num-big">iOS 16+</div>iPhone-first</div>
+  </div>
+</section>
+
+<!-- ───────── Features ───────── -->
+<section class="features" id="features">
+  <div class="container">
+    <h2 class="section-title">Built for protocol clarity, not gamification.</h2>
+    <p class="section-lede">QuikShot is the spreadsheet you wish you'd kept — finally given a calm, Apple-native home. Every screen answers a question you actually have.</p>
+
+    <div class="feature-grid">
+      <div class="f-card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></div>
+        <h3>Today, not yesterday</h3>
+        <p>One screen answers what's due, what's logged, and where you should inject next. Advanced fields stay tucked away until you need them.</p>
+      </div>
+      <div class="f-card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6L4 19a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-6-10V3"/><path d="M6.5 14h11"/></svg></div>
+        <h3>Reconstitution math</h3>
+        <p>Save vial amount and BAC water. QuikShot calculates concentration and draw amount from your saved values — no mental arithmetic at the bench.</p>
+      </div>
+      <div class="f-card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13c2 0 3-6 5-6s2 12 4 12 3-9 5-9 2 4 4 4"/></svg></div>
+        <h3>Estimated levels</h3>
+        <p>Confidence-aware curves built from your logged doses. Estimates are clearly labeled — never overclaimed.</p>
+      </div>
+      <div class="f-card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a6 6 0 0 1 6 6c0 5-6 12-6 12S6 13 6 8a6 6 0 0 1 6-6z"/><circle cx="12" cy="8" r="2"/></svg></div>
+        <h3>Site rotation, suggested</h3>
+        <p>Body-map history shows least-recently-used sites at a glance. The next site is suggested, never prescribed.</p>
+      </div>
+      <div class="f-card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/></svg></div>
+        <h3>Inventory & schedules</h3>
+        <p>Recurring doses, vial-level inventory, and overdue states that warn without alarming.</p>
+      </div>
+      <div class="f-card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <h3>Yours, locally</h3>
+        <p>Your data lives on your device. No required account. No ads. No analytics. Optional iCloud sync, when you want it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── Lanes ───────── -->
+<section class="lanes">
+  <div class="container">
+    <h2 class="section-title">Four lanes. One calm home.</h2>
+    <p class="section-lede">Whether you're on a single weekly GLP-1 or running six concurrent peptides, the same app meets you where you are.</p>
+
+    <div class="lane-grid">
+      <div class="lane-card">
+        <div class="swatch" style="background: var(--lane-mineral)"></div>
+        <h4>Peptides</h4>
+        <p>BPC-157, TB-500, ipamorelin, and friends — with reconstitution profiles saved per vial.</p>
+      </div>
+      <div class="lane-card">
+        <div class="swatch" style="background: var(--lane-moss)"></div>
+        <h4>GLP-1s</h4>
+        <p>Semaglutide and tirzepatide titration with simple, recurring weekly schedules.</p>
+      </div>
+      <div class="lane-card">
+        <div class="swatch" style="background: var(--lane-ochre)"></div>
+        <h4>Oral compounds</h4>
+        <p>Metformin, NAD+ precursors, anything else you take by mouth on a recurring cadence.</p>
+      </div>
+      <div class="lane-card">
+        <div class="swatch" style="background: var(--lane-plum)"></div>
+        <h4>Custom</h4>
+        <p>Your own compounds with your own parameters. QuikShot does arithmetic, not recommendations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── FAQ ───────── -->
+<section class="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div>
+        <h2 class="section-title" style="font-size: 32px; margin: 0;">Common questions.</h2>
+        <p class="section-lede" style="margin-top: 14px;">Short answers. If yours isn't here, the App Store listing has the long version.</p>
+      </div>
+      <div>
+        <div class="faq-item">
+          <h4>Does QuikShot give medical advice?</h4>
+          <p>No. QuikShot is a personal logging tool. It performs arithmetic on values you enter — concentrations, draws, schedules. It does not recommend doses, evaluate safety, or replace a clinician.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Where is my data stored?</h4>
+          <p>On your device, by default. Optional iCloud sync mirrors across your own Apple devices. Nothing leaves the Apple ecosystem.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do I need an account?</h4>
+          <p>No. There is no QuikShot account, login, or email capture. Open the app and start logging.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Is there an Android version?</h4>
+          <p>Not planned. QuikShot is built natively on Apple platforms — iPhone first, with iPad and Watch following.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What does it cost?</h4>
+          <p>Free at launch. Future advanced features may sit behind a one-time unlock or small subscription. Core logging stays free.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── Privacy + download ───────── -->
+<section class="privacy-section" id="privacy">
+  <div class="container">
+    <h2>Privacy is a feature, not a checkbox.</h2>
+    <p>QuikShot is a personal logging tool. It does not provide medical advice, dosing recommendations, or clinical optimization — and the architecture is built so it can't.</p>
+
+    <ul class="privacy-list">
+      <li><span class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Local-first storage</li>
+      <li><span class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>No required account</li>
+      <li><span class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>No ads, no analytics</li>
+      <li><span class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>No third-party SDKs</li>
+    </ul>
+
+    <div class="footer-cta" id="download">
+      <a href="#" class="btn btn-lg btn-ink-on-dark">Download for iPhone</a>
+      <a href="privacy.html" class="btn btn-lg btn-ghost-on-dark">Read privacy policy</a>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── Footer ───────── -->
+<footer class="site-foot">
+  <div class="container site-foot-inner">
+    <div class="site-brand" style="font-size: 14px; color: var(--steel)">
+      <img src="assets/logo.svg" width="20" height="20" alt="">
+      QuikShot
+    </div>
+    <div class="foot-links">
+      <a href="release-notes.html">Release notes</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="privacy.html#disclaimer">Disclaimer</a>
+      <span>© 2026 QuikShot</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

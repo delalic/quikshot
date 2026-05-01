@@ -1,0 +1,285 @@
+/* ============================================================
+   QuikShot Design System — colors_and_type.css
+   Single source of truth for color + type tokens.
+   ============================================================ */
+
+/* Inter Tight stands in for SF Pro Text. JetBrains Mono stands in for SF Mono. */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ───────── Color: Core palette ───────── */
+  --ink:           #0B1020;   /* primary text, dark surface base */
+  --graphite:     #1C2238;    /* dark mode card surface */
+  --slate:        #3A4360;    /* dark mode secondary surface */
+
+  --mineral:      #2B5CE6;    /* primary action, links, dose accent */
+  --mineral-600:  #2049C2;    /* mineral pressed / on-press */
+  --mineral-soft: #E6EDFE;    /* selected fills, mineral tint surfaces */
+  --mineral-50:   #F2F5FF;    /* faintest mineral wash */
+
+  --silver:       #8A92A6;    /* secondary text */
+  --steel:        #6B7388;    /* tertiary text */
+  --mist:         #E5E8EF;    /* hairlines, dividers, inactive bg */
+  --fog:          #EFF1F6;    /* row hover, faintest surface */
+  --paper:        #F7F8FB;    /* page background (light) */
+  --snow:         #FFFFFF;    /* card surface (light) */
+
+  /* ───────── Color: Semantic state ───────── */
+  --state-due:      #2B5CE6;  /* mineral — neutral, expectant */
+  --state-taken:    #1F8F5F;  /* muted moss — calm completion */
+  --state-taken-soft: #E1F2EA;
+  --state-skipped:  #8A92A6;  /* silver — soft, no judgment */
+  --state-missed:   #C24A3D;  /* desaturated clay — readable, never bright */
+  --state-missed-soft: #FBE9E6;
+  --state-overdue:  #D08A2A;  /* warm ochre — warning, not alarm */
+  --state-overdue-soft: #FBEFD8;
+
+  /* ───────── Color: QuikShot Energy accent ───────── */
+  /* Bounded to ≤8% of any surface. Use for app icon, hero confirmations only. */
+  --energy:       #FF5B3A;
+  --energy-600:   #E04A2D;
+  --energy-soft:  #FFE6E0;
+
+  /* ───────── Color: Compound lane palette ───────── */
+  /* Six muted swatches for protocol differentiation. Never high-saturation. */
+  --lane-mineral: #2B5CE6;
+  --lane-moss:    #1F8F5F;
+  --lane-ochre:   #D08A2A;
+  --lane-plum:    #7E4FA3;
+  --lane-teal:    #2A8E96;
+  --lane-clay:    #C24A3D;
+
+  /* ───────── Color: Semantic roles (light) ───────── */
+  --bg:           var(--paper);
+  --bg-elevated:  var(--snow);
+  --bg-tinted:    var(--mineral-soft);
+  --fg:           var(--ink);
+  --fg-secondary: var(--steel);
+  --fg-tertiary:  var(--silver);
+  --fg-on-mineral: var(--snow);
+  --separator:    var(--mist);
+  --hairline:     rgba(11, 16, 32, 0.08);
+
+  /* ───────── Type: Families ───────── */
+  --font-text: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace;
+
+  /* ───────── Type: Scale ──────────
+     iOS-aligned text styles. Sizes in px (root = 16). */
+  --display-size:   40px;  --display-lh:   44px;  --display-w:   600;
+  --title-1-size:   28px;  --title-1-lh:   34px;  --title-1-w:   600;
+  --title-2-size:   22px;  --title-2-lh:   28px;  --title-2-w:   600;
+  --title-3-size:   20px;  --title-3-lh:   25px;  --title-3-w:   600;
+  --headline-size:  17px;  --headline-lh:  22px;  --headline-w:  600;
+  --body-size:      17px;  --body-lh:      22px;  --body-w:      400;
+  --callout-size:   16px;  --callout-lh:   21px;  --callout-w:   400;
+  --subhead-size:   15px;  --subhead-lh:   20px;  --subhead-w:   500;
+  --footnote-size:  13px;  --footnote-lh:  18px;  --footnote-w:  400;
+  --caption-size:   12px;  --caption-lh:   16px;  --caption-w:   500;
+  --caption-2-size: 11px;  --caption-2-lh: 13px;  --caption-2-w: 500;
+
+  /* ───────── Spacing (4-pt grid) ───────── */
+  --s-0: 0;
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-7: 32px;
+  --s-8: 40px;
+  --s-9: 48px;
+  --s-10: 64px;
+  --s-11: 80px;
+  --s-12: 96px;
+
+  /* ───────── Radii ───────── */
+  --r-sm:   8px;  /* chips, badges */
+  --r-md:  14px;  /* buttons, inputs */
+  --r-lg:  20px;  /* cards, sheets — the QuikShot card */
+  --r-xl:  28px;  /* hero surfaces */
+  --r-pill: 999px;
+
+  /* ───────── Elevation ───────── */
+  --shadow-1: 0 1px 2px rgba(11,16,32,.05), 0 1px 1px rgba(11,16,32,.04);
+  --shadow-2: 0 4px 16px rgba(11,16,32,.06), 0 1px 2px rgba(11,16,32,.04);
+  --shadow-3: 0 18px 48px rgba(11,16,32,.18), 0 4px 12px rgba(11,16,32,.08);
+  --shadow-focus: 0 0 0 4px rgba(43, 92, 230, 0.24);
+  --shadow-inset-input: inset 0 0 0 1px var(--mist);
+
+  /* ───────── Motion ───────── */
+  --ease: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-in:  cubic-bezier(0.4, 0.0, 1.0, 1);
+  --dur-1: 120ms;
+  --dur-2: 240ms;
+  --dur-3: 360ms;
+  --dur-4: 600ms;
+
+  /* ───────── Materials ───────── */
+  --blur-bar: saturate(180%) blur(20px);
+  --bar-bg-light: rgba(247, 248, 251, 0.78);
+  --bar-bg-dark:  rgba(11, 16, 32, 0.72);
+  --scrim:       rgba(11, 16, 32, 0.32);
+}
+
+/* ───────── Dark mode ───────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:           var(--ink);
+    --bg-elevated:  var(--graphite);
+    --bg-tinted:    rgba(43, 92, 230, 0.16);
+    --fg:           #F0F2F8;
+    --fg-secondary: #B0B6C6;
+    --fg-tertiary:  #6B7388;
+    --separator:    rgba(255, 255, 255, 0.08);
+    --hairline:     rgba(255, 255, 255, 0.08);
+    --shadow-1: 0 1px 2px rgba(0,0,0,.4), 0 0 0 1px rgba(255,255,255,.04);
+    --shadow-2: 0 8px 24px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.04);
+    --shadow-3: 0 24px 64px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.06);
+    --mineral-soft: rgba(43, 92, 230, 0.18);
+    --state-taken-soft:  rgba(31, 143, 95, 0.18);
+    --state-overdue-soft:rgba(208, 138, 42, 0.18);
+    --state-missed-soft: rgba(194, 74, 61, 0.18);
+  }
+}
+
+/* Force-light / force-dark helpers */
+[data-theme="light"] {
+  --bg: var(--paper); --bg-elevated: var(--snow); --bg-tinted: var(--mineral-soft);
+  --fg: var(--ink); --fg-secondary: var(--steel); --fg-tertiary: var(--silver);
+  --separator: var(--mist); --hairline: rgba(11,16,32,.08);
+}
+[data-theme="dark"] {
+  --bg: var(--ink); --bg-elevated: var(--graphite); --bg-tinted: rgba(43,92,230,.16);
+  --fg: #F0F2F8; --fg-secondary: #B0B6C6; --fg-tertiary: #6B7388;
+  --separator: rgba(255,255,255,.08); --hairline: rgba(255,255,255,.08);
+  --shadow-1: 0 1px 2px rgba(0,0,0,.4), 0 0 0 1px rgba(255,255,255,.04);
+  --shadow-2: 0 8px 24px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.04);
+  --shadow-3: 0 24px 64px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.06);
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-text);
+  font-size: var(--body-size);
+  line-height: var(--body-lh);
+  font-weight: var(--body-w);
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'cv11', 'ss01';
+  text-rendering: optimizeLegibility;
+}
+
+/* ============================================================
+   Semantic type classes (use as utility OR clone styles)
+   ============================================================ */
+
+.qs-display  { font-size: var(--display-size);  line-height: var(--display-lh);  font-weight: var(--display-w); letter-spacing: -0.022em; }
+.qs-title-1  { font-size: var(--title-1-size);  line-height: var(--title-1-lh);  font-weight: var(--title-1-w); letter-spacing: -0.018em; }
+.qs-title-2  { font-size: var(--title-2-size);  line-height: var(--title-2-lh);  font-weight: var(--title-2-w); letter-spacing: -0.014em; }
+.qs-title-3  { font-size: var(--title-3-size);  line-height: var(--title-3-lh);  font-weight: var(--title-3-w); letter-spacing: -0.01em; }
+.qs-headline { font-size: var(--headline-size); line-height: var(--headline-lh); font-weight: var(--headline-w); letter-spacing: -0.005em;}
+.qs-body     { font-size: var(--body-size);     line-height: var(--body-lh);     font-weight: var(--body-w); }
+.qs-callout  { font-size: var(--callout-size);  line-height: var(--callout-lh);  font-weight: var(--callout-w); }
+.qs-subhead  { font-size: var(--subhead-size);  line-height: var(--subhead-lh);  font-weight: var(--subhead-w); }
+.qs-footnote { font-size: var(--footnote-size); line-height: var(--footnote-lh); font-weight: var(--footnote-w); color: var(--fg-secondary); }
+.qs-caption  { font-size: var(--caption-size);  line-height: var(--caption-lh);  font-weight: var(--caption-w); color: var(--fg-secondary); }
+.qs-caption-2{ font-size: var(--caption-2-size);line-height: var(--caption-2-lh);font-weight: var(--caption-2-w); color: var(--fg-tertiary); text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* Tabular numerics — for dose, time, draw amount columns. */
+.qs-num {
+  font-family: var(--font-mono);
+  font-feature-settings: 'tnum' 1, 'lnum' 1, 'zero' 1;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+.qs-num-text {
+  /* Keep text font but force tabular numerics — for numbers inline with prose */
+  font-feature-settings: 'tnum' 1, 'lnum' 1;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* ============================================================
+   Element defaults — opt-in via .qs-prose wrapper
+   ============================================================ */
+
+.qs-prose h1 { font-size: var(--title-1-size);  line-height: var(--title-1-lh);  font-weight: 600; letter-spacing: -0.018em; margin: 0 0 var(--s-3); }
+.qs-prose h2 { font-size: var(--title-2-size);  line-height: var(--title-2-lh);  font-weight: 600; letter-spacing: -0.014em; margin: var(--s-7) 0 var(--s-3); }
+.qs-prose h3 { font-size: var(--title-3-size);  line-height: var(--title-3-lh);  font-weight: 600; margin: var(--s-6) 0 var(--s-2); }
+.qs-prose p  { font-size: var(--body-size);     line-height: var(--body-lh);     margin: 0 0 var(--s-3); text-wrap: pretty; }
+.qs-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--fog);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+
+.qs-btn {
+  font-family: var(--font-text);
+  font-size: var(--headline-size);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.005em;
+  border: 0;
+  border-radius: var(--r-md);
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: background var(--dur-1) var(--ease), transform var(--dur-1) var(--ease), box-shadow var(--dur-1) var(--ease);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  min-height: 48px;
+}
+.qs-btn:active { transform: scale(0.98); }
+.qs-btn:focus-visible { outline: 0; box-shadow: var(--shadow-focus); }
+
+.qs-btn--primary   { background: var(--mineral); color: var(--snow); }
+.qs-btn--primary:hover  { background: var(--mineral-600); }
+.qs-btn--secondary { background: var(--mineral-soft); color: var(--mineral); }
+.qs-btn--ghost     { background: transparent; color: var(--mineral); }
+.qs-btn--neutral   { background: var(--snow); color: var(--ink); box-shadow: var(--shadow-1); }
+.qs-btn--energy    { background: var(--energy); color: var(--snow); }
+.qs-btn--destructive { background: var(--state-missed); color: var(--snow); }
+
+.qs-btn[disabled] { opacity: 0.38; pointer-events: none; }
+
+/* ============================================================
+   Surfaces — the QuikShot Card
+   ============================================================ */
+
+.qs-card {
+  background: var(--bg-elevated);
+  border-radius: var(--r-lg);
+  padding: var(--s-4);
+  box-shadow: var(--shadow-1);
+}
+.qs-card--raised { box-shadow: var(--shadow-2); }
+.qs-card--tinted { background: var(--bg-tinted); box-shadow: none; border: 1px solid var(--mist); }
+
+/* ============================================================
+   Lane chip — 6px square color prefix used in dose rows
+   ============================================================ */
+.qs-lane {
+  display: inline-block;
+  width: 6px; height: 16px;
+  border-radius: 2px;
+  flex: 0 0 auto;
+}
+.qs-lane--mineral { background: var(--lane-mineral); }
+.qs-lane--moss    { background: var(--lane-moss); }
+.qs-lane--ochre   { background: var(--lane-ochre); }
+.qs-lane--plum    { background: var(--lane-plum); }
+.qs-lane--teal    { background: var(--lane-teal); }
+.qs-lane--clay    { background: var(--lane-clay); }

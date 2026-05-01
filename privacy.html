@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — QuikShot</title>
+<meta name="description" content="QuikShot privacy policy and medical disclaimer. Local-first storage, no required account, no analytics, no third-party SDKs.">
+<link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<style>
+  /* ───────── Privacy layout ───────── */
+  .privacy-wrap {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 64px;
+    padding: 16px 0 96px;
+  }
+  .priv-toc {
+    position: sticky; top: 80px;
+    align-self: start;
+    border-left: 1px solid var(--mist);
+    padding: 4px 0 4px 16px;
+  }
+  .priv-toc .label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.10em;
+    color: var(--silver); text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+  .priv-toc ul { list-style: none; padding: 0; margin: 0; }
+  .priv-toc li { margin-bottom: 8px; }
+  .priv-toc a {
+    font-size: 14px; color: var(--steel);
+    line-height: 1.4;
+  }
+  .priv-toc a:hover { color: var(--ink); text-decoration: none; }
+  .priv-toc .num {
+    color: var(--silver); margin-right: 8px;
+    font-size: 12px;
+  }
+
+  /* ───────── At-a-glance card ───────── */
+  .glance {
+    background: var(--snow);
+    border: 1px solid var(--mist);
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 48px;
+  }
+  .glance .eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.10em;
+    color: var(--mineral); text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+  .glance h2 {
+    font-size: 22px; font-weight: 600;
+    letter-spacing: -0.012em;
+    margin: 0 0 18px;
+  }
+  .glance-grid {
+    list-style: none; padding: 0; margin: 0;
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;
+  }
+  .glance-grid li {
+    display: flex; gap: 12px; align-items: flex-start;
+    font-size: 15px; color: var(--ink);
+    line-height: 1.45;
+  }
+  .glance-grid .check {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--state-taken-soft); color: var(--state-taken);
+    display: inline-flex; align-items: center; justify-content: center;
+    flex: 0 0 auto;
+    margin-top: 1px;
+  }
+
+  /* ───────── Section ───────── */
+  .priv-section {
+    border-top: 1px solid var(--mist);
+    padding: 36px 0;
+  }
+  .priv-section:first-of-type { border-top: 0; padding-top: 0; }
+  .priv-section h2 {
+    font-size: 24px; font-weight: 600;
+    letter-spacing: -0.014em;
+    margin: 0 0 8px;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .priv-section .section-num {
+    font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
+    font-size: 12px; color: var(--silver);
+    margin: 0 0 6px;
+  }
+  .priv-section p {
+    font-size: 16px; line-height: 1.6;
+    color: var(--ink);
+    margin: 0 0 14px;
+    text-wrap: pretty;
+  }
+  .priv-section ul {
+    margin: 0 0 16px; padding-left: 22px;
+  }
+  .priv-section li {
+    font-size: 16px; line-height: 1.6;
+    margin-bottom: 6px;
+    text-wrap: pretty;
+  }
+  .priv-section strong { font-weight: 600; }
+  .priv-section a { color: var(--mineral); }
+
+  /* ───────── Disclaimer block ───────── */
+  .disclaimer {
+    background: var(--state-overdue-soft);
+    border: 1px solid rgba(208, 138, 42, 0.28);
+    border-radius: 20px;
+    padding: 28px;
+    margin: 16px 0 0;
+  }
+  .disclaimer .eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.10em;
+    color: var(--state-overdue); text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  .disclaimer h3 {
+    font-size: 20px; font-weight: 600;
+    letter-spacing: -0.012em;
+    margin: 0 0 10px;
+    color: var(--ink);
+  }
+  .disclaimer p {
+    font-size: 15px; line-height: 1.6;
+    color: var(--ink);
+    margin: 0 0 12px;
+    text-wrap: pretty;
+  }
+  .disclaimer p:last-child { margin-bottom: 0; }
+
+  /* ───────── Definitions table ───────── */
+  .defs {
+    background: var(--snow);
+    border: 1px solid var(--mist);
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 8px 0 16px;
+  }
+  .defs dl { margin: 0; }
+  .defs > dl > div {
+    display: grid; grid-template-columns: 200px 1fr;
+    border-top: 1px solid var(--mist);
+  }
+  .defs > dl > div:first-child { border-top: 0; }
+  .defs dt {
+    font-size: 14px; font-weight: 600;
+    color: var(--ink);
+    padding: 14px 18px;
+    background: var(--paper);
+    border-right: 1px solid var(--mist);
+  }
+  .defs dd {
+    margin: 0; padding: 14px 18px;
+    font-size: 14px; line-height: 1.55;
+    color: var(--steel);
+  }
+
+  .updated {
+    font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
+    font-size: 13px; color: var(--silver);
+    margin-top: 16px;
+  }
+
+  @media (max-width: 880px) {
+    .privacy-wrap { grid-template-columns: 1fr; gap: 32px; }
+    .priv-toc { position: static; border-left: 0; padding-left: 0;
+      border-top: 1px solid var(--mist); padding-top: 24px;
+      order: 2;
+    }
+    .glance-grid { grid-template-columns: 1fr; }
+    .defs > dl > div { grid-template-columns: 1fr; }
+    .defs dt { border-right: 0; border-bottom: 1px solid var(--mist); }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container site-nav-inner">
+    <a href="index.html" class="site-brand">
+      <img src="assets/logo.svg" width="28" height="28" alt="">
+      QuikShot
+    </a>
+    <nav class="site-links">
+      <a href="index.html#features">Features</a>
+      <a href="privacy.html" class="is-current">Privacy</a>
+      <a href="release-notes.html">Release notes</a>
+    </nav>
+    <a href="index.html#download" class="nav-cta">Download</a>
+  </div>
+</header>
+
+<div class="container-narrow">
+  <div class="page-header">
+    <p class="eyebrow">Privacy policy</p>
+    <h1>What QuikShot stores, and what it doesn't.</h1>
+    <p class="lede">QuikShot is built so it cannot leak data it does not collect. This page explains, in plain language, what's on your device, what isn't, and the boundaries of what the app does.</p>
+    <p class="updated">Last updated April 22, 2026 · Effective April 22, 2026</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="privacy-wrap">
+
+    <aside class="priv-toc">
+      <p class="label">Sections</p>
+      <ul>
+        <li><a href="#summary"><span class="num">01</span>Summary</a></li>
+        <li><a href="#data"><span class="num">02</span>What is stored</a></li>
+        <li><a href="#location"><span class="num">03</span>Where it lives</a></li>
+        <li><a href="#sync"><span class="num">04</span>iCloud sync</a></li>
+        <li><a href="#third-parties"><span class="num">05</span>Third parties</a></li>
+        <li><a href="#rights"><span class="num">06</span>Your rights</a></li>
+        <li><a href="#children"><span class="num">07</span>Children</a></li>
+        <li><a href="#changes"><span class="num">08</span>Changes</a></li>
+        <li><a href="#contact"><span class="num">09</span>Contact</a></li>
+        <li><a href="#disclaimer"><span class="num">10</span>Disclaimer</a></li>
+      </ul>
+    </aside>
+
+    <main>
+
+      <!-- ───────── Glance card ───────── -->
+      <div class="glance">
+        <p class="eyebrow">At a glance</p>
+        <h2>The short version.</h2>
+        <ul class="glance-grid">
+          <li>
+            <span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
+            Your data lives on your device by default.
+          </li>
+          <li>
+            <span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
+            There is no QuikShot account, login, or email capture.
+          </li>
+          <li>
+            <span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
+            No analytics, telemetry, ads, or third-party SDKs.
+          </li>
+          <li>
+            <span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
+            Optional iCloud sync stays inside your Apple account.
+          </li>
+          <li>
+            <span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
+            Delete the app and your data goes with it.
+          </li>
+          <li>
+            <span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
+            QuikShot is a logging tool — not medical advice.
+          </li>
+        </ul>
+      </div>
+
+      <!-- ───────── 01 Summary ───────── -->
+      <section class="priv-section" id="summary">
+        <p class="section-num">01</p>
+        <h2>Summary.</h2>
+        <p>QuikShot ("the app") is a personal logging tool for peptides, GLP-1 medications, custom compounds, and recurring oral routines. It is published by an independent developer.</p>
+        <p>The app is designed to be useful without sending your data anywhere. Everything you log stays on your iPhone unless you explicitly enable iCloud sync, which keeps your data inside your own Apple account.</p>
+      </section>
+
+      <!-- ───────── 02 Data ───────── -->
+      <section class="priv-section" id="data">
+        <p class="section-num">02</p>
+        <h2>What QuikShot stores.</h2>
+        <p>QuikShot stores only what you enter, plus the minimum app state required to run.</p>
+
+        <div class="defs">
+          <dl>
+            <div>
+              <dt>Compounds and protocols</dt>
+              <dd>Names, doses, schedules, reconstitution profiles, vial inventory, and the lane you assigned.</dd>
+            </div>
+            <div>
+              <dt>Dose log entries</dt>
+              <dd>Timestamps for taken, skipped, and missed doses; optional injection-site tag and free-text note.</dd>
+            </div>
+            <div>
+              <dt>App preferences</dt>
+              <dd>Reminder times, theme, units, and other settings you've chosen.</dd>
+            </div>
+            <div>
+              <dt>Crash diagnostics</dt>
+              <dd>Apple-mediated crash reports if you opted in to share with developers in iOS Settings. QuikShot never receives identifiers tied to you.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <p><strong>QuikShot does not collect:</strong> your name, email address, phone number, location, contacts, photos, calendar events, or device identifiers. The app does not request these permissions because it does not need them.</p>
+      </section>
+
+      <!-- ───────── 03 Location ───────── -->
+      <section class="priv-section" id="location">
+        <p class="section-num">03</p>
+        <h2>Where your data lives.</h2>
+        <p>By default, every byte you create in QuikShot is stored locally inside the app's sandboxed container on your iPhone, in the standard SQLite store backing Apple's Core Data framework.</p>
+        <p>The app does not run a server. There is no QuikShot cloud, database, or analytics pipeline that receives your records. The developer never sees what you log.</p>
+      </section>
+
+      <!-- ───────── 04 iCloud ───────── -->
+      <section class="priv-section" id="sync">
+        <p class="section-num">04</p>
+        <h2>iCloud sync (optional).</h2>
+        <p>If you turn on iCloud sync in Settings, QuikShot uses Apple's CloudKit framework to mirror your data to your private iCloud database. This keeps your records consistent across iPhones, iPads, and Macs signed into the same Apple ID.</p>
+        <ul>
+          <li>Data sits in <strong>your</strong> private iCloud container — not a developer-controlled one.</li>
+          <li>Apple controls access; the QuikShot developer cannot read this data.</li>
+          <li>Sync can be turned off at any time. Existing local data remains on each device.</li>
+          <li>Removing QuikShot from iCloud (Settings → Apple ID → iCloud → Manage) deletes the synced copy.</li>
+        </ul>
+      </section>
+
+      <!-- ───────── 05 Third parties ───────── -->
+      <section class="priv-section" id="third-parties">
+        <p class="section-num">05</p>
+        <h2>Third parties and SDKs.</h2>
+        <p>QuikShot ships with no third-party analytics, advertising, attribution, A/B testing, crash-reporting, or session-replay SDKs. The only frameworks the app uses are Apple's own — UIKit, SwiftUI, Core Data, CloudKit, UserNotifications, and StoreKit (for any future paid feature).</p>
+        <p>This means there is no Facebook SDK, no Google Analytics, no Mixpanel, no Sentry, no AppsFlyer, and no Adjust. There is no tracking, in any sense Apple's App Tracking Transparency framework defines.</p>
+      </section>
+
+      <!-- ───────── 06 Rights ───────── -->
+      <section class="priv-section" id="rights">
+        <p class="section-num">06</p>
+        <h2>Your data, your control.</h2>
+        <p>Because the developer never receives your data, the standard "data subject" requests (access, correction, deletion) are answered by the app itself rather than a customer service queue:</p>
+        <ul>
+          <li><strong>Access.</strong> Open the app — you have the full record.</li>
+          <li><strong>Export.</strong> Settings → Export creates a CSV of your dose log for your own records.</li>
+          <li><strong>Correction.</strong> Edit any compound, schedule, or logged dose directly in the app.</li>
+          <li><strong>Deletion.</strong> Uninstall the app. Local data is removed with it. Disable iCloud sync first if you also want to clear the cloud copy.</li>
+        </ul>
+        <p>If you live in a jurisdiction that grants formal rights under laws like the GDPR or CCPA, those rights still apply. Because no personal data leaves your device through QuikShot, requests directed at the developer will be answered by pointing you to these in-app controls.</p>
+      </section>
+
+      <!-- ───────── 07 Children ───────── -->
+      <section class="priv-section" id="children">
+        <p class="section-num">07</p>
+        <h2>Children.</h2>
+        <p>QuikShot is not directed to children. The compounds the app helps people track are intended for adults. The developer does not knowingly collect data from anyone under 18 — and, as noted above, does not receive user data at all.</p>
+      </section>
+
+      <!-- ───────── 08 Changes ───────── -->
+      <section class="priv-section" id="changes">
+        <p class="section-num">08</p>
+        <h2>Changes to this policy.</h2>
+        <p>If this policy changes in a substantive way, the "Last updated" date above moves and the change is summarized in the next release. Minor wording fixes do not bump the date.</p>
+      </section>
+
+      <!-- ───────── 09 Contact ───────── -->
+      <section class="priv-section" id="contact">
+        <p class="section-num">09</p>
+        <h2>Contact.</h2>
+        <p>Questions about this policy, the app, or anything else: <a href="mailto:hello@quikshot.app">hello@quikshot.app</a>.</p>
+      </section>
+
+      <!-- ───────── 10 Disclaimer ───────── -->
+      <section class="priv-section" id="disclaimer">
+        <p class="section-num">10</p>
+        <h2>Medical disclaimer.</h2>
+
+        <div class="disclaimer">
+          <p class="eyebrow">Important</p>
+          <h3>QuikShot is a logging tool, not a clinician.</h3>
+          <p>QuikShot performs arithmetic on values you enter — concentrations, draw amounts, schedule cadences, estimated active levels. It does not recommend doses, evaluate the safety of any compound, diagnose conditions, or replace the judgment of a qualified medical professional.</p>
+          <p>"Estimated level" charts and reconstitution math are presented as estimates based on the values you entered. Real-world pharmacokinetics depend on factors the app cannot see. Treat every number as a reference point, not a target.</p>
+          <p>If you are uncertain about any aspect of a medication, compound, or protocol, talk to a qualified clinician. If you are experiencing a medical emergency, call your local emergency number.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="container site-foot-inner">
+    <div class="site-brand" style="font-size: 14px; color: var(--steel)">
+      <img src="assets/logo.svg" width="20" height="20" alt="">
+      QuikShot
+    </div>
+    <div class="foot-links">
+      <a href="release-notes.html">Release notes</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="privacy.html#disclaimer">Disclaimer</a>
+      <span>© 2026 QuikShot</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
