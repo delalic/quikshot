@@ -1,42 +1,20 @@
-# QuikShot website
+# QuikShot — Marketing Site
 
-A static, three-page marketing site for QuikShot. Designed to publish on GitHub Pages.
+This is the source code for the [QuikShot](https://delalic.github.io/quikshot/) marketing website.
 
-## Pages
+## Live Site
 
-- `index.html` — Home: hero, features, lanes, FAQ, privacy block.
-- `release-notes.html` — Versioned release log with on-deck roadmap.
-- `privacy.html` — Privacy policy + medical disclaimer.
+Visit the live site here: **[https://delalic.github.io/quikshot/](https://delalic.github.io/quikshot/)**
 
-## Publish to GitHub Pages
+## About
 
-1. Push the site files to the `quikshot` repo root.
-2. In the repo, **Settings → Pages**.
-3. Source: **Deploy from a branch**. Branch: `main`, folder: `/`.
-4. Save. The site will publish at `https://<user>.github.io/<repo>/`.
-
-A `.nojekyll` file is included so GitHub Pages serves the files as-is without running Jekyll.
+QuikShot is a simple, no-build-step static site consisting of HTML and CSS.
 
 ## Files
 
-```
-quikshot/
-├── index.html
-├── release-notes.html
-├── privacy.html
-├── .nojekyll
-├── styles/
-│   ├── tokens.css       ← QuikShot design tokens (colors, type, spacing)
-│   └── site.css         ← Shared site layout
-└── assets/
-    ├── logo.svg
-    ├── wordmark.svg
-    ├── app-icon.svg
-    └── lane-*.svg
-```
-
-## Editing
-
-- All design tokens live in `styles/tokens.css` (mineral, paper, ink, lane colors, type scale).
-- Each page has its own `<style>` block for page-specific layout, on top of the shared `site.css`.
-- Voice rules apply: sentence case, numerals for doses/times, no emoji.
+- `index.html` — landing page (hero, features, lanes, FAQ, privacy callout)
+- `release-notes.html` — version history and roadmap
+- `privacy.html` — privacy policy and medical disclaimer
+- `styles/tokens.css` — QuikShot design tokens
+- `styles/site.css` — shared site layout
+- `assets/` — logos, app icon, and lane artwork
