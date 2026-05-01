@@ -153,6 +153,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .prose strong { font-weight: 600; }
 .prose .meta { color: var(--silver); font-size: 14px; }
 
+/* ───────── Brand dot accent ───────── */
+.accent-dot { color: var(--energy); }
+
 /* ───────── Mono/numerics utility ───────── */
 .num {
   font-family: var(--font-mono);
