@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dev build notes — QuikShot</title>
+<meta name="description" content="Internal per-build log of merged issues. Not App Store release copy.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<style>
+  .dev-banner {
+    background: var(--state-overdue-soft);
+    color: var(--state-overdue);
+    border-radius: 14px;
+    padding: 14px 18px;
+    font-size: 14px; line-height: 1.5;
+    margin: 0 0 32px;
+    border: 1px solid var(--mist);
+  }
+  .dev-banner strong { font-weight: 700; }
+
+  .build-log {
+    list-style: none; padding: 0; margin: 0 0 64px;
+    border-top: 1px solid var(--mist);
+  }
+  .build-log li {
+    display: grid;
+    grid-template-columns: 84px 1fr auto;
+    gap: 18px;
+    align-items: baseline;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--mist);
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .build-log .ver {
+    font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
+    font-size: 13px; color: var(--steel);
+  }
+  .build-log .title { text-wrap: pretty; }
+  .build-log .issue {
+    font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
+    font-size: 13px; color: var(--silver);
+  }
+  .build-log .issue a { color: var(--steel); }
+  .build-log .empty {
+    grid-column: 1 / -1;
+    color: var(--silver);
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  @media (max-width: 640px) {
+    .build-log li { grid-template-columns: 1fr; gap: 4px; }
+    .build-log .issue { justify-self: start; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container site-nav-inner">
+    <a href="index.html" class="site-brand">
+      <img src="assets/logo.svg" width="28" height="28" alt="">
+      <span>Quik<span class="brand-accent">Shot</span></span>
+    </a>
+    <nav class="site-links">
+      <a href="index.html#features">Features</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="release-notes.html">Release notes</a>
+    </nav>
+    <a href="index.html#download" class="nav-cta">Download</a>
+  </div>
+</header>
+
+<div class="container-narrow">
+  <div class="page-header">
+    <p class="eyebrow">Dev build notes</p>
+    <h1>Per-build merge log<span class="accent-dot">.</span></h1>
+    <p class="lede">An internal log of issues merged to <span class="num">main</span>, recorded against the installed build number. Not App Store release copy — see <a href="release-notes.html">Release notes</a> for those.</p>
+  </div>
+
+  <div class="dev-banner">
+    <strong>Dev/build log.</strong> Each entry is appended after an issue merges to <span class="num">main</span> and the resulting build is installed. Versions here track the project <span class="num">BuildNumber</span>, not App Store releases.
+  </div>
+
+  <ul class="build-log">
+    <li class="empty"><span class="empty">No entries yet. The first entry will be appended after the next merge to main.</span></li>
+  </ul>
+</div>
+
+<footer class="site-foot">
+  <div class="container site-foot-inner">
+    <div class="site-brand" style="font-size: 14px; color: var(--steel)">
+      <img src="assets/logo.svg" width="20" height="20" alt="">
+      <span>Quik<span class="brand-accent">Shot</span></span>
+    </div>
+    <div class="foot-links">
+      <a href="release-notes.html">Release notes</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="privacy.html#disclaimer">Disclaimer</a>
+      <span>© 2026 QuikShot</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
