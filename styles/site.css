@@ -7,8 +7,8 @@
 
 html, body {
   margin: 0; padding: 0;
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--bg);
+  color: var(--fg);
   font-family: var(--font-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,7 +24,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 /* ───────── Top nav ───────── */
 .site-nav {
   position: sticky; top: 0; z-index: 20;
-  background: rgba(247,248,251,0.78);
+  background: var(--bar-bg);
   backdrop-filter: var(--blur-bar);
   -webkit-backdrop-filter: var(--blur-bar);
   border-bottom: 1px solid var(--hairline);
@@ -36,7 +36,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .site-brand {
   display: flex; align-items: center; gap: 12px;
   font-size: 24px; font-weight: 700; letter-spacing: -0.018em;
-  color: var(--ink);
+  color: var(--fg);
 }
 .site-brand img { display: block; width: 36px; height: 36px; }
 .site-brand:hover { text-decoration: none; }
@@ -48,22 +48,22 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .site-links {
   display: flex; gap: 28px;
-  font-size: 15px; color: var(--steel);
+  font-size: 15px; color: var(--fg-secondary);
 }
 .site-links a {
-  color: var(--steel); font-weight: 500;
+  color: var(--fg-secondary); font-weight: 500;
 }
-.site-links a:hover { color: var(--ink); text-decoration: none; }
-.site-links a.is-current { color: var(--ink); }
+.site-links a:hover { color: var(--fg); text-decoration: none; }
+.site-links a.is-current { color: var(--fg); }
 
 .nav-cta {
   font-family: inherit; font-size: 14px; font-weight: 600;
   padding: 9px 16px; border-radius: var(--r-md);
   border: 0; cursor: pointer;
-  background: var(--ink); color: var(--snow);
+  background: var(--fg); color: var(--bg);
   transition: background var(--dur-1) var(--ease);
 }
-.nav-cta:hover { background: var(--graphite); }
+.nav-cta:hover { background: var(--fg-secondary); }
 
 /* ───────── Buttons ───────── */
 .btn {
@@ -78,27 +78,27 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .btn:active { transform: scale(0.98); }
 .btn-lg { font-size: 17px; padding: 14px 22px; }
 .btn-md { font-size: 15px; padding: 11px 18px; }
-.btn-primary { background: var(--mineral); color: var(--snow); }
+.btn-primary { background: var(--mineral); color: var(--fg-on-mineral); }
 .btn-primary:hover { background: var(--mineral-600); }
-.btn-ink { background: var(--ink); color: var(--snow); }
-.btn-ink:hover { background: var(--graphite); }
-.btn-ghost { background: transparent; color: var(--ink); }
-.btn-ghost:hover { background: var(--fog); }
+.btn-ink { background: var(--fg); color: var(--bg); }
+.btn-ink:hover { background: var(--fg-secondary); }
+.btn-ghost { background: transparent; color: var(--fg); }
+.btn-ghost:hover { background: var(--bg-tinted); }
 
 /* ───────── Footer ───────── */
 .site-foot {
-  border-top: 1px solid var(--mist);
+  border-top: 1px solid var(--separator);
   padding: 40px 0 56px;
   margin-top: 96px;
-  color: var(--silver);
+  color: var(--fg-tertiary);
   font-size: 13px;
 }
 .site-foot-inner {
   display: flex; justify-content: space-between; align-items: center;
   flex-wrap: wrap; gap: 16px;
 }
-.site-foot a { color: var(--steel); }
-.site-foot a:hover { color: var(--ink); }
+.site-foot a { color: var(--fg-secondary); }
+.site-foot a:hover { color: var(--fg); }
 .foot-links { display: flex; gap: 20px; }
 
 /* ───────── Page header (release notes / privacy) ───────── */
@@ -118,7 +118,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .page-header p.lede {
   font-size: 19px; line-height: 1.5;
-  color: var(--steel);
+  color: var(--fg-secondary);
   margin: 0; max-width: 560px;
   text-wrap: pretty;
 }
@@ -126,11 +126,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 /* ───────── Long-form prose ───────── */
 .prose {
   font-size: 17px; line-height: 1.6;
-  color: var(--ink);
+  color: var(--fg);
 }
 .prose p {
   margin: 0 0 16px; text-wrap: pretty;
-  color: var(--ink);
+  color: var(--fg);
 }
 .prose h2 {
   font-size: 24px; line-height: 1.25;
@@ -148,10 +148,10 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .prose li { margin-bottom: 6px; text-wrap: pretty; }
 .prose code {
   font-family: var(--font-mono); font-size: 0.9em;
-  background: var(--fog); padding: 1px 6px; border-radius: 4px;
+  background: var(--bg-tinted); padding: 1px 6px; border-radius: 4px;
 }
 .prose strong { font-weight: 600; }
-.prose .meta { color: var(--silver); font-size: 14px; }
+.prose .meta { color: var(--fg-tertiary); font-size: 14px; }
 
 /* ───────── Brand dot accent ───────── */
 .accent-dot { color: var(--energy); }
@@ -165,7 +165,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ───────── Card ───────── */
 .card {
-  background: var(--snow);
+  background: var(--bg-elevated);
   border-radius: var(--r-lg);
   padding: 24px;
   box-shadow: var(--shadow-1);

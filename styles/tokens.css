@@ -120,43 +120,95 @@
   --blur-bar: saturate(180%) blur(20px);
   --bar-bg-light: rgba(247, 248, 251, 0.78);
   --bar-bg-dark:  rgba(11, 16, 32, 0.72);
+  --bar-bg:       var(--bar-bg-light);
   --scrim:       rgba(11, 16, 32, 0.32);
+
+  --canvas-dark:    #06091A;
+  --graphite-2:     #232B45;
+  --slate-2:        #2F385A;
+
+  --mineral-bright:      #5C84F2;
+  --mineral-bright-600:  #4A73E5;
+  --mineral-bright-soft: rgba(92, 132, 242, 0.18);
+
+  --energy-warm:      #FF6E50;
+  --energy-warm-soft: rgba(255, 110, 80, 0.18);
+
+  --lane-mineral-d: #5C84F2;
+  --lane-moss-d:    #34B07B;
+  --lane-ochre-d:   #E0A347;
+  --lane-plum-d:    #A172C2;
+  --lane-teal-d:    #45ABB3;
+  --lane-clay-d:    #DC6A5C;
+
+  --state-taken-d:   #34B07B;
+  --state-missed-d:  #DC6A5C;
+  --state-overdue-d: #E0A347;
 }
 
 /* ───────── Dark mode ───────── */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg:           var(--ink);
+    color-scheme: dark;
+    --bg:           var(--canvas-dark);
     --bg-elevated:  var(--graphite);
-    --bg-tinted:    rgba(43, 92, 230, 0.16);
+    --bg-raised:    var(--graphite-2);
+    --bg-tinted:    rgba(92, 132, 242, 0.14);
     --fg:           #F0F2F8;
     --fg-secondary: #B0B6C6;
     --fg-tertiary:  #6B7388;
     --separator:    rgba(255, 255, 255, 0.08);
-    --hairline:     rgba(255, 255, 255, 0.08);
-    --shadow-1: 0 1px 2px rgba(0,0,0,.4), 0 0 0 1px rgba(255,255,255,.04);
-    --shadow-2: 0 8px 24px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.04);
-    --shadow-3: 0 24px 64px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.06);
-    --mineral-soft: rgba(43, 92, 230, 0.18);
-    --state-taken-soft:  rgba(31, 143, 95, 0.18);
-    --state-overdue-soft:rgba(208, 138, 42, 0.18);
-    --state-missed-soft: rgba(194, 74, 61, 0.18);
+    --hairline:     rgba(255, 255, 255, 0.06);
+    --mineral:      var(--mineral-bright);
+    --mineral-600:  var(--mineral-bright-600);
+    --mineral-soft: var(--mineral-bright-soft);
+    --energy:       var(--energy-warm);
+    --energy-soft:  var(--energy-warm-soft);
+    --lane-mineral: var(--lane-mineral-d);
+    --lane-moss:    var(--lane-moss-d);
+    --lane-ochre:   var(--lane-ochre-d);
+    --lane-plum:    var(--lane-plum-d);
+    --lane-teal:    var(--lane-teal-d);
+    --lane-clay:    var(--lane-clay-d);
+    --state-due:    var(--mineral-bright);
+    --state-taken:  var(--state-taken-d);
+    --state-missed: var(--state-missed-d);
+    --state-overdue:var(--state-overdue-d);
+    --state-taken-soft:  rgba(52, 176, 123, 0.16);
+    --state-overdue-soft:rgba(224, 163, 71, 0.16);
+    --state-missed-soft: rgba(220, 106, 92, 0.16);
+    --shadow-1: 0 1px 2px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.05);
+    --shadow-2: 0 8px 24px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.06);
+    --shadow-3: 0 24px 64px rgba(0,0,0,.7), inset 0 0 0 1px rgba(255,255,255,.08);
+    --shadow-focus: 0 0 0 4px rgba(92, 132, 242, 0.36);
+    --bar-bg: rgba(6, 9, 26, 0.72);
+    --scrim: rgba(0, 0, 0, 0.56);
   }
 }
 
 /* Force-light / force-dark helpers */
 [data-theme="light"] {
-  --bg: var(--paper); --bg-elevated: var(--snow); --bg-tinted: var(--mineral-soft);
+  color-scheme: light;
+  --bar-bg: var(--bar-bg-light);
+  --bg: var(--paper); --bg-elevated: var(--snow); --bg-raised: var(--snow); --bg-tinted: var(--mineral-soft);
   --fg: var(--ink); --fg-secondary: var(--steel); --fg-tertiary: var(--silver);
   --separator: var(--mist); --hairline: rgba(11,16,32,.08);
 }
 [data-theme="dark"] {
-  --bg: var(--ink); --bg-elevated: var(--graphite); --bg-tinted: rgba(43,92,230,.16);
+  color-scheme: dark;
+  --bar-bg: rgba(6, 9, 26, 0.72);
+  --bg: var(--canvas-dark); --bg-elevated: var(--graphite); --bg-raised: var(--graphite-2); --bg-tinted: rgba(92,132,242,.14);
   --fg: #F0F2F8; --fg-secondary: #B0B6C6; --fg-tertiary: #6B7388;
-  --separator: rgba(255,255,255,.08); --hairline: rgba(255,255,255,.08);
-  --shadow-1: 0 1px 2px rgba(0,0,0,.4), 0 0 0 1px rgba(255,255,255,.04);
-  --shadow-2: 0 8px 24px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.04);
-  --shadow-3: 0 24px 64px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.06);
+  --separator: rgba(255,255,255,.08); --hairline: rgba(255,255,255,.06);
+  --mineral: var(--mineral-bright); --mineral-600: var(--mineral-bright-600); --mineral-soft: var(--mineral-bright-soft);
+  --energy: var(--energy-warm); --energy-soft: var(--energy-warm-soft);
+  --lane-mineral: var(--lane-mineral-d); --lane-moss: var(--lane-moss-d); --lane-ochre: var(--lane-ochre-d);
+  --lane-plum: var(--lane-plum-d); --lane-teal: var(--lane-teal-d); --lane-clay: var(--lane-clay-d);
+  --state-due: var(--mineral-bright); --state-taken: var(--state-taken-d); --state-missed: var(--state-missed-d); --state-overdue: var(--state-overdue-d);
+  --state-taken-soft: rgba(52,176,123,.16); --state-missed-soft: rgba(220,106,92,.16); --state-overdue-soft: rgba(224,163,71,.16);
+  --shadow-1: 0 1px 2px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.05);
+  --shadow-2: 0 8px 24px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.06);
+  --shadow-3: 0 24px 64px rgba(0,0,0,.7), inset 0 0 0 1px rgba(255,255,255,.08);
 }
 
 /* ============================================================
@@ -216,7 +268,7 @@ body {
 .qs-prose code {
   font-family: var(--font-mono);
   font-size: 0.92em;
-  background: var(--fog);
+  background: var(--bg-tinted);
   padding: 1px 6px;
   border-radius: 4px;
 }
@@ -245,11 +297,11 @@ body {
 .qs-btn:active { transform: scale(0.98); }
 .qs-btn:focus-visible { outline: 0; box-shadow: var(--shadow-focus); }
 
-.qs-btn--primary   { background: var(--mineral); color: var(--snow); }
+.qs-btn--primary   { background: var(--mineral); color: var(--fg-on-mineral); }
 .qs-btn--primary:hover  { background: var(--mineral-600); }
 .qs-btn--secondary { background: var(--mineral-soft); color: var(--mineral); }
 .qs-btn--ghost     { background: transparent; color: var(--mineral); }
-.qs-btn--neutral   { background: var(--snow); color: var(--ink); box-shadow: var(--shadow-1); }
+.qs-btn--neutral   { background: var(--bg-elevated); color: var(--fg); box-shadow: var(--shadow-1); }
 .qs-btn--energy    { background: var(--energy); color: var(--snow); }
 .qs-btn--destructive { background: var(--state-missed); color: var(--snow); }
 
@@ -266,7 +318,7 @@ body {
   box-shadow: var(--shadow-1);
 }
 .qs-card--raised { box-shadow: var(--shadow-2); }
-.qs-card--tinted { background: var(--bg-tinted); box-shadow: none; border: 1px solid var(--mist); }
+.qs-card--tinted { background: var(--bg-tinted); box-shadow: none; border: 1px solid var(--separator); }
 
 /* ============================================================
    Lane chip — 6px square color prefix used in dose rows

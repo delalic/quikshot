@@ -28,18 +28,18 @@
   .hero p.lede {
     font-size: 20px;
     line-height: 1.5;
-    color: var(--steel);
+    color: var(--fg-secondary);
     margin: 0 0 32px;
     max-width: 480px;
     text-wrap: pretty;
   }
   .hero .cta-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
   .hero .meta {
-    font-size: 13px; color: var(--silver);
+    font-size: 13px; color: var(--fg-tertiary);
     margin-top: 24px;
     font-feature-settings: 'tnum' 1;
   }
-  .hero .meta .dot { display: inline-block; width: 3px; height: 3px; border-radius: 50%; background: var(--silver); margin: 0 8px; vertical-align: middle; }
+  .hero .meta .dot { display: inline-block; width: 3px; height: 3px; border-radius: 50%; background: var(--fg-tertiary); margin: 0 8px; vertical-align: middle; }
 
   /* ───────── Device mockup ───────── */
   .device-stage {
@@ -64,7 +64,7 @@
   }
   .device .screen {
     width: 100%; height: 100%;
-    background: var(--paper);
+    background: var(--bg);
     border-radius: 44px;
     padding: 44px 14px 14px;
     overflow: hidden;
@@ -75,7 +75,7 @@
     width: 96px; height: 28px; background: var(--ink); border-radius: 16px;
   }
   .today-card {
-    background: var(--snow);
+    background: var(--bg-elevated);
     border-radius: 20px;
     padding: 18px;
     box-shadow: var(--shadow-1);
@@ -101,15 +101,15 @@
     font-variant-numeric: tabular-nums;
     font-size: 38px; font-weight: 600;
     letter-spacing: -0.024em;
-    color: var(--ink);
+    color: var(--fg);
   }
-  .today-card .unit { font-size: 18px; color: var(--steel); font-weight: 600; }
+  .today-card .unit { font-size: 18px; color: var(--fg-secondary); font-weight: 600; }
   .today-card .compound {
     font-size: 16px; font-weight: 600;
     margin-top: 2px; position: relative;
   }
   .today-card .due {
-    font-size: 13px; color: var(--steel);
+    font-size: 13px; color: var(--fg-secondary);
     margin-top: 4px; position: relative;
   }
   .today-card .actions {
@@ -121,14 +121,14 @@
     cursor: pointer;
   }
   .today-card .actions .log {
-    flex: 2; background: var(--mineral); color: var(--snow);
+    flex: 2; background: var(--mineral); color: var(--fg-on-mineral);
   }
   .today-card .actions .skip {
     background: var(--mineral-soft); color: var(--mineral);
   }
 
   .dose-row {
-    background: var(--snow);
+    background: var(--bg-elevated);
     border-radius: 14px;
     padding: 11px 12px;
     display: flex; align-items: center; gap: 10px;
@@ -137,32 +137,32 @@
   }
   .dose-row .lane { width: 6px; height: 22px; border-radius: 2px; flex: 0 0 auto; }
   .dose-row .body { flex: 1; min-width: 0; }
-  .dose-row .title { font-size: 13px; font-weight: 600; color: var(--ink); }
-  .dose-row .sub { font-size: 11px; color: var(--steel); margin-top: 2px; font-feature-settings: 'tnum' 1; }
+  .dose-row .title { font-size: 13px; font-weight: 600; color: var(--fg); }
+  .dose-row .sub { font-size: 11px; color: var(--fg-secondary); margin-top: 2px; font-feature-settings: 'tnum' 1; }
   .dose-row .badge {
     font-size: 9px; font-weight: 700; letter-spacing: 0.06em;
     padding: 3px 7px; border-radius: 4px; text-transform: uppercase;
   }
   .badge-taken { color: var(--state-taken); background: var(--state-taken-soft); }
-  .badge-skip { color: var(--silver); background: var(--mist); }
+  .badge-skip { color: var(--fg-tertiary); background: var(--separator); }
   .badge-due { color: var(--mineral); background: var(--mineral-soft); }
 
   /* ───────── Stats strip ───────── */
   .strip {
-    background: var(--snow);
-    border-top: 1px solid var(--mist);
-    border-bottom: 1px solid var(--mist);
+    background: var(--bg-elevated);
+    border-top: 1px solid var(--separator);
+    border-bottom: 1px solid var(--separator);
     padding: 48px 0;
   }
   .strip-grid {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
   }
   .strip-grid .stat {
-    font-size: 14px; color: var(--steel); line-height: 1.4;
+    font-size: 14px; color: var(--fg-secondary); line-height: 1.4;
   }
   .strip-grid .num-big {
     font-family: var(--font-mono); font-variant-numeric: tabular-nums;
-    font-size: 34px; font-weight: 600; color: var(--ink);
+    font-size: 34px; font-weight: 600; color: var(--fg);
     margin-bottom: 6px; letter-spacing: -0.022em;
   }
 
@@ -178,17 +178,17 @@
     text-wrap: balance;
   }
   .section-lede {
-    font-size: 18px; line-height: 1.5; color: var(--steel);
+    font-size: 18px; line-height: 1.5; color: var(--fg-secondary);
     max-width: 580px; margin: 0 0 56px; text-wrap: pretty;
   }
   .feature-grid {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
   }
   .f-card {
-    background: var(--snow);
+    background: var(--bg-elevated);
     border-radius: 24px;
     padding: 28px;
-    border: 1px solid var(--mist);
+    border: 1px solid var(--separator);
     transition: box-shadow var(--dur-2) var(--ease), transform var(--dur-2) var(--ease);
   }
   .f-card:hover {
@@ -214,25 +214,25 @@
     letter-spacing: -0.012em;
   }
   .f-card p {
-    font-size: 15px; color: var(--steel); margin: 0;
+    font-size: 15px; color: var(--fg-secondary); margin: 0;
     line-height: 1.55; text-wrap: pretty;
   }
 
   /* ───────── Lanes section ───────── */
   .lanes {
     padding: 96px 0;
-    background: var(--snow);
-    border-top: 1px solid var(--mist);
-    border-bottom: 1px solid var(--mist);
+    background: var(--bg-elevated);
+    border-top: 1px solid var(--separator);
+    border-bottom: 1px solid var(--separator);
   }
   .lane-grid {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
   }
   .lane-card {
-    background: var(--paper);
+    background: var(--bg);
     border-radius: 18px;
     padding: 22px;
-    border: 1px solid var(--mist);
+    border: 1px solid var(--separator);
   }
   .lane-card .swatch {
     width: 8px; height: 32px; border-radius: 3px;
@@ -243,7 +243,7 @@
     letter-spacing: -0.008em;
   }
   .lane-card p {
-    font-size: 13px; color: var(--steel); margin: 0;
+    font-size: 13px; color: var(--fg-secondary); margin: 0;
     line-height: 1.5;
   }
 
@@ -301,16 +301,16 @@
     align-items: start;
   }
   .faq-item {
-    border-top: 1px solid var(--mist);
+    border-top: 1px solid var(--separator);
     padding: 22px 0;
   }
-  .faq-item:last-child { border-bottom: 1px solid var(--mist); }
+  .faq-item:last-child { border-bottom: 1px solid var(--separator); }
   .faq-item h4 {
     font-size: 17px; font-weight: 600; margin: 0 0 6px;
     letter-spacing: -0.008em;
   }
   .faq-item p {
-    font-size: 15px; color: var(--steel); margin: 0;
+    font-size: 15px; color: var(--fg-secondary); margin: 0;
     line-height: 1.55; text-wrap: pretty;
   }
 
@@ -552,7 +552,7 @@
 <!-- ───────── Footer ───────── -->
 <footer class="site-foot">
   <div class="container site-foot-inner">
-    <div class="site-brand" style="font-size: 14px; color: var(--steel)">
+    <div class="site-brand" style="font-size: 14px; color: var(--fg-secondary)">
       <img src="assets/logo.svg" width="20" height="20" alt="">
       <span>Quik<span class="brand-accent">Shot</span></span>
     </div>
