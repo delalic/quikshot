@@ -25,6 +25,14 @@ The parent folder `/Users/haris/Documents/shots_tracker` is only a workspace con
 
 The original website source was archived at `/Users/haris/Documents/shots_tracker/archive/original-site-source` for reference only. Do not use it for ongoing website updates, GitHub Pages publishing, issues, commits, or pushes.
 
+## Local Agent Notes
+
+This repository may have an ignored `local-agent-notes/` folder on the user's machine.
+
+If present, read it before marketing-site edits. It contains local workflow preferences for agents on this machine, such as whether to push marketing changes directly to `origin main`.
+
+Do not commit `local-agent-notes/`; it is intentionally ignored.
+
 Before marketing-site work, run:
 
 ```sh
