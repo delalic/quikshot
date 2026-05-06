@@ -19,30 +19,30 @@
   .priv-toc {
     position: sticky; top: 80px;
     align-self: start;
-    border-left: 1px solid var(--mist);
+    border-left: 1px solid var(--separator);
     padding: 4px 0 4px 16px;
   }
   .priv-toc .label {
     font-size: 11px; font-weight: 600; letter-spacing: 0.10em;
-    color: var(--silver); text-transform: uppercase;
+    color: var(--fg-tertiary); text-transform: uppercase;
     margin: 0 0 12px;
   }
   .priv-toc ul { list-style: none; padding: 0; margin: 0; }
   .priv-toc li { margin-bottom: 8px; }
   .priv-toc a {
-    font-size: 14px; color: var(--steel);
+    font-size: 14px; color: var(--fg-secondary);
     line-height: 1.4;
   }
-  .priv-toc a:hover { color: var(--ink); text-decoration: none; }
+  .priv-toc a:hover { color: var(--fg); text-decoration: none; }
   .priv-toc .num {
-    color: var(--silver); margin-right: 8px;
+    color: var(--fg-tertiary); margin-right: 8px;
     font-size: 12px;
   }
 
   /* ───────── At-a-glance card ───────── */
   .glance {
-    background: var(--snow);
-    border: 1px solid var(--mist);
+    background: var(--bg-elevated);
+    border: 1px solid var(--separator);
     border-radius: 20px;
     padding: 28px;
     margin-bottom: 48px;
@@ -63,7 +63,7 @@
   }
   .glance-grid li {
     display: flex; gap: 12px; align-items: flex-start;
-    font-size: 15px; color: var(--ink);
+    font-size: 15px; color: var(--fg);
     line-height: 1.45;
   }
   .glance-grid .check {
@@ -76,7 +76,7 @@
 
   /* ───────── Section ───────── */
   .priv-section {
-    border-top: 1px solid var(--mist);
+    border-top: 1px solid var(--separator);
     padding: 36px 0;
   }
   .priv-section:first-of-type { border-top: 0; padding-top: 0; }
@@ -84,17 +84,17 @@
     font-size: 24px; font-weight: 600;
     letter-spacing: -0.014em;
     margin: 0 0 8px;
-    color: var(--ink);
+    color: var(--fg);
     text-wrap: balance;
   }
   .priv-section .section-num {
     font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
-    font-size: 12px; color: var(--silver);
+    font-size: 12px; color: var(--fg-tertiary);
     margin: 0 0 6px;
   }
   .priv-section p {
     font-size: 16px; line-height: 1.6;
-    color: var(--ink);
+    color: var(--fg);
     margin: 0 0 14px;
     text-wrap: pretty;
   }
@@ -111,8 +111,8 @@
 
   /* ───────── Definitions table ───────── */
   .defs {
-    background: var(--snow);
-    border: 1px solid var(--mist);
+    background: var(--bg-elevated);
+    border: 1px solid var(--separator);
     border-radius: 16px;
     overflow: hidden;
     margin: 8px 0 16px;
@@ -120,37 +120,37 @@
   .defs dl { margin: 0; }
   .defs > dl > div {
     display: grid; grid-template-columns: 200px 1fr;
-    border-top: 1px solid var(--mist);
+    border-top: 1px solid var(--separator);
   }
   .defs > dl > div:first-child { border-top: 0; }
   .defs dt {
     font-size: 14px; font-weight: 600;
-    color: var(--ink);
+    color: var(--fg);
     padding: 14px 18px;
-    background: var(--paper);
-    border-right: 1px solid var(--mist);
+    background: var(--bg);
+    border-right: 1px solid var(--separator);
   }
   .defs dd {
     margin: 0; padding: 14px 18px;
     font-size: 14px; line-height: 1.55;
-    color: var(--steel);
+    color: var(--fg-secondary);
   }
 
   .updated {
     font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
-    font-size: 13px; color: var(--silver);
+    font-size: 13px; color: var(--fg-tertiary);
     margin-top: 16px;
   }
 
   @media (max-width: 880px) {
     .privacy-wrap { grid-template-columns: 1fr; gap: 32px; }
     .priv-toc { position: static; border-left: 0; padding-left: 0;
-      border-top: 1px solid var(--mist); padding-top: 24px;
+      border-top: 1px solid var(--separator); padding-top: 24px;
       order: 2;
     }
     .glance-grid { grid-template-columns: 1fr; }
     .defs > dl > div { grid-template-columns: 1fr; }
-    .defs dt { border-right: 0; border-bottom: 1px solid var(--mist); }
+    .defs dt { border-right: 0; border-bottom: 1px solid var(--separator); }
   }
 </style>
 </head>
@@ -356,7 +356,7 @@
 
 <footer class="site-foot">
   <div class="container site-foot-inner">
-    <div class="site-brand" style="font-size: 14px; color: var(--steel)">
+    <div class="site-brand" style="font-size: 14px; color: var(--fg-secondary)">
       <img src="assets/logo.svg" width="20" height="20" alt="">
       <span>Quik<span class="brand-accent">Shot</span></span>
     </div>

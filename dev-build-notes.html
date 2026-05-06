@@ -16,7 +16,7 @@
     margin: 32px 0 10px;
   }
   .dev-subtitle {
-    font-size: 15px; color: var(--steel);
+    font-size: 15px; color: var(--fg-secondary);
     line-height: 1.55;
     margin: 0 0 40px;
     text-wrap: pretty;
@@ -24,13 +24,13 @@
 
   .builds-label {
     font-size: 11px; font-weight: 700; letter-spacing: 0.10em;
-    color: var(--silver); text-transform: uppercase;
+    color: var(--fg-tertiary); text-transform: uppercase;
     margin: 0 0 12px;
   }
 
   .build-log {
     list-style: none; padding: 0; margin: 0 0 64px;
-    border-top: 1px solid var(--mist);
+    border-top: 1px solid var(--separator);
   }
   .build-log li {
     display: grid;
@@ -38,20 +38,20 @@
     gap: 18px;
     align-items: baseline;
     padding: 14px 0;
-    border-bottom: 1px solid var(--mist);
+    border-bottom: 1px solid var(--separator);
     font-size: 15px;
     line-height: 1.5;
-    color: var(--ink);
+    color: var(--fg);
   }
   .build-log .ver {
     font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
-    font-size: 13px; color: var(--steel);
+    font-size: 13px; color: var(--fg-secondary);
   }
   .build-log .issue {
     font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
-    font-size: 13px; color: var(--silver);
+    font-size: 13px; color: var(--fg-tertiary);
   }
-  .build-log .issue a { color: var(--steel); }
+  .build-log .issue a { color: var(--fg-secondary); }
   .build-log .title { text-wrap: pretty; }
 
   @media (max-width: 640px) {
@@ -127,7 +127,7 @@
 
 <footer class="site-foot">
   <div class="container site-foot-inner">
-    <div class="site-brand" style="font-size: 14px; color: var(--steel)">
+    <div class="site-brand" style="font-size: 14px; color: var(--fg-secondary)">
       <img src="assets/logo.svg" width="20" height="20" alt="">
       <span>Quik<span class="brand-accent">Shot</span></span>
     </div>
