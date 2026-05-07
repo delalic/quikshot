@@ -54,8 +54,166 @@
   .build-log .issue a { color: var(--fg-secondary); }
   .build-log .title { text-wrap: pretty; }
 
+  .process-reference {
+    margin: 10px 0 88px;
+    padding: 28px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--separator);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-1);
+  }
+  .process-reference h2 {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.012em;
+    margin: 0 0 6px;
+  }
+  .process-reference p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--fg-secondary);
+    margin: 0 0 22px;
+    text-wrap: pretty;
+  }
+  .process-flow {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .flow-state {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 14px 12px;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    text-align: center;
+  }
+  .flow-state strong {
+    display: block;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  .flow-state span {
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    line-height: 1.25;
+    color: var(--fg-secondary);
+  }
+  .flow-state--idle {
+    background: rgba(107, 115, 136, 0.12);
+    background: color-mix(in srgb, var(--fg-tertiary) 10%, transparent);
+    border-color: rgba(107, 115, 136, 0.42);
+    border-color: color-mix(in srgb, var(--fg-tertiary) 42%, transparent);
+  }
+  .flow-state--active {
+    background: rgba(208, 138, 42, 0.18);
+    background: color-mix(in srgb, var(--state-overdue) 16%, transparent);
+    border-color: rgba(208, 138, 42, 0.62);
+    border-color: color-mix(in srgb, var(--state-overdue) 62%, transparent);
+  }
+  .flow-state--done {
+    background: rgba(31, 143, 95, 0.16);
+    background: color-mix(in srgb, var(--state-taken) 16%, transparent);
+    border-color: rgba(31, 143, 95, 0.62);
+    border-color: color-mix(in srgb, var(--state-taken) 62%, transparent);
+  }
+  .flow-link {
+    flex: 0 0 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--fg-tertiary);
+  }
+  .flow-link::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    right: 13px;
+    top: 50%;
+    height: 1px;
+    background: var(--separator);
+  }
+  .flow-link::after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 5px);
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid var(--separator);
+    border-right: 1px solid var(--separator);
+    transform: rotate(45deg);
+  }
+  .flow-link span {
+    position: relative;
+    z-index: 1;
+    max-width: 66px;
+    padding: 4px 5px;
+    border-radius: 7px;
+    background: var(--bg-elevated);
+    color: var(--fg-tertiary);
+    font-size: 10px;
+    line-height: 1.15;
+    text-align: center;
+  }
+  .process-side-paths {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .process-side-paths div {
+    border: 1px solid var(--separator);
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.35;
+    color: var(--fg-secondary);
+    background: rgba(107, 115, 136, 0.08);
+    background: color-mix(in srgb, var(--bg) 52%, transparent);
+  }
+  .process-side-paths strong {
+    display: block;
+    color: var(--fg);
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
   @media (max-width: 640px) {
     .build-log li { grid-template-columns: 1fr; gap: 4px; }
+    .process-reference { padding: 22px; }
+    .process-flow {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .flow-link {
+      min-height: 28px;
+      flex-basis: auto;
+    }
+    .flow-link::before {
+      left: 50%;
+      right: auto;
+      top: 0;
+      bottom: 6px;
+      width: 1px;
+      height: auto;
+    }
+    .flow-link::after {
+      right: auto;
+      left: calc(50% - 5px);
+      top: auto;
+      bottom: 3px;
+      transform: rotate(135deg);
+    }
+    .flow-link span {
+      max-width: 170px;
+      background: var(--bg);
+    }
+    .process-side-paths { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -143,6 +301,44 @@
       <span class="title">Add automated dev build release notes page</span>
     </li>
   </ul>
+
+  <section class="process-reference" aria-labelledby="process-reference-title">
+    <h2 id="process-reference-title">Development process, pocket edition</h2>
+    <p>For anyone reading build numbers and wondering how the issue machine works.</p>
+
+    <div class="process-flow" aria-label="QuikShot issue development process">
+      <div class="flow-state flow-state--idle">
+        <strong>Backlog</strong>
+        <span>Not started</span>
+      </div>
+      <div class="flow-link"><span>PM refines issue</span></div>
+      <div class="flow-state flow-state--idle">
+        <strong>Ready</strong>
+        <span>Not started</span>
+      </div>
+      <div class="flow-link"><span>Coder picks up issue</span></div>
+      <div class="flow-state flow-state--active">
+        <strong>In progress</strong>
+        <span>Active</span>
+      </div>
+      <div class="flow-link"><span>Coder implements issue</span></div>
+      <div class="flow-state flow-state--active">
+        <strong>In review</strong>
+        <span>Active</span>
+      </div>
+      <div class="flow-link"><span>Reviewer completes issue</span></div>
+      <div class="flow-state flow-state--done">
+        <strong>Done</strong>
+        <span>Accepted</span>
+      </div>
+    </div>
+
+    <div class="process-side-paths" aria-label="Additional process paths">
+      <div><strong>Failed review</strong>Reviewer sends it back to Ready; coder fixes it and returns it to review.</div>
+      <div><strong>Small safe work</strong>Coder can self-merge when review is not required and validation is clean.</div>
+      <div><strong>Follow-ups</strong>PM creates new backlog issues for deferred work or residual risk.</div>
+    </div>
+  </section>
 </div>
 
 <footer class="site-foot">
