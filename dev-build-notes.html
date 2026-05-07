@@ -55,8 +55,10 @@
   .build-log .title { text-wrap: pretty; }
 
   .process-reference {
-    margin: 10px 0 88px;
-    padding: 28px;
+    width: min(1120px, calc(100vw - 48px));
+    margin: 20px 0 88px 50%;
+    transform: translateX(-50%);
+    padding: 34px;
     background: var(--bg-elevated);
     border: 1px solid var(--separator);
     border-radius: var(--r-lg);
@@ -72,33 +74,44 @@
     font-size: 14px;
     line-height: 1.5;
     color: var(--fg-secondary);
-    margin: 0 0 22px;
+    margin: 0 0 26px;
     text-wrap: pretty;
   }
-  .process-flow {
-    display: flex;
-    align-items: stretch;
-    gap: 12px;
+  .process-rail {
+    display: grid;
+    grid-template-columns:
+      minmax(118px, 1fr) minmax(90px, 0.62fr)
+      minmax(118px, 1fr) minmax(90px, 0.62fr)
+      minmax(118px, 1fr) minmax(90px, 0.62fr)
+      minmax(118px, 1fr) minmax(90px, 0.62fr)
+      minmax(118px, 1fr);
+    gap: 8px;
+    position: relative;
+    margin: 0 0 20px;
   }
   .flow-state {
-    flex: 1 1 0;
-    min-width: 0;
-    padding: 14px 12px;
-    border-radius: 14px;
+    min-height: 96px;
+    padding: 18px 16px 16px;
+    border-radius: 16px;
     border: 1px solid transparent;
-    text-align: center;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .flow-state strong {
     display: block;
-    font-size: 13px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.1;
     font-weight: 700;
+    letter-spacing: -0.01em;
   }
   .flow-state span {
     display: block;
-    margin-top: 4px;
-    font-size: 11px;
-    line-height: 1.25;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.3;
     color: var(--fg-secondary);
   }
   .flow-state--idle {
@@ -120,18 +133,16 @@
     border-color: color-mix(in srgb, var(--state-taken) 62%, transparent);
   }
   .flow-link {
-    flex: 0 0 74px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
+    z-index: 1;
+    min-height: 96px;
     color: var(--fg-tertiary);
   }
   .flow-link::before {
     content: "";
     position: absolute;
-    left: 4px;
-    right: 13px;
+    left: 10px;
+    right: 20px;
     top: 50%;
     height: 1px;
     background: var(--separator);
@@ -139,7 +150,7 @@
   .flow-link::after {
     content: "";
     position: absolute;
-    right: 5px;
+    right: 15px;
     top: calc(50% - 5px);
     width: 9px;
     height: 9px;
@@ -148,16 +159,23 @@
     transform: rotate(45deg);
   }
   .flow-link span {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    max-width: 66px;
-    padding: 4px 5px;
-    border-radius: 7px;
+    left: 50%;
+    top: calc(50% - 31px);
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 120px;
+    padding: 4px 8px;
+    border-radius: 999px;
     background: var(--bg-elevated);
-    color: var(--fg-tertiary);
-    font-size: 10px;
-    line-height: 1.15;
+    color: var(--fg-secondary);
+    font-size: 12px;
+    line-height: 1.2;
     text-align: center;
+  }
+  .process-step {
+    display: contents;
   }
   .process-side-paths {
     display: grid;
@@ -168,7 +186,7 @@
   .process-side-paths div {
     border: 1px solid var(--separator);
     border-radius: 12px;
-    padding: 10px 12px;
+    padding: 12px 14px;
     font-size: 12px;
     line-height: 1.35;
     color: var(--fg-secondary);
@@ -182,17 +200,27 @@
     margin-bottom: 3px;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 760px) {
     .build-log li { grid-template-columns: 1fr; gap: 4px; }
-    .process-reference { padding: 22px; }
-    .process-flow {
+    .process-reference {
+      width: auto;
+      margin: 20px 0 88px;
+      transform: none;
+      padding: 22px;
+    }
+    .process-rail {
       display: grid;
       grid-template-columns: 1fr;
       gap: 8px;
+      margin-bottom: 12px;
+    }
+    .process-step { display: contents; }
+    .flow-state {
+      min-height: auto;
+      padding: 14px 16px;
     }
     .flow-link {
-      min-height: 28px;
-      flex-basis: auto;
+      min-height: 32px;
     }
     .flow-link::before {
       left: 50%;
@@ -210,6 +238,7 @@
       transform: rotate(135deg);
     }
     .flow-link span {
+      top: 50%;
       max-width: 170px;
       background: var(--bg);
     }
@@ -306,30 +335,40 @@
     <h2 id="process-reference-title">Development process, pocket edition</h2>
     <p>For anyone reading build numbers and wondering how the issue machine works.</p>
 
-    <div class="process-flow" aria-label="QuikShot issue development process">
-      <div class="flow-state flow-state--idle">
-        <strong>Backlog</strong>
-        <span>Not started</span>
+    <div class="process-rail" aria-label="QuikShot issue development process">
+      <div class="process-step">
+        <div class="flow-state flow-state--idle">
+          <strong>Backlog</strong>
+          <span>Not started</span>
+        </div>
+        <div class="flow-link"><span>PM refines</span></div>
       </div>
-      <div class="flow-link"><span>PM refines issue</span></div>
-      <div class="flow-state flow-state--idle">
-        <strong>Ready</strong>
-        <span>Not started</span>
+      <div class="process-step">
+        <div class="flow-state flow-state--idle">
+          <strong>Ready</strong>
+          <span>Not started</span>
+        </div>
+        <div class="flow-link"><span>Coder picks up</span></div>
       </div>
-      <div class="flow-link"><span>Coder picks up issue</span></div>
-      <div class="flow-state flow-state--active">
-        <strong>In progress</strong>
-        <span>Active</span>
+      <div class="process-step">
+        <div class="flow-state flow-state--active">
+          <strong>In progress</strong>
+          <span>Active coding</span>
+        </div>
+        <div class="flow-link"><span>Coder implements</span></div>
       </div>
-      <div class="flow-link"><span>Coder implements issue</span></div>
-      <div class="flow-state flow-state--active">
-        <strong>In review</strong>
-        <span>Active</span>
+      <div class="process-step">
+        <div class="flow-state flow-state--active">
+          <strong>In review</strong>
+          <span>Active review</span>
+        </div>
+        <div class="flow-link"><span>Reviewer completes</span></div>
       </div>
-      <div class="flow-link"><span>Reviewer completes issue</span></div>
-      <div class="flow-state flow-state--done">
-        <strong>Done</strong>
-        <span>Accepted</span>
+      <div class="process-step">
+        <div class="flow-state flow-state--done">
+          <strong>Done</strong>
+          <span>Accepted</span>
+        </div>
       </div>
     </div>
 
