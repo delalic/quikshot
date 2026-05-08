@@ -18,8 +18,39 @@
   .dev-subtitle {
     font-size: 15px; color: var(--fg-secondary);
     line-height: 1.55;
-    margin: 0 0 40px;
+    margin: 0 0 18px;
     text-wrap: pretty;
+  }
+
+  .dev-switcher {
+    display: inline-flex;
+    gap: 3px;
+    padding: 3px;
+    margin: 0 0 32px;
+    border: 1px solid var(--separator);
+    border-radius: var(--r-pill);
+    background: var(--bg-elevated);
+    box-shadow: var(--shadow-1);
+  }
+  .dev-switcher a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 82px;
+    padding: 7px 12px;
+    border-radius: var(--r-pill);
+    color: var(--fg-secondary);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .dev-switcher a:hover {
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .dev-switcher a[aria-current="page"] {
+    background: var(--fg);
+    color: var(--bg);
   }
 
   .builds-label {
@@ -107,6 +138,10 @@
 <div class="container-narrow">
   <p class="dev-eyebrow">Dev build log</p>
   <p class="dev-subtitle">Closed issues by build number. For customer-facing updates, see <a href="release-notes.html">Release notes</a>.</p>
+  <nav class="dev-switcher" aria-label="Development logs">
+    <a href="dev-build-notes.html" aria-current="page">Builds</a>
+    <a href="dev-activity.html">Activity</a>
+  </nav>
 
   <p class="builds-label">Builds</p>
   <ul class="build-log">

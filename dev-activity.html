@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dev activity - QuikShot</title>
+<meta name="description" content="Compact internal activity ledger for QuikShot agent and project work.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<style>
+  .dev-eyebrow {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+    color: var(--mineral); text-transform: uppercase;
+    margin: 32px 0 10px;
+  }
+  .dev-subtitle {
+    font-size: 15px; color: var(--fg-secondary);
+    line-height: 1.55;
+    margin: 0 0 18px;
+    text-wrap: pretty;
+  }
+
+  .dev-switcher {
+    display: inline-flex;
+    gap: 3px;
+    padding: 3px;
+    margin: 0 0 32px;
+    border: 1px solid var(--separator);
+    border-radius: var(--r-pill);
+    background: var(--bg-elevated);
+    box-shadow: var(--shadow-1);
+  }
+  .dev-switcher a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 82px;
+    padding: 7px 12px;
+    border-radius: var(--r-pill);
+    color: var(--fg-secondary);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .dev-switcher a:hover {
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .dev-switcher a[aria-current="page"] {
+    background: var(--fg);
+    color: var(--bg);
+  }
+
+  .activity-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.10em;
+    color: var(--fg-tertiary); text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+  .activity-log {
+    margin: 0 0 80px;
+  }
+  .activity-day {
+    padding: 0;
+    margin: 0 0 28px;
+  }
+  .activity-date {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--fg-secondary);
+    margin: 0 0 10px;
+  }
+  .activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--separator);
+  }
+  .activity-entry {
+    display: grid;
+    grid-template-columns: 12px 54px minmax(0, 1fr) max-content;
+    gap: 12px;
+    align-items: baseline;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--separator);
+    color: var(--fg);
+  }
+  .activity-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--fg-tertiary);
+    box-shadow: 0 0 0 3px var(--bg-tinted);
+    transform: translateY(-1px);
+  }
+  .activity-entry[data-run-state="completed"][data-outcome-tone="positive"] .activity-status {
+    background: var(--state-taken);
+  }
+  .activity-entry[data-run-state="completed"][data-outcome-tone="negative"] .activity-status {
+    background: var(--state-missed);
+  }
+  .activity-entry[data-run-state="completed"][data-outcome-tone="neutral"] .activity-status {
+    background: var(--fg-tertiary);
+  }
+  .activity-entry[data-run-state="failed"] .activity-status {
+    background: var(--lane-plum);
+  }
+  .activity-entry[data-run-state="blocked"] .activity-status,
+  .activity-entry[data-run-state="inconclusive"] .activity-status {
+    background: var(--state-overdue);
+  }
+  .activity-time {
+    font-family: var(--font-mono);
+    font-feature-settings: 'tnum' 1;
+    font-size: 13px;
+    color: var(--fg-secondary);
+  }
+  .activity-main {
+    min-width: 0;
+  }
+  .activity-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    font-family: var(--font-mono);
+    font-feature-settings: 'tnum' 1;
+    font-size: 12px;
+    color: var(--fg-tertiary);
+  }
+  .activity-meta > * {
+    min-width: 0;
+  }
+  .activity-meta > * + *::before {
+    content: "|";
+    color: var(--separator);
+    margin-right: 10px;
+  }
+  .activity-meta a {
+    color: var(--fg-secondary);
+  }
+  .activity-detail {
+    display: block;
+    margin-top: 3px;
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--fg);
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
+  }
+  .activity-outcome {
+    justify-self: end;
+    align-self: center;
+    padding: 4px 9px;
+    border-radius: var(--r-pill);
+    background: var(--bg-tinted);
+    color: var(--fg-secondary);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (max-width: 760px) {
+    .activity-entry {
+      grid-template-columns: 12px minmax(0, 1fr);
+      gap: 4px 12px;
+      align-items: start;
+    }
+    .activity-status {
+      grid-row: 1 / span 3;
+      margin-top: 5px;
+      transform: none;
+    }
+    .activity-time,
+    .activity-main,
+    .activity-outcome {
+      grid-column: 2;
+    }
+    .activity-outcome {
+      justify-self: start;
+      margin-top: 4px;
+      white-space: normal;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container site-nav-inner">
+    <a href="index.html" class="site-brand">
+      <img src="assets/logo.svg" width="28" height="28" alt="">
+      <span>Quik<span class="brand-accent">Shot</span></span>
+    </a>
+    <nav class="site-links">
+      <a href="index.html#features">Features</a>
+      <a href="journey.html">Journey</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="release-notes.html">Release notes</a>
+    </nav>
+    <a href="index.html#download" class="nav-cta">Download</a>
+  </div>
+</header>
+
+<div class="container-narrow">
+  <p class="dev-eyebrow">Dev activity</p>
+  <p class="dev-subtitle">Compact activity ledger for PM, QA, code, review, build, test, planning, and process runs.</p>
+  <nav class="dev-switcher" aria-label="Development logs">
+    <a href="dev-build-notes.html">Builds</a>
+    <a href="dev-activity.html" aria-current="page">Activity</a>
+  </nav>
+
+  <p class="activity-label">Activity</p>
+  <div class="activity-log">
+    <section class="activity-day" aria-labelledby="activity-2026-05-08">
+      <h2 class="activity-date" id="activity-2026-05-08">Friday, 8 May 2026</h2>
+      <ul class="activity-list">
+        <li class="activity-entry" data-run-state="completed" data-outcome-tone="neutral">
+          <span class="activity-status" aria-hidden="true"></span>
+          <time class="activity-time" datetime="2026-05-08T13:45:00-04:00">13:45</time>
+          <span class="activity-main">
+            <span class="visually-hidden">Completed run, neutral outcome.</span>
+            <span class="activity-meta">
+              <span>Sample</span>
+              <span>Codex</span>
+              <span>Planning</span>
+              <a href="https://github.com/delalic/quikshot_code/issues/142" aria-label="Issue 142">#142</a>
+            </span>
+            <span class="activity-detail">Activity ledger page shell</span>
+          </span>
+          <span class="activity-outcome">Sample entry</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="container site-foot-inner">
+    <div class="site-brand" style="font-size: 14px; color: var(--fg-secondary)">
+      <img src="assets/logo.svg" width="20" height="20" alt="">
+      <span>Quik<span class="brand-accent">Shot</span></span>
+    </div>
+    <div class="foot-links">
+      <a href="journey.html">Journey</a>
+      <a href="release-notes.html">Release notes</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="privacy.html#disclaimer">Disclaimer</a>
+      <span>&copy; 2026 QuikShot</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
