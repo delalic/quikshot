@@ -61,6 +61,14 @@
   .activity-log {
     margin: 0 0 80px;
   }
+  .activity-empty {
+    border-top: 1px solid var(--separator);
+    color: var(--fg-secondary);
+    font-size: 15px;
+    line-height: 1.55;
+    margin: 0;
+    padding: 12px 0;
+  }
   .activity-day {
     padding: 0;
     margin: 0 0 28px;
@@ -254,26 +262,28 @@
 
   <p class="activity-label">Activity</p>
   <div class="activity-log">
+    <!-- dev-activity:start -->
     <section class="activity-day" aria-labelledby="activity-2026-05-08">
       <h2 class="activity-date" id="activity-2026-05-08">Friday, 8 May 2026</h2>
       <ul class="activity-list">
         <li class="activity-entry" data-run-state="completed" data-outcome-tone="neutral">
           <span class="activity-status" aria-hidden="true"></span>
-          <time class="activity-time" datetime="2026-05-08T13:45:00-04:00">13:45</time>
+          <time class="activity-time" datetime="2026-05-08T14:52:00-04:00">14:52</time>
           <span class="activity-main">
             <span class="visually-hidden">Completed run, neutral outcome.</span>
             <span class="activity-meta">
-              <span>Sample</span>
+              <span>Kamenko</span>
               <span>Codex</span>
-              <span>Planning</span>
+              <span>Process</span>
               <a href="https://github.com/delalic/quikshot_code/issues/142" aria-label="Issue 142">#142</a>
             </span>
-            <span class="activity-detail">Activity ledger page shell</span>
+            <span class="activity-detail">Activity data source and helper script test</span>
           </span>
           <span class="activity-outcome">Sample entry</span>
         </li>
       </ul>
     </section>
+    <!-- dev-activity:end -->
   </div>
 </div>
 
