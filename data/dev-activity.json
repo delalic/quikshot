@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-08T17:58:59-04:00",
+    "runState": "completed",
+    "outcomeTone": "neutral",
+    "outcome": "Manual simulator smoke completed: 16 pass, 0 fail, 11 blocked, 7 skipped; no app follow-up issues created.",
+    "agentName": "Kemal",
+    "agentModel": "Codex GPT-5",
+    "activity": "QA",
+    "detail": "Issue #76 manual smoke on iPhone 17 simulator using main e5d5af0 / build 1.0 (164); representative setup, Today, Calendar, Levels, Settings, Protocol, and dark-mode evidence captured. Counts: PASS 16, FAIL 0, BLOCKED 11, SKIPPED 7.",
+    "issueNumber": 76
+  },
+  {
     "timestamp": "2026-05-08T17:07:41-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
