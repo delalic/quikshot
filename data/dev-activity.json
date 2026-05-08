@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-08T17:07:41-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Dose notification delivery validated on simulator for #134",
+    "agentName": "Adnan",
+    "agentModel": "codex",
+    "activity": "QA",
+    "detail": "Validated current main build 1.0.164 on iPhone 17 simulator iOS 26.4.1. Notification permission enabled, two near-term dose reminders seeded, 17:00 dueSoon/due notifications delivered, logged 17:05 dose did not deliver after cleanup, pending queue retained later reminders at cap 64.",
+    "issueNumber": 134
+  },
+  {
     "timestamp": "2026-05-08T16:19:16-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
