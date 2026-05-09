@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-09T13:52:01-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue 150 review fix pushed",
+    "agentName": "Sanela",
+    "agentModel": "codex",
+    "activity": "Fix failed review for issue #150",
+    "detail": "PR #151 now removes stale-detail snooze notifications when the global Show dose details setting changes and includes focused scheduler regression tests.",
+    "issueNumber": 150
+  },
+  {
     "timestamp": "2026-05-09T13:38:25-04:00",
     "runState": "failed",
     "outcomeTone": "negative",
