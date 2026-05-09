@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-09T13:23:13-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Global notification details implemented",
+    "agentName": "Sanela",
+    "agentModel": "codex",
+    "activity": "Code issue #150",
+    "detail": "PR #151 adds Settings > Notifications Show dose details, protocol previews, global reminder copy gating, focused tests, and docs updates.",
+    "issueNumber": 150
+  },
+  {
     "timestamp": "2026-05-09T04:08:52-04:00",
     "runState": "completed",
     "outcomeTone": "neutral",
