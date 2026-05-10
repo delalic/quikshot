@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-10T11:39:31-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue #167 implementation ready for review",
+    "agentName": "Adnan",
+    "agentModel": "Codex GPT-5 (reasoning not exposed; GPT-5.5 high requested)",
+    "activity": "Implemented overdue dose resolution dialog/action behavior",
+    "detail": "Anchored the resolution surface to the tapped dose row, updated copy/actions, added selected-event tests, opened PR #168; simulator screenshots blocked by simulator boot/test-launch stalls.",
+    "issueNumber": 167
+  },
+  {
     "timestamp": "2026-05-10T11:20:02-04:00",
     "runState": "completed",
     "outcomeTone": "neutral",
