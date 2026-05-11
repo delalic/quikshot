@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-11T18:00:44-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Protocol History ready for review",
+    "agentName": "Mirza",
+    "agentModel": "GPT-5 Codex",
+    "activity": "Coding worker for issue #172",
+    "detail": "Implemented Protocol History with snapshot filters, grouping tests, PR #174, and branch issue-172 pushed.",
+    "issueNumber": 172
+  },
+  {
     "timestamp": "2026-05-11T17:44:34-04:00",
     "runState": "completed",
     "outcomeTone": "neutral",
