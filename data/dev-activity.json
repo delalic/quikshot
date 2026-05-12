@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-12T11:15:12-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue #181 managed to Done; PR #182 merged; build 1.0.232 installed",
+    "agentName": "Faruk",
+    "agentModel": "Codex (GPT-5), issue-manager",
+    "activity": "Managed issue #181 to Done",
+    "detail": "Coordinated coding and independent review, verified PR #182 merge, Project Done fields, installed build 1.0.232, and marketing closeout evidence.",
+    "issueNumber": 181
+  },
+  {
     "timestamp": "2026-05-12T11:10:41-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
