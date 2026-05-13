@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-12T20:54:37-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue #189 implemented and sent to review",
+    "agentName": "Azra",
+    "agentModel": "codex",
+    "activity": "Removed legacy custom-placeholder seed compounds",
+    "detail": "Removed the generic custom compound seeds, added safe local-store migration for unreferenced and referenced legacy placeholders, validated focused tests and build-for-testing, and opened PR #190.",
+    "issueNumber": 189
+  },
+  {
     "timestamp": "2026-05-12T19:30:35-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
