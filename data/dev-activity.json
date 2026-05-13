@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-13T15:33:41-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Integrated and merged #198",
+    "agentName": "Nermin",
+    "agentModel": "GPT-5 Codex high",
+    "activity": "Merged issue #198 after repairing the local Xcode target membership for DoseDisplayResolver, ran the post-merge device install, and recorded build 1.0.257.",
+    "detail": "PR #201 merged; post-merge install reported BuildNumber 1.0.257, BuildNumberSource device-build, InstallStatus installed. Broad UI target still has an unrelated existing issue183 scroll failure recorded on the issue.",
+    "issueNumber": 198
+  },
+  {
     "timestamp": "2026-05-13T14:54:55-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
