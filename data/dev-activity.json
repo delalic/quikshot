@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-13T17:58:53-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Implemented and validated issue #204 scheduling timing fix.",
+    "agentName": "Vedad",
+    "agentModel": "Codex (GPT-5), requested xhigh reasoning",
+    "activity": "Issue #204 scheduling timing implementation",
+    "detail": "Separated due-soon display from due-now, revised missed cutoffs and reminder sequencing, and opened PR #205.",
+    "issueNumber": 204
+  },
+  {
     "timestamp": "2026-05-13T17:03:49-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
