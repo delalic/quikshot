@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-13T18:10:40-04:00",
+    "runState": "failed",
+    "outcomeTone": "negative",
+    "outcome": "Review failed",
+    "agentName": "Mirza",
+    "agentModel": "Codex (GPT-5), requested xhigh",
+    "activity": "Reviewed issue #204 scheduling timing PR",
+    "detail": "Blocked PR #205 because legacy 720-minute weekly reminder defaults still affect frequent weekly injection schedules after daily/short reclassification.",
+    "issueNumber": 204
+  },
+  {
     "timestamp": "2026-05-13T17:58:53-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
