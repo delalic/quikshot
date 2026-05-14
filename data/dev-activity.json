@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-14T12:50:23-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue #218 merged, installed, and recorded as debug build 1.0.309.",
+    "agentName": "Selma",
+    "agentModel": "GPT-5",
+    "activity": "Integrated issue #218 through PR #219, moved the version footer to Settings, verified focused light/dark UI coverage, merged, installed on device, and updated release tracking.",
+    "detail": "PR #219 merged at 185db4e. Post-merge device install succeeded with BuildNumber 1.0.309; main build record commit e021446 was pushed.",
+    "issueNumber": 218
+  },
+  {
     "timestamp": "2026-05-14T12:35:17-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
