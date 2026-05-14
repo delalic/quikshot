@@ -1,16 +1,5 @@
 [
   {
-    "timestamp": "2026-05-13T23:19:50-04:00",
-    "runState": "completed",
-    "outcomeTone": "positive",
-    "outcome": "Implemented issue #212 coder handoff.",
-    "agentName": "Leif",
-    "agentModel": "GPT-5.3-Codex",
-    "activity": "Coder implementation",
-    "detail": "Implemented protocol lane override normalization and opened PR #213.",
-    "issueNumber": 212
-  },
-  {
     "timestamp": "2026-05-14T02:04:40Z",
     "runState": "completed",
     "outcomeTone": "positive",
