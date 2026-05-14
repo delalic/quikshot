@@ -41,13 +41,15 @@
   --energy-soft:  #FFE6E0;
 
   /* ───────── Color: Compound lane palette ───────── */
-  /* Six muted swatches for protocol differentiation. Never high-saturation. */
+  /* Eight muted swatches for protocol differentiation. Never high-saturation. */
   --lane-mineral: #2B5CE6;
   --lane-moss:    #1F8F5F;
   --lane-ochre:   #D08A2A;
   --lane-plum:    #7E4FA3;
   --lane-teal:    #2A8E96;
   --lane-clay:    #C24A3D;
+  --lane-rose:    #A85A7A;
+  --lane-slate:   #5A6B7F;
 
   /* ───────── Color: Semantic roles (light) ───────── */
   --bg:           var(--paper);
@@ -140,6 +142,8 @@
   --lane-plum-d:    #A172C2;
   --lane-teal-d:    #45ABB3;
   --lane-clay-d:    #DC6A5C;
+  --lane-rose-d:    #C47096;
+  --lane-slate-d:   #7A8FA6;
 
   --state-taken-d:   #34B07B;
   --state-missed-d:  #DC6A5C;
@@ -170,6 +174,8 @@
     --lane-plum:    var(--lane-plum-d);
     --lane-teal:    var(--lane-teal-d);
     --lane-clay:    var(--lane-clay-d);
+    --lane-rose:    var(--lane-rose-d);
+    --lane-slate:   var(--lane-slate-d);
     --state-due:    var(--mineral-bright);
     --state-taken:  var(--state-taken-d);
     --state-missed: var(--state-missed-d);
@@ -193,6 +199,9 @@
   --bg: var(--paper); --bg-elevated: var(--snow); --bg-raised: var(--snow); --bg-tinted: var(--mineral-soft);
   --fg: var(--ink); --fg-secondary: var(--steel); --fg-tertiary: var(--silver);
   --separator: var(--mist); --hairline: rgba(11,16,32,.08);
+  --lane-mineral: #2B5CE6; --lane-moss: #1F8F5F; --lane-ochre: #D08A2A;
+  --lane-plum: #7E4FA3; --lane-teal: #2A8E96; --lane-clay: #C24A3D;
+  --lane-rose: #A85A7A; --lane-slate: #5A6B7F;
 }
 [data-theme="dark"] {
   color-scheme: dark;
@@ -204,6 +213,7 @@
   --energy: var(--energy-warm); --energy-soft: var(--energy-warm-soft);
   --lane-mineral: var(--lane-mineral-d); --lane-moss: var(--lane-moss-d); --lane-ochre: var(--lane-ochre-d);
   --lane-plum: var(--lane-plum-d); --lane-teal: var(--lane-teal-d); --lane-clay: var(--lane-clay-d);
+  --lane-rose: var(--lane-rose-d); --lane-slate: var(--lane-slate-d);
   --state-due: var(--mineral-bright); --state-taken: var(--state-taken-d); --state-missed: var(--state-missed-d); --state-overdue: var(--state-overdue-d);
   --state-taken-soft: rgba(52,176,123,.16); --state-missed-soft: rgba(220,106,92,.16); --state-overdue-soft: rgba(224,163,71,.16);
   --shadow-1: 0 1px 2px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.05);
@@ -335,3 +345,5 @@ body {
 .qs-lane--plum    { background: var(--lane-plum); }
 .qs-lane--teal    { background: var(--lane-teal); }
 .qs-lane--clay    { background: var(--lane-clay); }
+.qs-lane--rose    { background: var(--lane-rose); }
+.qs-lane--slate   { background: var(--lane-slate); }
