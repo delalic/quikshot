@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-13T21:22:41-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue #208 supply picker row polish implemented and validated.",
+    "agentName": "Kenan",
+    "agentModel": "GPT-5 Codex / medium / local Mac",
+    "activity": "Polished Review & Log Supply picker rows for long inventory and reconstitution labels.",
+    "detail": "Converted the Review & Log sheet supply inventory and reconstitution profile pickers to full-width menu row labels that allow long values to use available width while preserving picker options, defaults, draft-change markers, and logging semantics. Validated with diff check, simulator build, and dark/light screenshot evidence.",
+    "issueNumber": 208
+  },
+  {
     "timestamp": "2026-05-13T20:51:39-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
