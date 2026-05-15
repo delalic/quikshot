@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-15T11:42:29-04:00",
+    "runState": "failed",
+    "outcomeTone": "negative",
+    "outcome": "Review failed",
+    "agentName": "Lejla",
+    "agentModel": "Codex GPT-5",
+    "activity": "Reviewed issue #249 / PR #250",
+    "detail": "Source and docs checked; required Settings visual QA remains blocked by CoreSimulator mismatch, so issue returned to Ready with review:failed.",
+    "issueNumber": 249
+  },
+  {
     "timestamp": "2026-05-15T11:36:32-04:00",
     "runState": "completed",
     "outcomeTone": "neutral",
