@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-15T09:21:41-04:00",
+    "runState": "completed",
+    "outcomeTone": "incomplete",
+    "outcome": "Protocol records ready for review",
+    "agentName": "Kenan",
+    "agentModel": "codex",
+    "activity": "Implemented issue #244",
+    "detail": "Replaced Protocol lower mixed records with compact global entries; build and simulator evidence blocked by local iOS runtime mismatch.",
+    "issueNumber": 244
+  },
+  {
     "timestamp": "2026-05-15T07:23:57-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
