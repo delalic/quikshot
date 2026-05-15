@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-15T04:16:13Z",
+    "runState": "failed",
+    "outcomeTone": "negative",
+    "outcome": "Review failed",
+    "agentName": "Adnan",
+    "agentModel": "Codex (GPT-5) medium",
+    "activity": "Reviewed issue #239",
+    "detail": "Blocked PR #240 because commit freshness still allows stale inventory projections when selected inventory changes while the sheet remains open.",
+    "issueNumber": 239
+  },
+  {
     "timestamp": "2026-05-15T00:08:03-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
