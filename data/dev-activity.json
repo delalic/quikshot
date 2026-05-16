@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-16T16:39:02-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Created shared dose-row hierarchy issue",
+    "agentName": "Amina",
+    "agentModel": "GPT-5 Codex",
+    "activity": "PM issue creation",
+    "detail": "Created Ready issue #286 for bullet-separated compound/dose hierarchy in shared DoseRow across Calendar, Today logged rows, and Protocol history.",
+    "issueNumber": 286
+  },
+  {
     "timestamp": "2026-05-16T16:36:52-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
