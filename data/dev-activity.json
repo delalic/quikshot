@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-16T09:25:17-04:00",
+    "runState": "failed",
+    "outcomeTone": "negative",
+    "outcome": "Review failed",
+    "agentName": "Nermin",
+    "agentModel": "Codex high",
+    "activity": "Reviewed issue #267 PR #268",
+    "detail": "Found unresolved Calendar existing-dose logging sheets still show saved snapshot names for renamed compounds; moved issue back to Ready.",
+    "issueNumber": 267
+  },
+  {
     "timestamp": "2026-05-16T09:15:26-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
