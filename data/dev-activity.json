@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-15T23:19:19-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "PR opened for review",
+    "agentName": "Nermin",
+    "agentModel": "Codex / reasoning medium",
+    "activity": "Implemented Today planned next-dose preview",
+    "detail": "Promoted planned next doses into read-only Today preview cards and opened PR #262 for required review.",
+    "issueNumber": 261
+  },
+  {
     "timestamp": "2026-05-15T22:42:21-04:00",
     "runState": "completed",
     "outcomeTone": "neutral",
