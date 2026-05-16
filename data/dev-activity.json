@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-15T22:17:27-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Added iPad compatibility regression runbook.",
+    "agentName": "Codex",
+    "agentModel": "GPT-5",
+    "activity": "PM/process docs",
+    "detail": "Created docs/ipad-regression-sweep-runbook.md and wired it into AGENTS.md, docs/development-process.md, and docs/project-management.md."
+  },
+  {
     "timestamp": "2026-05-15T22:13:58-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
