@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-16T13:10:31-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Implemented issue #275 Site summary card and Site usage overview; opened PR #276 for review.",
+    "agentName": "Lejla",
+    "agentModel": "Codex (requested high reasoning inherited; exact runtime not independently visible)",
+    "activity": "Issue #275 coding handoff",
+    "detail": "Added the computed site-usage overview model, Settings summary card/detail UI, focused unit tests, and light/dark UI screenshot coverage. Validated focused model tests, existing site-rotation tests, UI screenshot tests, diff check, and build-for-testing before pushing branch issue-275.",
+    "issueNumber": 275
+  },
+  {
     "timestamp": "2026-05-16T12:55:46-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
