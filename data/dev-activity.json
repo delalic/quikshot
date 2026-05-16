@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-16T09:31:46-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Failed-review fix pushed",
+    "agentName": "Nermin",
+    "agentModel": "Codex medium",
+    "activity": "Fixed Calendar existing logging sheet names",
+    "detail": "Issue #267 fix pass now resolves current compound names in Calendar-opened injection and oral existing logging sheets while preserving edit/history snapshots.",
+    "issueNumber": 267
+  },
+  {
     "timestamp": "2026-05-16T09:25:17-04:00",
     "runState": "failed",
     "outcomeTone": "negative",
