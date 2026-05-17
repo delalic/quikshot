@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-16T21:53:18-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue #296 ready for review",
+    "agentName": "Nermin",
+    "agentModel": "Codex requested high reasoning",
+    "activity": "Implemented protocol optional-link menu cleanup",
+    "detail": "Split Protocol editor optional links, restored flat menu checkmarks, hid oral reconstitution links, and opened PR #300.",
+    "issueNumber": 296
+  },
+  {
     "timestamp": "2026-05-16T20:54:43-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
