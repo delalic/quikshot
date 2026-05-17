@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-16T23:14:50-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue #274 accepted, merged, installed, and closed out.",
+    "agentName": "Lejla",
+    "agentModel": "GPT-5",
+    "activity": "Integrated #274 reminder timing toggles",
+    "detail": "Reviewed PR #301, ran focused planner/scheduler/settings tests and light/dark Settings UI validation, repaired stale UI-test assertions, merged to main, and installed build 1.0.433.",
+    "issueNumber": 274
+  },
+  {
     "timestamp": "2026-05-16T22:49:29-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
