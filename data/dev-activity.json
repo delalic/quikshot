@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-17T00:06:22-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Created Ready issue #308 for vial-derived reconstitution profile handling in log dose.",
+    "agentName": "Selma",
+    "agentModel": "codex",
+    "activity": "PM issue creation",
+    "detail": "Created and triaged issue #308 to make selected supply vial profiles authoritative in Review & Log.",
+    "issueNumber": 308
+  },
+  {
     "timestamp": "2026-05-16T23:38:05-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
