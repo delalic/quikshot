@@ -22,28 +22,6 @@
     "issueNumber": 308
   },
   {
-    "timestamp": "2026-05-16T23:38:05-04:00",
-    "runState": "completed",
-    "outcomeTone": "positive",
-    "outcome": "Implementation ready for review",
-    "agentName": "Edin",
-    "agentModel": "codex",
-    "activity": "Coded issue #303",
-    "detail": "Centralized saved reconstitution profile row summary copy in ReconstitutionFormatter and added focused formatter tests.",
-    "issueNumber": 303
-  },
-  {
-    "timestamp": "2026-05-16T23:23:04-04:00",
-    "runState": "completed",
-    "outcomeTone": "positive",
-    "outcome": "Issue #302 handed to review",
-    "agentName": "Nermin",
-    "agentModel": "codex",
-    "activity": "coding",
-    "detail": "Benchmark WSL Codex run added formatter-owned reconstitution profile display summary and opened PR #305.",
-    "issueNumber": 302
-  },
-  {
     "timestamp": "2026-05-16T23:14:50-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
