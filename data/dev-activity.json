@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T19:21:29-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Logged compound-name regression #339",
+    "agentName": "Codex PM",
+    "agentModel": "GPT-5",
+    "activity": "PM regression triage",
+    "detail": "Confirmed old compound snapshots can still leak on Today/Calendar display paths after the IA/history changes and created Ready regression issue #339 with code-backed baseline and acceptance criteria.",
+    "issueNumber": 339
+  },
+  {
     "timestamp": "2026-05-18T19:10:48-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
