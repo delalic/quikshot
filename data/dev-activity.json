@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T19:37:18-04:00",
+    "runState": "completed",
+    "outcomeTone": "neutral",
+    "outcome": "Created Ready follow-up #341 for Compound Library IA cleanup.",
+    "agentName": "Codex PM",
+    "agentModel": "GPT-5",
+    "activity": "PM triage",
+    "detail": "Confirmed current main has no Compound Library row in SettingsView, found Protocols still exposes it in the top-right menu and above Site rotation, created #341, set Priority P1/Size S/Ready, and added it to #195 checklist.",
+    "issueNumber": 341
+  },
+  {
     "timestamp": "2026-05-18T19:24:01-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
