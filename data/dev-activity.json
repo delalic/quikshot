@@ -1,5 +1,27 @@
 [
   {
+    "timestamp": "2026-05-17T23:21:53-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Refined #318 for development",
+    "agentName": "Lejla",
+    "agentModel": "GPT-5 Codex",
+    "activity": "PM issue refinement",
+    "detail": "Refined Calendar header cleanup as a post-#194 follow-up that preserves day navigation and week-strip swipe behavior, added labels and Project fields, and moved the issue to Ready.",
+    "issueNumber": 318
+  },
+  {
+    "timestamp": "2026-05-17T23:21:52-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Refined #317 for development",
+    "agentName": "Lejla",
+    "agentModel": "GPT-5 Codex",
+    "activity": "PM issue refinement",
+    "detail": "Refined Today logged-dose ordering around the current TodayDoseSectionResolver baseline, added labels and Project fields, and moved the issue to Ready.",
+    "issueNumber": 317
+  },
+  {
     "timestamp": "2026-05-17T21:13:35-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
