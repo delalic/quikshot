@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-17T21:01:37-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Refined #194 for day-first Calendar navigation",
+    "agentName": "Lejla",
+    "agentModel": "GPT-5 Codex",
+    "activity": "PM issue refinement",
+    "detail": "Updated issue #194 with device-testing feedback: persistent today hairline, one-day header arrows, and date-strip week swipes. Moved the issue to Ready and resized it to M.",
+    "issueNumber": 194
+  },
+  {
     "timestamp": "2026-05-17T09:32:21-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
