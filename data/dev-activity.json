@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T19:24:01-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Updated #339 with history naming decision",
+    "agentName": "Codex PM",
+    "agentModel": "GPT-5",
+    "activity": "PM issue refinement",
+    "detail": "Updated #339 to make current linked compound names the user-facing display rule across event surfaces, including history, while preserving persisted snapshots as fallback only.",
+    "issueNumber": 339
+  },
+  {
     "timestamp": "2026-05-18T19:21:29-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
