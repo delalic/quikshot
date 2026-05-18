@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T11:34:44-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue #324 coding handoff ready for review in PR #332",
+    "agentName": "Lejla",
+    "agentModel": "local Codex agent; system context GPT-5; requested reasoning xhigh",
+    "activity": "Moved Settings out of the bottom tab shell and added the Supplies entry tab for issue #324.",
+    "detail": "Branch issue-324 commit 606cb28 replaces the Settings tab with Supplies, adds the root Settings gear sheet with reminders deep-link support, keeps Protocol resources intact, and validates dark/light simulator screenshots.",
+    "issueNumber": 324
+  },
+  {
     "timestamp": "2026-05-18T10:35:58-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
