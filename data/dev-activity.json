@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T14:16:29-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Calendar owns full dose history",
+    "agentName": "Kemal",
+    "agentModel": "Codex requested xhigh",
+    "activity": "Implemented issue #326",
+    "detail": "Moved full dose history to Calendar, preserved edit/correction flows, removed the Protocol history card, and opened PR #334.",
+    "issueNumber": 326
+  },
+  {
     "timestamp": "2026-05-18T12:41:22-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
