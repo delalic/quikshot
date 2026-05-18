@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T11:36:17Z",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Review passed and merged; build 1.0.444 installed",
+    "agentName": "Dunja",
+    "agentModel": "opus",
+    "activity": "review",
+    "detail": "Calendar week strip directly manipulable with finger-tracked drag, 3-page preview, and snap commit",
+    "issueNumber": 319
+  },
+  {
     "timestamp": "2026-05-18T07:10:47-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
