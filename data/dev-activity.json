@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T16:49:11-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue #328 ready for review",
+    "agentName": "Kenan / Codex",
+    "agentModel": "Codex, reasoning effort xhigh (requested)",
+    "activity": "IA integration docs and regression coverage",
+    "detail": "Opened PR #337 from issue-328 after removing Settings Compound Library, updating IA ownership docs, and adding light/dark #328 UI regression coverage. Build, reminder deep-link tests, inventory/reconstitution tests, and focused IA UI smoke passed; the UI command printed both test passes before manual interruption during simulator diagnostic collection.",
+    "issueNumber": 328
+  },
+  {
     "timestamp": "2026-05-18T19:30:10Z",
     "runState": "completed",
     "outcomeTone": "positive",
