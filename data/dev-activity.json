@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T19:30:10Z",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Issue #327 reached Done after Codex implementation and Codex review; PR #336 merged, build 1.0.465 installed, parent #195 checklist updated, and final app build-number commit pushed.",
+    "agentName": "Nermin",
+    "agentModel": "codex",
+    "activity": "issue-manager closeout #327",
+    "detail": "Manager verification confirmed issue CLOSED, Project Status Done, BuildNumber 1.0.465, Completed 2026-05-18, PR #336 merged at 24549c3, app main clean at 74f5b05, marketing repo clean at 537897d before manager entry, and issue worktree removed.",
+    "issueNumber": 327
+  },
+  {
     "timestamp": "2026-05-18T15:27:12-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
