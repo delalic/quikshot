@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T10:08:50-04:00",
+    "runState": "completed",
+    "outcomeTone": "neutral",
+    "outcome": "Updated issue #195 Calendar history IA to use a bottom Full history card plus a secondary toolbar shortcut.",
+    "agentName": "Codex PM",
+    "agentModel": "GPT-5",
+    "activity": "PM issue refinement",
+    "detail": "Edited #195 so Calendar owns full dose history through a labeled bottom Dose history card and optional top-right shortcut, preserving existing full-history behavior and avoiding a segmented Calendar mode.",
+    "issueNumber": 195
+  },
+  {
     "timestamp": "2026-05-18T08:58:22-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
