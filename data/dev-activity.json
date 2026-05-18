@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T12:32:20-04:00",
+    "runState": "blocked",
+    "outcomeTone": "incomplete",
+    "outcome": "Review not claimed",
+    "agentName": "Sead",
+    "agentModel": "Codex (GPT-5-based; requested xhigh, reasoning visibility limited)",
+    "activity": "Issue #325 review preflight",
+    "detail": "Stopped before claim because #325 already has an active review worklog by Damir with no later review result or withdrawal.",
+    "issueNumber": 325
+  },
+  {
     "timestamp": "2026-05-18T12:26:33-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
