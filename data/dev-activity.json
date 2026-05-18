@@ -22,6 +22,17 @@
     "issueNumber": 194
   },
   {
+    "timestamp": "2026-05-17T21:55:00+02:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Integration complete",
+    "agentName": "Nermin",
+    "agentModel": "claude-sonnet-4-6",
+    "activity": "Remote Integrator: Calendar today/day-first navigation",
+    "detail": "Integrated PR #316 for #194. Local compile, 22 unit tests passed. Simulator: today hairline, selected fill, day arrows, week boundary crossing, month picker, Today return, Dynamic Type \u2014 all verified light and dark. Merged, installed Build 1.0.437 on device.",
+    "issueNumber": 194
+  },
+  {
     "timestamp": "2026-05-17T09:32:21-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
