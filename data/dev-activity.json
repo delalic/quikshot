@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T08:33:43-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Updated #195 Compound Library placement",
+    "agentName": "Lejla",
+    "agentModel": "GPT-5 Codex",
+    "activity": "PM issue refinement",
+    "detail": "Updated the navigation IA tracker so Compound Library is available from both Protocols/setup and Supplies, while removing it from Settings and using the same shared library screen/data.",
+    "issueNumber": 195
+  },
+  {
     "timestamp": "2026-05-18T08:23:42-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
