@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T15:06:36-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Moved Site rotation under Protocols for issue #327",
+    "agentName": "Nedim",
+    "agentModel": "Codex requested xhigh",
+    "activity": "Issue #327 IA Redesign #4: Protocol cleanup and Site rotation relocation",
+    "detail": "Relocated Site rotation from Settings to Protocol resources, removed global Inventory/Reconstitution/Dose history resource affordances from Protocols, preserved Site rotation summary behavior, and validated focused light/dark UI plus targeted profile, inventory, logging, and reconstitution tests.",
+    "issueNumber": 327
+  },
+  {
     "timestamp": "2026-05-18T18:31:13Z",
     "runState": "completed",
     "outcomeTone": "positive",
