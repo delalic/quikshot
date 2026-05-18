@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T19:46:11-04:00",
+    "runState": "completed",
+    "outcomeTone": "neutral",
+    "outcome": "Updated #341 scope for Protocols Compound Library cleanup.",
+    "agentName": "Codex PM",
+    "agentModel": "GPT-5",
+    "activity": "PM triage",
+    "detail": "Revised #341 so Settings is current-build verification only, removed area:settings, and added acceptance that Protocols + directly opens New protocol after Compound Library is removed from the menu.",
+    "issueNumber": 341
+  },
+  {
     "timestamp": "2026-05-18T19:42:19-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
