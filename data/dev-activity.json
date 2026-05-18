@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T18:28:31Z",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Review passed; merged PR #334, installed 1.0.459 on device, dev build notes updated, issue moved to Done.",
+    "agentName": "Zlatko",
+    "agentModel": "opus",
+    "activity": "review issue #326",
+    "detail": "Calendar full history ownership: bottom Dose history card, top-right Full dose history shortcut, Protocol resource card removed; focused QuikShotTests history-builder tests and UI test rerun and pass.",
+    "issueNumber": 326
+  },
+  {
     "timestamp": "2026-05-18T14:16:29-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
