@@ -105,6 +105,31 @@
     letter-spacing: -0.012em;
     margin: 0 0 12px;
   }
+  .process-reference p {
+    max-width: 760px;
+    margin: 0 0 18px;
+    color: var(--fg-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .process-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .process-card {
+    display: grid;
+    gap: 10px;
+  }
+  .process-card h3 {
+    margin: 0;
+    color: var(--fg-secondary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
   .process-diagram {
     display: block;
     width: 100%;
@@ -122,6 +147,7 @@
       transform: none;
     }
     .process-reference h2 { font-size: 18px; }
+    .process-reference p { font-size: 13px; }
   }
 </style>
 </head>
@@ -697,7 +723,17 @@
 
   <section class="process-reference" aria-labelledby="process-reference-title">
     <h2 id="process-reference-title">Development process, pocket edition</h2>
-    <img class="process-diagram" src="assets/dev-process-flow.svg" alt="QuikShot issue development process: Backlog to Ready to In progress to In review to Done, with failed review, self-merge, and follow-up loops.">
+    <p>Local lane remains the default. Remote lane is opt-in, or starts from issues already in Build, with GitHub as the handoff boundary.</p>
+    <div class="process-grid">
+      <article class="process-card">
+        <h3>Local lane</h3>
+        <img class="process-diagram" src="assets/dev-process-flow.svg" alt="QuikShot local lane: Backlog to Ready to In progress to In review to Done, with failed review, self-merge, and follow-up loops.">
+      </article>
+      <article class="process-card">
+        <h3>Remote lane</h3>
+        <img class="process-diagram" src="assets/dev-process-remote-lane.svg" alt="QuikShot remote lane: Ready to In progress to Build to Done, with Remote Coder handoff, optional hosted validation rerun, Mac Integrator, and fallback to Ready when rework is needed.">
+      </article>
+    </div>
   </section>
 </div>
 

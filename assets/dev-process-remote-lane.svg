@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="450" viewBox="0 0 1120 450" role="img" aria-labelledby="title desc">
+  <title id="title">QuikShot remote lane development process</title>
+  <desc id="desc">Opt-in remote issue lane from Ready to In progress to Build to Done, with Remote Coder GitHub handoff, optional hosted validation rerun, Mac Integrator, and fallback to Ready for rework.</desc>
+  <defs>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8A92A6"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E0A347"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34B07B"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#DC6A5C"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5C84F2"/>
+    </marker>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+    <style>
+      .eyebrow { font: 700 13px -apple-system, BlinkMacSystemFont, "Inter Tight", "Segoe UI", sans-serif; letter-spacing: .12em; fill: #B0C6FF; text-transform: uppercase; }
+      .label { font: 700 20px -apple-system, BlinkMacSystemFont, "Inter Tight", "Segoe UI", sans-serif; fill: #F0F2F8; }
+      .sub { font: 400 14px -apple-system, BlinkMacSystemFont, "Inter Tight", "Segoe UI", sans-serif; fill: #B0B6C6; }
+      .action { font: 600 13px -apple-system, BlinkMacSystemFont, "Inter Tight", "Segoe UI", sans-serif; fill: #B0B6C6; }
+      .note { font: 400 13px -apple-system, BlinkMacSystemFont, "Inter Tight", "Segoe UI", sans-serif; fill: #B0B6C6; }
+      .small { font: 600 12px -apple-system, BlinkMacSystemFont, "Inter Tight", "Segoe UI", sans-serif; fill: #B0B6C6; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1118" height="448" rx="28" fill="#1C2238" stroke="#3A4360" stroke-width="2"/>
+  <rect x="24" y="24" width="1072" height="402" rx="22" fill="#232B45" opacity=".52"/>
+  <text class="eyebrow" x="56" y="60">Remote lane - opt-in</text>
+
+  <!-- Main states -->
+  <g filter="url(#soft-shadow)">
+    <rect x="68" y="130" width="170" height="94" rx="18" fill="#2A2F43" stroke="#6B7388" stroke-opacity=".62"/>
+    <rect x="338" y="130" width="190" height="94" rx="18" fill="#3A332E" stroke="#E0A347" stroke-opacity=".72"/>
+    <rect x="628" y="130" width="170" height="94" rx="18" fill="#2B3554" stroke="#5C84F2" stroke-opacity=".75"/>
+    <rect x="898" y="130" width="170" height="94" rx="18" fill="#243E43" stroke="#34B07B" stroke-opacity=".72"/>
+  </g>
+
+  <text class="label" x="116" y="170">Ready</text>
+  <text class="sub" x="102" y="195">Remote eligible</text>
+  <text class="label" x="372" y="170">In progress</text>
+  <text class="sub" x="366" y="195">Remote Coder</text>
+  <text class="small" x="366" y="212">Windows/WSL preferred</text>
+  <text class="label" x="684" y="170">Build</text>
+  <text class="sub" x="652" y="195">GitHub handoff</text>
+  <text class="small" x="652" y="212">not review queue</text>
+  <text class="label" x="942" y="170">Done</text>
+  <text class="sub" x="924" y="195">Integrated</text>
+
+  <!-- Main flow arrows -->
+  <path d="M 250 177 L 326 177" fill="none" stroke="#8A92A6" stroke-width="2" marker-end="url(#arrow-gray)"/>
+  <text class="action" x="255" y="156">Manager routes</text>
+
+  <path d="M 540 177 L 616 177" fill="none" stroke="#E0A347" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  <text class="action" x="542" y="156">PR + handoff</text>
+  <text class="small" x="542" y="211">compile or unit</text>
+
+  <path d="M 810 177 L 886 177" fill="none" stroke="#5C84F2" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text class="action" x="808" y="156">Mac Integrator</text>
+  <text class="small" x="810" y="211">review + merge</text>
+
+  <!-- Integrator reject loop -->
+  <path d="M 714 120 C 664 66 514 54 400 70 C 268 88 192 96 154 120" fill="none" stroke="#DC6A5C" stroke-width="2" stroke-dasharray="7 7" marker-end="url(#arrow-red)"/>
+  <rect x="360" y="48" width="330" height="34" rx="17" fill="#301F29" stroke="#DC6A5C" stroke-opacity=".55"/>
+  <text class="action" x="392" y="70" fill="#DC6A5C">Integrator rejects: back to Ready</text>
+
+  <!-- Hosted validation rerun -->
+  <path d="M 712 232 C 712 282 650 286 650 238" fill="none" stroke="#5C84F2" stroke-width="2" stroke-dasharray="8 8" marker-end="url(#arrow-blue)"/>
+  <rect x="574" y="276" width="282" height="34" rx="17" fill="#1E2B4A" stroke="#5C84F2" stroke-opacity=".6"/>
+  <text class="action" x="600" y="298" fill="#B0C6FF">Optional Builder validation rerun</text>
+
+  <!-- Satellite / primary closeout split -->
+  <path d="M 984 232 C 984 314 898 330 808 332 C 688 334 560 326 472 306" fill="none" stroke="#34B07B" stroke-width="2" stroke-dasharray="8 8" marker-end="url(#arrow-green)"/>
+  <rect x="760" y="318" width="296" height="34" rx="17" fill="#1F332E" stroke="#34B07B" stroke-opacity=".55"/>
+  <text class="action" x="786" y="340" fill="#34B07B">Satellite may leave device closeout to Manager</text>
+
+  <!-- Follow-up loop -->
+  <path d="M 984 232 C 984 378 152 378 152 232" fill="none" stroke="#5C84F2" stroke-width="2" stroke-dasharray="8 8" marker-end="url(#arrow-blue)"/>
+  <rect x="374" y="348" width="332" height="34" rx="17" fill="#1E2B4A" stroke="#5C84F2" stroke-opacity=".6"/>
+  <text class="action" x="402" y="370" fill="#B0C6FF">PM creates follow-up after integration</text>
+
+  <!-- Legend -->
+  <g transform="translate(56 394)">
+    <rect x="0" y="0" width="1008" height="32" rx="12" fill="#111729" stroke="#3A4360" stroke-opacity=".8"/>
+    <circle cx="24" cy="16" r="5" fill="#6B7388"/>
+    <text class="note" x="40" y="21">Ready queue</text>
+    <circle cx="176" cy="16" r="5" fill="#E0A347"/>
+    <text class="note" x="192" y="21">Remote coding</text>
+    <circle cx="344" cy="16" r="5" fill="#5C84F2"/>
+    <text class="note" x="360" y="21">GitHub/Mac integration</text>
+    <circle cx="580" cy="16" r="5" fill="#34B07B"/>
+    <text class="note" x="596" y="21">Accepted</text>
+    <line x1="732" y1="16" x2="780" y2="16" stroke="#5C84F2" stroke-width="2" stroke-dasharray="8 8"/>
+    <text class="note" x="796" y="21">Optional or fallback path</text>
+  </g>
+</svg>
