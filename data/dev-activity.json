@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-18T23:31:09-04:00",
+    "runState": "completed",
+    "outcomeTone": "positive",
+    "outcome": "Implemented issue #349 and opened PR #350 for review.",
+    "agentName": "Lejla",
+    "agentModel": "Codex/GPT-5",
+    "activity": "Today one-hour timing rule",
+    "detail": "Promoted next-dose cards now use a 1-hour action window, oral before-due reminders resolve to 60 minutes, and focused Today/reminder tests passed.",
+    "issueNumber": 349
+  },
+  {
     "timestamp": "2026-05-18T23:13:14-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
