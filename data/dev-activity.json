@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-19T08:21:46-04:00",
+    "runState": "blocked",
+    "outcomeTone": "incomplete",
+    "outcome": "Review blocked pending device evidence",
+    "agentName": "Adis",
+    "agentModel": "codex",
+    "activity": "Review",
+    "detail": "PR #352 passed focused simulator review, but required physical iOS Options validation for Configure in QuikShot is still missing.",
+    "issueNumber": 351
+  },
+  {
     "timestamp": "2026-05-19T08:07:24-04:00",
     "runState": "completed",
     "outcomeTone": "positive",
