@@ -22,8 +22,16 @@
     return url.href;
   }
 
+  function isVisible() {
+    return document.visibilityState !== "hidden";
+  }
+
+  function reloadFresh() {
+    window.location.replace(refreshUrl());
+  }
+
   function checkForUpdate() {
-    if (document.visibilityState !== "visible" || inFlight || !currentSignature) {
+    if (!isVisible() || inFlight || !currentSignature) {
       return;
     }
 
@@ -43,7 +51,7 @@
         var nextDocument = new DOMParser().parseFromString(html, "text/html");
         var nextSignature = readSignature(nextDocument);
         if (nextSignature && nextSignature !== currentSignature) {
-          window.location.reload();
+          reloadFresh();
         }
       })
       .catch(function () {
@@ -55,7 +63,7 @@
   }
 
   function startPolling() {
-    if (timer !== null || document.visibilityState !== "visible") {
+    if (timer !== null || !isVisible()) {
       return;
     }
 
@@ -71,14 +79,31 @@
     timer = null;
   }
 
+  function checkAndPoll() {
+    if (!isVisible()) {
+      return;
+    }
+
+    checkForUpdate();
+    startPolling();
+  }
+
+  function scheduleVisibleCheck() {
+    window.setTimeout(checkAndPoll, 0);
+  }
+
   document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-      checkForUpdate();
-      startPolling();
+    if (isVisible()) {
+      scheduleVisibleCheck();
     } else {
       stopPolling();
     }
   });
 
+  window.addEventListener("focus", scheduleVisibleCheck);
+  window.addEventListener("pageshow", scheduleVisibleCheck);
+  window.addEventListener("pagehide", stopPolling);
+
   startPolling();
+  scheduleVisibleCheck();
 }());
