@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-19T08:29:19-04:00",
+    "runState": "blocked",
+    "outcomeTone": "incomplete",
+    "outcome": "Issue #351 review blocked on physical notification Options evidence",
+    "agentName": "Amila",
+    "agentModel": "codex",
+    "activity": "Issue manager follow-up",
+    "detail": "PR #352 passed code and simulator review, but native Configure in QuikShot Options validation still requires hands-on physical-device evidence before merge.",
+    "issueNumber": 351
+  },
+  {
     "timestamp": "2026-05-19T08:21:46-04:00",
     "runState": "blocked",
     "outcomeTone": "incomplete",
