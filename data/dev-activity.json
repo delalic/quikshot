@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-20T16:48:20-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Selma",
+    "agentModel": "Codex / high",
+    "subject": "Compound detail: Normalize level estimate card layout",
+    "issueNumber": 366,
+    "note": "PR #367 merged; satellite closeout pending primary Mac"
+  },
+  {
     "timestamp": "2026-05-20T16:37:49-04:00",
     "systemHealth": "ok",
     "role": "PM",
