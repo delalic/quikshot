@@ -22,6 +22,28 @@
     "note": "Focused on grouping concept and moved to Icebox"
   },
   {
+    "timestamp": "2026-05-20T15:08:00-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Installed",
+    "agentName": "Manager",
+    "agentModel": "GPT-5.5",
+    "subject": "Compound Library: Add Current filter",
+    "issueNumber": 361,
+    "note": "Installed build 1.0.505 on device and completed Done closeout"
+  },
+  {
+    "timestamp": "2026-05-20T15:04:00-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Lejla",
+    "agentModel": "GPT-5",
+    "subject": "Compound Library: Add Current filter",
+    "issueNumber": 361,
+    "note": "Validated on satellite Mac, added focused UI regression, and merged PR #362"
+  },
+  {
     "timestamp": "2026-05-20T14:46:10-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
