@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-20T18:57:25-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Daris",
+    "agentModel": "Codex manager",
+    "subject": "Supplies: Add Injection Prep view",
+    "issueNumber": 365,
+    "note": "Closed #365 after PR #370 merge and build 1.0.517 device install."
+  },
+  {
     "timestamp": "2026-05-20T18:53:58-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
