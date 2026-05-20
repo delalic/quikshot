@@ -29,7 +29,8 @@
     "agentName": "Kevin",
     "agentModel": "GPT-5",
     "subject": "Supplies: Add Injection Prep view",
-    "issueNumber": 365
+    "issueNumber": 365,
+    "note": "Prep control clarified; #368 created"
   },
   {
     "timestamp": "2026-05-20T16:34:53-04:00",
