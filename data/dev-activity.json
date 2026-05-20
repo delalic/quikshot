@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-20T11:49:07-04:00",
+    "systemHealth": "ok",
+    "role": "Process",
+    "result": "Updated",
+    "agentName": "Kevin",
+    "agentModel": "GPT-5",
+    "subject": "Dev activity install details and sizing",
+    "note": "Install details now show build number"
+  },
+  {
     "timestamp": "2026-05-20T11:37:10-04:00",
     "systemHealth": "ok",
     "role": "Process",
@@ -17,7 +27,7 @@
     "agentName": "Kevin",
     "agentModel": "GPT-5",
     "subject": "One-off iPhone install",
-    "note": "Installed QuikShot 1.0.504 on Haris' iPhone 13 Pro"
+    "note": "1.0.504"
   },
   {
     "timestamp": "2026-05-20T10:51:05-04:00",
