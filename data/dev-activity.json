@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-20T17:56:40-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Lejla",
+    "agentModel": "gpt-5.5",
+    "subject": "UI: Standardize vertical lane markers across app surfaces",
+    "issueNumber": 353,
+    "note": "Satellite Mac integration merged PR #369; primary Mac install/build-number closeout pending."
+  },
+  {
     "timestamp": "2026-05-20T17:33:54-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
