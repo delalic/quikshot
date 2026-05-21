@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-20T21:37:13-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Lejla",
+    "agentModel": "GPT-5 / high / satellite Mac",
+    "subject": "Reconstitution profiles: Show calculation preview as a summary card",
+    "issueNumber": 371,
+    "note": "Merged PR #373 at f9152a5 after local simulator visual validation; primary-Mac physical-device closeout left for Manager."
+  },
+  {
     "timestamp": "2026-05-20T21:24:23-04:00",
     "systemHealth": "ok",
     "role": "Process",
