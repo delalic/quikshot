@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-20T21:46:49-04:00",
+    "systemHealth": "ok",
+    "role": "Installer",
+    "result": "Installed",
+    "agentName": "Haris-Primary-Mac-Codex",
+    "agentModel": "GPT-5",
+    "subject": "Reconstitution profiles: Show calculation preview as a summary card",
+    "issueNumber": 371,
+    "note": "Primary Mac closeout installed QuikShot 1.0.520 on Haris' iPhone 13 Pro after remote coder Hilda and satellite integrator Lejla merged PR #373."
+  },
+  {
     "timestamp": "2026-05-20T21:37:13-04:00",
     "systemHealth": "ok",
     "role": "Integrator",
