@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-20T21:12:38-04:00",
+    "systemHealth": "ok",
+    "role": "Remote Coder",
+    "result": "Code complete",
+    "agentName": "Hilda",
+    "agentModel": "GPT-5",
+    "subject": "Reconstitution profiles: Show calculation preview as a summary card",
+    "issueNumber": 371,
+    "note": "Implemented issue #371 and moved it to Build for Integrator pickup."
+  },
+  {
     "timestamp": "2026-05-20T21:05:19-04:00",
     "systemHealth": "ok",
     "role": "PM",
