@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-20T22:31:18-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Kenan",
+    "agentModel": "codex / GPT-5",
+    "subject": "Supplies: Clean up Injection prep UX and non-vial warnings",
+    "issueNumber": 372,
+    "note": "Managed #372 to Done; verified PR #374 merged, build 1.0.526 installed, Project Done, and worktree cleanup complete."
+  },
+  {
     "timestamp": "2026-05-20T22:28:22-04:00",
     "systemHealth": "partial",
     "role": "Reviewer",
