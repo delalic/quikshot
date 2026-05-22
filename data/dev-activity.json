@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-21T23:13:30-04:00",
+    "systemHealth": "ok",
+    "role": "PM",
+    "result": "Created",
+    "agentName": "Kevin",
+    "agentModel": "GPT-5",
+    "subject": "Persistence: Raise to iOS 17 and migrate local storage to SwiftData",
+    "issueNumber": 392,
+    "note": "Backlog P1 XL"
+  },
+  {
     "timestamp": "2026-05-21T23:07:04-04:00",
     "systemHealth": "ok",
     "role": "Manager",
