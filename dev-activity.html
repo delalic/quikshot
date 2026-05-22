@@ -102,21 +102,50 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--fg-tertiary);
+    background: var(--activity-status-color, var(--fg-tertiary));
     box-shadow: 0 0 0 3px var(--bg-tinted);
     transform: translateY(-1px);
   }
+  .activity-entry[data-system-health="ok"] {
+    --activity-status-color: var(--state-taken);
+    --activity-pulse-color: color-mix(in srgb, var(--state-taken) 32%, transparent);
+  }
+  .activity-entry[data-system-health="partial"] {
+    --activity-status-color: var(--state-overdue);
+    --activity-pulse-color: color-mix(in srgb, var(--state-overdue) 32%, transparent);
+  }
+  .activity-entry[data-system-health="down"] {
+    --activity-status-color: var(--state-missed);
+    --activity-pulse-color: color-mix(in srgb, var(--state-missed) 32%, transparent);
+  }
+  .activity-entry[data-system-health="unknown"] {
+    --activity-status-color: var(--fg-tertiary);
+    --activity-pulse-color: color-mix(in srgb, var(--fg-tertiary) 32%, transparent);
+  }
   .activity-entry[data-system-health="ok"] .activity-status {
-    background: var(--state-taken);
+    background: var(--activity-status-color);
   }
   .activity-entry[data-system-health="partial"] .activity-status {
-    background: var(--state-overdue);
+    background: var(--activity-status-color);
   }
   .activity-entry[data-system-health="down"] .activity-status {
-    background: var(--state-missed);
+    background: var(--activity-status-color);
   }
   .activity-entry[data-system-health="unknown"] .activity-status {
-    background: var(--fg-tertiary);
+    background: var(--activity-status-color);
+  }
+  .activity-entry[data-transient="true"] .activity-status {
+    animation: activity-status-pulse 1.5s ease-in-out infinite;
+  }
+  @keyframes activity-status-pulse {
+    0%, 100% {
+      box-shadow: 0 0 0 3px var(--bg-tinted), 0 0 0 0 var(--activity-pulse-color);
+      opacity: 1;
+    }
+    50% {
+      box-shadow: 0 0 0 3px var(--bg-tinted), 0 0 0 6px var(--activity-pulse-color);
+      opacity: 0.72;
+    }
   }
   .activity-time {
     font-family: var(--font-mono);
@@ -219,6 +248,12 @@
       white-space: normal;
     }
   }
+  @media (prefers-reduced-motion: reduce) {
+    .activity-entry[data-transient="true"] .activity-status {
+      animation: none;
+      box-shadow: 0 0 0 3px var(--bg-tinted), 0 0 0 4px var(--activity-pulse-color);
+    }
+  }
 </style>
 </head>
 <body>
@@ -253,6 +288,20 @@
     <section class="activity-day" data-activity-date="2026-05-22" aria-labelledby="activity-2026-05-22">
       <h2 class="activity-date" id="activity-2026-05-22" data-full-date="Friday, 22 May 2026">Friday, 22 May 2026</h2>
       <ul class="activity-list">
+        <li class="activity-entry" data-system-health="ok" data-result="updated" data-result-tone="neutral">
+          <span class="activity-status" aria-label="System health okay"></span>
+          <time class="activity-time" datetime="2026-05-22T11:20:43-04:00">11:20</time>
+          <span class="activity-line">
+            <span class="activity-subject"><span class="activity-subject-title">Transient manager activity rows</span></span>
+            <span class="activity-actor">
+            <span class="activity-role">Process</span>
+            <span>Kevin</span>
+            <span>GPT-5</span>
+            </span>
+            <span class="activity-result" aria-label="Product result Updated">Updated</span>
+          </span>
+          <span class="activity-note">Added Coding pending/started rows for local issue managers.</span>
+        </li>
         <li class="activity-entry" data-system-health="ok" data-result="updated" data-result-tone="neutral">
           <span class="activity-status" aria-label="System health okay"></span>
           <time class="activity-time" datetime="2026-05-22T10:18:44-04:00">10:18</time>
