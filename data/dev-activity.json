@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-22T08:42:56-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Dalila",
+    "agentModel": "Codex (GPT-5, xhigh reasoning)",
+    "subject": "Persistence: Raise to iOS 17 and migrate local storage to SwiftData",
+    "issueNumber": 392,
+    "note": "Implemented iOS 17 SwiftData local persistence migration behind repository boundary. Commit 3d98feea364492e03ff4722eaf4df217c6d860b9, PR #394."
+  },
+  {
     "timestamp": "2026-05-21T23:52:17-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
