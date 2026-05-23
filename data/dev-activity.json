@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-23T19:55:56-04:00",
+    "systemHealth": "ok",
+    "role": "PM",
+    "result": "Created",
+    "agentName": "Kevin",
+    "agentModel": "GPT-5",
+    "subject": "Protocols: Sort active protocol rows alphabetically",
+    "issueNumber": 430,
+    "note": "Created Ready issue for alphabetical active-protocol row ordering, matching existing filter-chip ordering without changing persistence."
+  },
+  {
     "timestamp": "2026-05-23T19:49:39-04:00",
     "systemHealth": "ok",
     "role": "Coder",
