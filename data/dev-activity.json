@@ -12,6 +12,17 @@
     "transient": true
   },
   {
+    "timestamp": "2026-05-22T23:12:05-04:00",
+    "systemHealth": "ok",
+    "role": "PM",
+    "result": "Updated",
+    "agentName": "Kevin",
+    "agentModel": "codex",
+    "subject": "Persistence: Sync QuikShot data across devices with iCloud",
+    "issueNumber": 398,
+    "note": "Documented iCloud sync decisions, backup/restore interaction, and entitlement prep."
+  },
+  {
     "timestamp": "2026-05-22T23:08:36-04:00",
     "systemHealth": "ok",
     "role": "Manager",
