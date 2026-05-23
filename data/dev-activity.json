@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-23T19:17:27-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Sead",
+    "agentModel": "GPT-5 Codex",
+    "subject": "Data & Privacy: Restore from JSON backup",
+    "issueNumber": 397,
+    "note": "Failed-review fix pass started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-23T19:15:35-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -31,18 +43,6 @@
     "subject": "Rename Protocols tab to Plan while keeping protocol terminology inside the detail layer",
     "issueNumber": 427,
     "note": "Refined to Ready with Plan-tab scope, exact empty-state copy, routing/docs acceptance, P1/S metadata."
-  },
-  {
-    "timestamp": "2026-05-23T18:40:23-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Sead",
-    "agentModel": "GPT-5 Codex",
-    "subject": "Data & Privacy: Restore from JSON backup",
-    "issueNumber": 397,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-23T17:21:22-04:00",
