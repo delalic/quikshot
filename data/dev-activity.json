@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-23T08:35:47-04:00",
+    "systemHealth": "ok",
+    "role": "PM",
+    "result": "Created",
+    "agentName": "Kevin",
+    "agentModel": "GPT-5",
+    "subject": "Notifications: Combine simultaneous dose reminders",
+    "issueNumber": 413,
+    "note": "Backlog; proposed grouped notification copy included for review."
+  },
+  {
     "timestamp": "2026-05-23T08:17:27-04:00",
     "systemHealth": "ok",
     "role": "PM",
