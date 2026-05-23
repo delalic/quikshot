@@ -11,18 +11,6 @@
     "note": "PR https://github.com/delalic/quikshot_code/pull/411, commit 848bcd6b4031de8eb684c4d73cd1b6af01511470; validation passed."
   },
   {
-    "timestamp": "2026-05-22T23:17:13-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Adisa",
-    "agentModel": "Codex",
-    "subject": "Inventory: Fix forecast consistency for route-flexible and prepared supply",
-    "issueNumber": 400,
-    "note": "Local coder started.",
-    "transient": true
-  },
-  {
     "timestamp": "2026-05-22T23:12:05-04:00",
     "systemHealth": "ok",
     "role": "PM",
