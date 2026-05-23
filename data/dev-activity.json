@@ -1,5 +1,27 @@
 [
   {
+    "timestamp": "2026-05-23T10:26:57-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Done",
+    "agentName": "Adnan",
+    "agentModel": "Codex / GPT-5",
+    "subject": "Calendar: Remove prepared syringe indicator from week strip",
+    "issueNumber": 415,
+    "note": "TestFlight 1.0.630"
+  },
+  {
+    "timestamp": "2026-05-23T10:26:53-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Faruk",
+    "agentModel": "Codex GPT-5",
+    "subject": "Notifications: Combine simultaneous dose reminders",
+    "issueNumber": 413,
+    "note": "PR #416 merged; Build 1.0.629 predicted, install not attempted."
+  },
+  {
     "timestamp": "2026-05-23T10:16:22-04:00",
     "systemHealth": "ok",
     "role": "Manager",
@@ -53,18 +75,6 @@
     "subject": "Injection Prep: Repair stale prepared-syringe event links after logging",
     "issueNumber": 412,
     "note": "Verified PR #414 merged, Project Done, build 1.0.623 predicted; install not attempted due signing."
-  },
-  {
-    "timestamp": "2026-05-23T09:26:57-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Faruk",
-    "agentModel": "Codex GPT-5",
-    "subject": "Notifications: Combine simultaneous dose reminders",
-    "issueNumber": 413,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-23T09:22:45-04:00",
