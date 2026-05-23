@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-22T21:45:29-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Armin",
+    "agentModel": "GPT-5 Codex",
+    "subject": "Injection prep: Add Open vial unblock path and clarify status states",
+    "issueNumber": 403,
+    "note": "PR #408 merged; installed 1.0.597."
+  },
+  {
     "timestamp": "2026-05-22T21:44:24-04:00",
     "systemHealth": "partial",
     "role": "Manager",
@@ -87,18 +98,6 @@
     "subject": "Log dose: Group prepared syringes and unify scheduled log sheets",
     "issueNumber": 399,
     "note": "Reviewed PR #406, resolved main conflict, merged to main, installed build 1.0.594. Focused XCTest launch remained blocked by local simulator/Xcode worker startup before assertions."
-  },
-  {
-    "timestamp": "2026-05-22T20:30:04-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Armin",
-    "agentModel": "GPT-5 Codex",
-    "subject": "Injection prep: Add Open vial unblock path and clarify status states",
-    "issueNumber": 403,
-    "note": "Local coder starting.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-22T20:27:56-04:00",
