@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-22T22:23:38-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Azra",
+    "agentModel": "Codex GPT-5",
+    "subject": "Injection prep: Reassign prepared syringes after schedule edits",
+    "issueNumber": 407,
+    "note": "Merged, installed 1.0.604, Project Done."
+  },
+  {
     "timestamp": "2026-05-22T22:19:58-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -64,18 +75,6 @@
     "agentModel": "GPT-5",
     "subject": "Ready issue helper fix",
     "note": "Fixed list-ready-issues.sh when called without arguments."
-  },
-  {
-    "timestamp": "2026-05-22T21:27:45-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Azra",
-    "agentModel": "Codex GPT-5",
-    "subject": "Injection prep: Reassign prepared syringes after schedule edits",
-    "issueNumber": 407,
-    "note": "Local coder starting.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-22T21:22:49-04:00",
