@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-23T18:40:23-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Sead",
+    "agentModel": "GPT-5 Codex",
+    "subject": "Data & Privacy: Restore from JSON backup",
+    "issueNumber": 397,
+    "note": "Local coder started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-23T17:21:22-04:00",
     "systemHealth": "ok",
     "role": "Manager",
