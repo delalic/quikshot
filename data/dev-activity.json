@@ -1,5 +1,27 @@
 [
   {
+    "timestamp": "2026-05-23T17:00:22-04:00",
+    "systemHealth": "ok",
+    "role": "PM",
+    "result": "Updated",
+    "agentName": "Kevin",
+    "agentModel": "GPT-5",
+    "subject": "Persistence: Sync QuikShot data across devices with iCloud",
+    "issueNumber": 398,
+    "note": "Refined for Ready handoff with opt-in sync, normalized records, restore coordination, and signing validation guardrails."
+  },
+  {
+    "timestamp": "2026-05-23T16:59:47-04:00",
+    "systemHealth": "ok",
+    "role": "PM",
+    "result": "Updated",
+    "agentName": "Kevin",
+    "agentModel": "GPT-5",
+    "subject": "Data & Privacy: Restore from JSON backup",
+    "issueNumber": 397,
+    "note": "Refined for Ready handoff before iCloud sync with rollback and restore safety criteria."
+  },
+  {
     "timestamp": "2026-05-23T16:47:02-04:00",
     "systemHealth": "ok",
     "role": "Manager",
