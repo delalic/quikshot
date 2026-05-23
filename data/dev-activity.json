@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-22T23:08:36-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Nedim",
+    "agentModel": "GPT-5",
+    "subject": "Injection prep: Tighten filtered dates and whole-unit after-prep copy",
+    "issueNumber": 401,
+    "note": "Verified #407 gate, managed #401 through coding, review, merge, installed build 1.0.606, Project Done, and local cleanup."
+  },
+  {
     "timestamp": "2026-05-22T23:05:40-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -20,18 +31,6 @@
     "subject": "Injection prep: Tighten filtered dates and whole-unit after-prep copy",
     "issueNumber": 401,
     "note": "Implemented compact filtered Injection prep row dates and whole-unit after-prep copy; validation passed and PR #410 is ready for review."
-  },
-  {
-    "timestamp": "2026-05-22T22:24:13-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Nedim",
-    "agentModel": "GPT-5",
-    "subject": "Injection prep: Tighten filtered dates and whole-unit after-prep copy",
-    "issueNumber": 401,
-    "note": "Local coder starting after issue #407 reached Done.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-22T22:23:38-04:00",
