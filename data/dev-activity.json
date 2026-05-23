@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-23T10:29:03-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Sead",
+    "agentModel": "Codex GPT-5",
+    "subject": "Calendar: Remove prepared syringe indicator from week strip",
+    "issueNumber": 415,
+    "note": "Verified PR #417 merged; TestFlight 1.0.630 VALID."
+  },
+  {
     "timestamp": "2026-05-23T10:26:57-04:00",
     "systemHealth": "ok",
     "role": "Coder",
@@ -20,18 +31,6 @@
     "subject": "Notifications: Combine simultaneous dose reminders",
     "issueNumber": 413,
     "note": "PR #416 merged; Build 1.0.629 predicted, install not attempted."
-  },
-  {
-    "timestamp": "2026-05-23T10:16:22-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Sead",
-    "agentModel": "Codex GPT-5",
-    "subject": "Calendar: Remove prepared syringe indicator from week strip",
-    "issueNumber": 415,
-    "note": "Local coder starting; TestFlight requested for delivery.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-23T10:13:09-04:00",
