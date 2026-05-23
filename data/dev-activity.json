@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-22T20:30:04-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Armin",
+    "agentModel": "GPT-5 Codex",
+    "subject": "Injection prep: Add Open vial unblock path and clarify status states",
+    "issueNumber": 403,
+    "note": "Local coder starting.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-22T20:27:56-04:00",
     "systemHealth": "ok",
     "role": "Manager",
