@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-23T09:26:57-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Faruk",
+    "agentModel": "Codex GPT-5",
+    "subject": "Notifications: Combine simultaneous dose reminders",
+    "issueNumber": 413,
+    "note": "Local coder started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-23T09:22:45-04:00",
     "systemHealth": "partial",
     "role": "Reviewer",
@@ -20,18 +32,6 @@
     "subject": "Injection Prep: Repair stale prepared-syringe event links after logging",
     "issueNumber": 412,
     "note": "PR #414, commit 1e6fa93"
-  },
-  {
-    "timestamp": "2026-05-23T08:54:38-04:00",
-    "systemHealth": "partial",
-    "role": "Manager",
-    "result": "Coding pending",
-    "agentName": "Faruk",
-    "agentModel": "Codex GPT-5",
-    "subject": "Notifications: Combine simultaneous dose reminders",
-    "issueNumber": 413,
-    "note": "Waiting for local lane to clear.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-23T08:51:47-04:00",
