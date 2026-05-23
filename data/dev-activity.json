@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-23T10:13:09-04:00",
+    "systemHealth": "partial",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Adis",
+    "agentModel": "Codex (GPT-5 visible; requested GPT-5.5 xhigh)",
+    "subject": "Notifications: Combine simultaneous dose reminders",
+    "issueNumber": 413,
+    "note": "PR merged; BuildNumber 1.0.629 recorded from predicted-next-main-build because the configured iPhone was unavailable."
+  },
+  {
     "timestamp": "2026-05-23T10:00:38-04:00",
     "systemHealth": "ok",
     "role": "Process",
