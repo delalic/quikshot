@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-23T12:09:19-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Adna",
+    "agentModel": "codex",
+    "subject": "Logging: Preserve historical supply on taken injection edits",
+    "issueNumber": 418,
+    "note": "Local coder starting.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-23T11:57:54-04:00",
     "systemHealth": "ok",
     "role": "PM",
