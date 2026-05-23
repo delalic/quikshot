@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-22T23:17:13-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Adisa",
+    "agentModel": "Codex",
+    "subject": "Inventory: Fix forecast consistency for route-flexible and prepared supply",
+    "issueNumber": 400,
+    "note": "Local coder started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-22T23:08:36-04:00",
     "systemHealth": "ok",
     "role": "Manager",
@@ -75,18 +87,6 @@
     "subject": "Injection prep: Add Open vial unblock path and clarify status states",
     "issueNumber": 403,
     "note": "PR #408 merged; installed 1.0.597."
-  },
-  {
-    "timestamp": "2026-05-22T21:44:24-04:00",
-    "systemHealth": "partial",
-    "role": "Manager",
-    "result": "Coding pending",
-    "agentName": "Adisa",
-    "agentModel": "Codex",
-    "subject": "Inventory: Fix forecast consistency for route-flexible and prepared supply",
-    "issueNumber": 400,
-    "note": "Waiting for issue #401 to reach Done.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-22T21:41:49-04:00",
