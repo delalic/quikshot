@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-23T17:21:22-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Amra",
+    "agentModel": "codex",
+    "subject": "Protocols: Add BPC-157/TB-500 wolverine icon easter egg",
+    "issueNumber": 21,
+    "note": "Merged, installed 1.0.645, Project Done."
+  },
+  {
     "timestamp": "2026-05-23T17:18:46-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -64,18 +75,6 @@
     "subject": "Data & Privacy: Restore from JSON backup",
     "issueNumber": 397,
     "note": "Refined for Ready handoff before iCloud sync with rollback and restore safety criteria."
-  },
-  {
-    "timestamp": "2026-05-23T16:47:02-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Amra",
-    "agentModel": "codex",
-    "subject": "Protocols: Add BPC-157/TB-500 wolverine icon easter egg",
-    "issueNumber": 21,
-    "note": "Local coder starting.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-23T16:33:16-04:00",
