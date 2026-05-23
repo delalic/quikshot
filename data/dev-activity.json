@@ -7,7 +7,7 @@
     "agentName": "Codex",
     "agentModel": "GPT-5",
     "subject": "Simulator QA regression sweep",
-    "note": "iPhone 703 pass/6 validation fail/1 skip; iPad unit 649 pass/1 skip, smoke pass; no confirmed product regression"
+    "note": "iPhone 702 pass/6 validation fail/1 skip; iPad unit 648 pass/1 skip, smoke pass; no confirmed product regression"
   },
   {
     "timestamp": "2026-05-23T00:01:27-04:00",
