@@ -1,5 +1,26 @@
 [
   {
+    "timestamp": "2026-05-22T23:57:12-04:00",
+    "systemHealth": "partial",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Vedran",
+    "agentModel": "Codex (GPT-5)",
+    "subject": "Inventory: Fix forecast consistency for route-flexible and prepared supply",
+    "issueNumber": 400,
+    "note": "1.0.612 predicted; install not attempted"
+  },
+  {
+    "timestamp": "2026-05-22T23:56:24-04:00",
+    "systemHealth": "ok",
+    "role": "Process",
+    "result": "Updated",
+    "agentName": "Kevin",
+    "agentModel": "GPT-5",
+    "subject": "QA regression runbook expansion",
+    "note": "Added inventory, Injection prep, logging, prepared syringe, schedule-edit, SwiftData, and #400 wait-gate coverage."
+  },
+  {
     "timestamp": "2026-05-22T23:45:51-04:00",
     "systemHealth": "ok",
     "role": "Coder",
