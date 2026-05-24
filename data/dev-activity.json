@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-23T20:05:50-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Azra",
+    "agentModel": "Codex (GPT-5)",
+    "subject": "Rename Protocols tab to Plan while keeping protocol terminology inside the detail layer",
+    "issueNumber": 427,
+    "note": "Failed-review fix pass for PR #429: updated remaining top-level Plan docs/runbook wording, committed 64d77c0, pushed origin/issue-427, moved issue back to In review."
+  },
+  {
     "timestamp": "2026-05-23T20:01:49-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
