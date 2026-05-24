@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-24T14:40:35-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Done",
+    "agentName": "Amira",
+    "agentModel": "GPT-5 Codex high",
+    "subject": "Use branded light/dark launch screen",
+    "issueNumber": 426,
+    "note": "Re-review passed after safe-area fix; PR #449 merged; internal-only TestFlight build 1.0.694 uploaded and VALID in App Store Connect (delivery UUID 3a1abb53-5f4c-40ec-968c-b5ecee9\u2026"
+  },
+  {
     "timestamp": "2026-05-24T14:34:08-04:00",
     "systemHealth": "ok",
     "role": "PM",
@@ -95,18 +106,6 @@
     "subject": "UI: Use delete and archive icons consistently",
     "issueNumber": 443,
     "note": "TestFlight 1.0.684"
-  },
-  {
-    "timestamp": "2026-05-24T13:52:24-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Lejla",
-    "agentModel": "codex",
-    "subject": "Use branded light/dark launch screen",
-    "issueNumber": 426,
-    "note": "Local coder started after issue #443 reached Done.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-24T13:44:12-04:00",
