@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-24T01:35:03-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Jasmina",
+    "agentModel": "codex",
+    "subject": "Setup: Rename inventory delete to archive and add archive icons",
+    "issueNumber": 435,
+    "note": "Verified PR #436 merged, build 1.0.669 installed, Project Done, and cleanup complete."
+  },
+  {
     "timestamp": "2026-05-24T01:32:46-04:00",
     "systemHealth": "ok",
     "role": "Coder",
@@ -19,18 +30,6 @@
     "subject": "Setup: Rename inventory delete to archive and add archive icons",
     "issueNumber": 435,
     "note": "Created Ready follow-up for archive wording and icon consistency."
-  },
-  {
-    "timestamp": "2026-05-24T01:27:38-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Jasmina",
-    "agentModel": "codex",
-    "subject": "Setup: Rename inventory delete to archive and add archive icons",
-    "issueNumber": 435,
-    "note": "Local coder starting.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-24T00:52:29-04:00",
