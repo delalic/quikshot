@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-23T20:10:27-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Nihad",
+    "agentModel": "GPT-5 Codex",
+    "subject": "Rename Protocols tab to Plan while keeping protocol terminology inside the detail layer",
+    "issueNumber": 427,
+    "note": "1.0.664 predicted; device unavailable."
+  },
+  {
     "timestamp": "2026-05-23T20:08:54-04:00",
     "systemHealth": "partial",
     "role": "Reviewer",
@@ -50,18 +61,6 @@
     "agentModel": "Codex (requested gpt-5.5 medium; actual runtime\u2026",
     "subject": "Rename Protocols tab to Plan while keeping protocol terminology inside the detail layer",
     "issueNumber": 427
-  },
-  {
-    "timestamp": "2026-05-23T19:41:42-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Nihad",
-    "agentModel": "GPT-5 Codex",
-    "subject": "Rename Protocols tab to Plan while keeping protocol terminology inside the detail layer",
-    "issueNumber": 427,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-23T19:40:06-04:00",
