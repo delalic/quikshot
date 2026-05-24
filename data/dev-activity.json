@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-23T20:08:54-04:00",
+    "systemHealth": "partial",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Lejla",
+    "agentModel": "Codex (GPT-5; requested gpt-5.5 medium, actual\u2026",
+    "subject": "Rename Protocols tab to Plan while keeping protocol terminology inside the detail layer",
+    "issueNumber": 427
+  },
+  {
     "timestamp": "2026-05-23T20:05:50-04:00",
     "systemHealth": "ok",
     "role": "Coder",
