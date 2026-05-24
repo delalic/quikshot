@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-23T20:01:49-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Lejla",
+    "agentModel": "codex",
+    "subject": "Rename Protocols tab to Plan while keeping protocol terminology inside the detail layer",
+    "issueNumber": 427
+  },
+  {
     "timestamp": "2026-05-23T19:55:56-04:00",
     "systemHealth": "ok",
     "role": "PM",
