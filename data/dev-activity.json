@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-24T17:29:52-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Tarik",
+    "agentModel": "codex",
+    "subject": "Make launch screen dark the default fallback appearance",
+    "issueNumber": 455,
+    "note": "PR #456 merged; TestFlight 1.0.702."
+  },
+  {
     "timestamp": "2026-05-24T17:27:37-04:00",
     "systemHealth": "ok",
     "role": "Coder",
@@ -8,18 +19,6 @@
     "agentModel": "codex",
     "subject": "Make launch screen dark the default fallback appearance",
     "issueNumber": 455
-  },
-  {
-    "timestamp": "2026-05-24T17:17:06-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Tarik",
-    "agentModel": "codex",
-    "subject": "Make launch screen dark the default fallback appearance",
-    "issueNumber": 455,
-    "note": "Local coder starting.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-24T17:14:33-04:00",
