@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-24T14:28:59-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Adnan",
+    "agentModel": "codex",
+    "subject": "Logging: Show last-used context for injection site selections",
+    "issueNumber": 447,
+    "note": "Managed to TestFlight 1.0.686."
+  },
+  {
     "timestamp": "2026-05-24T14:27:40-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -52,18 +63,6 @@
     "subject": "Use branded light/dark launch screen",
     "issueNumber": 426,
     "note": "Branch updated"
-  },
-  {
-    "timestamp": "2026-05-24T14:01:40-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Adnan",
-    "agentModel": "codex",
-    "subject": "Logging: Show last-used context for injection site selections",
-    "issueNumber": 447,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-24T14:00:29-04:00",
