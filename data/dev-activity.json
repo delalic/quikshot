@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-24T13:32:14-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Eldin",
+    "agentModel": "codex",
+    "subject": "UI: Standardize destructive confirmation popovers",
+    "issueNumber": 442,
+    "note": "Managed to Done; build 1.0.682."
+  },
+  {
     "timestamp": "2026-05-24T13:28:51-04:00",
     "systemHealth": "partial",
     "role": "Reviewer",
@@ -42,18 +53,6 @@
     "subject": "Use branded light/dark launch screen",
     "issueNumber": 426,
     "note": "Waiting for issue #443 to reach Done before starting local work.",
-    "transient": true
-  },
-  {
-    "timestamp": "2026-05-24T12:27:42-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Eldin",
-    "agentModel": "codex",
-    "subject": "UI: Standardize destructive confirmation popovers",
-    "issueNumber": 442,
-    "note": "Local coder starting.",
     "transient": true
   },
   {
