@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-24T00:52:29-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Emina",
+    "agentModel": "GPT-5 Codex",
+    "subject": "Protocols: Rename delete action to archive",
+    "issueNumber": 432,
+    "note": "Verified Done with BuildNumber 1.0.667; worktree removed."
+  },
+  {
     "timestamp": "2026-05-24T00:50:35-04:00",
     "systemHealth": "ok",
     "role": "Coder",
@@ -9,18 +20,6 @@
     "subject": "Protocols: Rename delete action to archive",
     "issueNumber": 432,
     "note": "1.0.667"
-  },
-  {
-    "timestamp": "2026-05-24T00:40:25-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Emina",
-    "agentModel": "GPT-5 Codex",
-    "subject": "Protocols: Rename delete action to archive",
-    "issueNumber": 432,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-24T00:38:18-04:00",
