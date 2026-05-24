@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-24T00:25:22-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Selma",
+    "agentModel": "Codex GPT-5",
+    "subject": "Protocols: Sort active protocol rows alphabetically",
+    "issueNumber": 430,
+    "note": "Verified Done with BuildNumber 1.0.665 predicted; worktree removed."
+  },
+  {
     "timestamp": "2026-05-24T00:23:18-04:00",
     "systemHealth": "partial",
     "role": "Coder",
