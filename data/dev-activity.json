@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-25T18:38:56-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Nermina",
+    "agentModel": "codex",
+    "subject": "Compound Library: Audit and correct seeded compounds for MVP",
+    "issueNumber": 196,
+    "note": "Local coder started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-25T18:36:25-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
@@ -9,18 +21,6 @@
     "subject": "Injection Prep combined flow: add explicit ineligibility, atomicity, and stale-link repair test coverage",
     "issueNumber": 464,
     "note": "Implemented issue #464 and moved it to Build for Integrator pickup."
-  },
-  {
-    "timestamp": "2026-05-25T18:35:55-04:00",
-    "systemHealth": "partial",
-    "role": "Manager",
-    "result": "Coding pending",
-    "agentName": "Nermina",
-    "agentModel": "codex",
-    "subject": "Compound Library: Audit and correct seeded compounds for MVP",
-    "issueNumber": 196,
-    "note": "Waiting for local lane to clear.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-25T18:28:10-04:00",
