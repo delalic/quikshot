@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-25T07:25:30-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Adna",
+    "agentModel": "Codex (GPT-5; high reasoning requested)",
+    "subject": "Notifications: Add Mark taken action for detailed single-dose reminders",
+    "issueNumber": 460
+  },
+  {
     "timestamp": "2026-05-25T07:08:56-04:00",
     "systemHealth": "ok",
     "role": "Manager",
