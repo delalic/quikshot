@@ -21,18 +21,6 @@
     "issueNumber": 192
   },
   {
-    "timestamp": "2026-05-24T20:36:08-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Amra",
-    "agentModel": "GPT-5 Codex xhigh",
-    "subject": "Support brand/product names without duplicating compounds",
-    "issueNumber": 192,
-    "note": "Local xhigh coder starting.",
-    "transient": true
-  },
-  {
     "timestamp": "2026-05-24T17:29:52-04:00",
     "systemHealth": "ok",
     "role": "Manager",
