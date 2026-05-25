@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-25T18:35:55-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Coding pending",
+    "agentName": "Nermina",
+    "agentModel": "codex",
+    "subject": "Compound Library: Audit and correct seeded compounds for MVP",
+    "issueNumber": 196,
+    "note": "Waiting for local lane to clear.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-25T18:28:10-04:00",
     "systemHealth": "ok",
     "role": "Manager",
