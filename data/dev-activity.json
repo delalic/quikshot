@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-25T13:51:17-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Vedad",
+    "agentModel": "Codex / GPT-5",
+    "subject": "Injection Prep: Combine unprepared injections into one syringe",
+    "issueNumber": 368,
+    "note": "Merged PR #463, installed 1.0.722, filed follow-ups #464 and #465."
+  },
+  {
     "timestamp": "2026-05-25T13:44:50-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -19,18 +30,6 @@
     "subject": "Injection Prep: Combine unprepared injections into one syringe",
     "issueNumber": 368,
     "note": "Implemented combined Injection Prep flow, pushed issue-368, opened PR #463, moved to In review."
-  },
-  {
-    "timestamp": "2026-05-25T11:54:53-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Vedad",
-    "agentModel": "Codex / GPT-5",
-    "subject": "Injection Prep: Combine unprepared injections into one syringe",
-    "issueNumber": 368,
-    "note": "Local Codex xhigh coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-25T09:22:55-04:00",
