@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-25T07:35:44-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Amina",
+    "agentModel": "codex",
+    "subject": "Notifications: Add Mark taken action for detailed single-dose reminders",
+    "issueNumber": 460,
+    "note": "Managed high-reasoning code/review agents; PR #461 merged, build 1.0.712 installed, Project Done."
+  },
+  {
     "timestamp": "2026-05-25T07:33:38-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -19,18 +30,6 @@
     "agentModel": "Codex (GPT-5; high reasoning requested)",
     "subject": "Notifications: Add Mark taken action for detailed single-dose reminders",
     "issueNumber": 460
-  },
-  {
-    "timestamp": "2026-05-25T07:08:56-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Amina",
-    "agentModel": "codex",
-    "subject": "Notifications: Add Mark taken action for detailed single-dose reminders",
-    "issueNumber": 460,
-    "note": "Local high-reasoning coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-24T23:04:23-04:00",
