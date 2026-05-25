@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-24T23:04:23-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Faruk",
+    "agentModel": "Codex GPT-5",
+    "subject": "Today: Remove warning triangle from same-day site conflict",
+    "issueNumber": 458,
+    "note": "Verified PR #459 merged, build 1.0.707 installed, Project Done, and local worktree removed."
+  },
+  {
     "timestamp": "2026-05-24T23:02:01-04:00",
     "systemHealth": "ok",
     "role": "Coder",
@@ -9,18 +20,6 @@
     "subject": "Today: Remove warning triangle from same-day site conflict",
     "issueNumber": 458,
     "note": "Merged PR #459, installed build 1.0.707 on Haris' iPhone 13 Pro, and closed Project status to Done."
-  },
-  {
-    "timestamp": "2026-05-24T22:55:21-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Faruk",
-    "agentModel": "Codex",
-    "subject": "Today: Remove warning triangle from same-day site conflict",
-    "issueNumber": 458,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-24T21:10:25-04:00",
