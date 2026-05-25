@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-25T18:49:35-04:00",
+    "systemHealth": "ok",
+    "role": "Installer",
+    "result": "Installed",
+    "agentName": "Manager",
+    "agentModel": "GPT-5",
+    "subject": "Injection Prep combined flow: add explicit ineligibility, atomicity, and stale-link repair test coverage",
+    "issueNumber": 464,
+    "note": "1.0.736"
+  },
+  {
     "timestamp": "2026-05-25T18:43:41-04:00",
     "systemHealth": "ok",
     "role": "Integrator",
