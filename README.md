@@ -10,11 +10,11 @@ GitHub repository:
 
 `delalic/quikshot`
 
-This is the source code for the [QuikShot](https://delalic.github.io/quikshot/) marketing website.
+This is the source code for the [QuikShot](https://quikshot.app/) marketing website.
 
 ## Live Site
 
-Visit the live site here: **[https://delalic.github.io/quikshot/](https://delalic.github.io/quikshot/)**
+Visit the live site here: **[https://quikshot.app/](https://quikshot.app/)**
 
 ## About
 

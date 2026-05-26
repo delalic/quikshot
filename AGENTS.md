@@ -12,7 +12,7 @@ GitHub repository:
 
 Published site:
 
-`https://delalic.github.io/quikshot/`
+`https://quikshot.app/`
 
 Use this repository for public website work: landing page, privacy page, release notes page, website assets, site styling, and GitHub Pages publishing.
 
