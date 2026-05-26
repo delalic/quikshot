@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T08:30:43-04:00",
+    "systemHealth": "ok",
+    "role": "Installer",
+    "result": "Installed",
+    "agentName": "Manager",
+    "agentModel": "GPT-5",
+    "subject": "Injection Prep repair and schedule-rebuild reassignment regressions",
+    "issueNumber": 486,
+    "note": "Build 1.0.765"
+  },
+  {
     "timestamp": "2026-05-26T08:26:33-04:00",
     "systemHealth": "ok",
     "role": "Manager",
