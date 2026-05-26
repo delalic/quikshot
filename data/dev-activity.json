@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-26T10:00:02-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Zlatan",
+    "agentModel": "codex",
+    "subject": "Dose cards: Keep status badges top-right aligned",
+    "issueNumber": 490,
+    "note": "Local coder started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-26T09:32:16-04:00",
     "systemHealth": "ok",
     "role": "Manager",
