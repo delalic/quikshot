@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-26T08:26:33-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Nermin",
+    "agentModel": "gpt-5 codex",
+    "subject": "Regression: Restore fixed QSFont tokens and scope Large Text support",
+    "issueNumber": 488,
+    "note": "Local coder started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-26T08:22:57-04:00",
     "systemHealth": "partial",
     "role": "Integrator",
