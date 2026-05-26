@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T09:32:16-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Nermin",
+    "agentModel": "gpt-5 codex",
+    "subject": "Regression: Restore fixed QSFont tokens and scope Large Text support",
+    "issueNumber": 488,
+    "note": "Managed Codex coding and required review to Done; build 1.0.768 installed."
+  },
+  {
     "timestamp": "2026-05-26T09:27:45-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -31,18 +42,6 @@
     "subject": "Injection Prep repair and schedule-rebuild reassignment regressions",
     "issueNumber": 486,
     "note": "Build 1.0.765"
-  },
-  {
-    "timestamp": "2026-05-26T08:26:33-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Nermin",
-    "agentModel": "gpt-5 codex",
-    "subject": "Regression: Restore fixed QSFont tokens and scope Large Text support",
-    "issueNumber": 488,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-26T08:22:57-04:00",
