@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-25T22:29:38-04:00",
+    "systemHealth": "ok",
+    "role": "Installer",
+    "result": "Installed",
+    "agentName": "Manager",
+    "agentModel": "GPT-5",
+    "subject": "First launch: update headline, trust strip, and primary CTA",
+    "issueNumber": 423,
+    "note": "Installed debug build 1.0.747 on Haris' iPhone 13 Pro after PR #479 merged."
+  },
+  {
     "timestamp": "2026-05-25T22:25:22-04:00",
     "systemHealth": "ok",
     "role": "Installer",
