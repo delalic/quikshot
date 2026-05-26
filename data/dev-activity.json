@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-25T21:38:07-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Emir",
+    "agentModel": "codex",
+    "subject": "Confirm AXXXL UI test screenshots render true accessibility sizing",
+    "issueNumber": 468,
+    "note": "Managed PR #476 to Done; build 1.0.745."
+  },
+  {
     "timestamp": "2026-05-25T21:34:53-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -53,18 +64,6 @@
     "subject": "Add guard coverage for prepared combined Review & Log source rows",
     "issueNumber": 469,
     "note": "Implemented issue #469 and moved it to Build for Integrator pickup."
-  },
-  {
-    "timestamp": "2026-05-25T20:28:22-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Emir",
-    "agentModel": "codex",
-    "subject": "Confirm AXXXL UI test screenshots render true accessibility sizing",
-    "issueNumber": 468,
-    "note": "Local coder starting.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-25T19:33:56-04:00",
