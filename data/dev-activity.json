@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-25T22:16:12-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Lejla",
+    "agentModel": "Codex / xhigh",
+    "subject": "Injection Prep: Clean up combined prep card, Calendar, and log UI",
+    "issueNumber": 473,
+    "note": "Merged PR #477; primary closeout pending."
+  },
+  {
     "timestamp": "2026-05-25T21:56:12-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
