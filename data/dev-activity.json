@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-26T10:14:00-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Selmir",
+    "agentModel": "codex",
+    "subject": "Dose cards: Keep status badges top-right aligned",
+    "issueNumber": 490
+  },
+  {
     "timestamp": "2026-05-26T10:00:02-04:00",
     "systemHealth": "ok",
     "role": "Manager",
