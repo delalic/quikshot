@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T01:14:13-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Emir",
+    "agentModel": "codex",
+    "subject": "Persistence: Sync QuikShot data across devices with iCloud",
+    "issueNumber": 398,
+    "note": "Managed Codex coding and Claude Opus 4.7 review to Done; follow-up #481 tracks Apple signing/TestFlight validation and release-gate removal."
+  },
+  {
     "timestamp": "2026-05-26T01:11:42-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -40,18 +51,6 @@
     "subject": "Persistence: Sync QuikShot data across devices with iCloud",
     "issueNumber": 398,
     "note": "Implemented opt-in normalized iCloud sync; opened PR #480; moved issue to In review."
-  },
-  {
-    "timestamp": "2026-05-25T23:24:42-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Emir",
-    "agentModel": "codex",
-    "subject": "Persistence: Sync QuikShot data across devices with iCloud",
-    "issueNumber": 398,
-    "note": "Local xhigh Codex coder starting.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-25T22:29:38-04:00",
