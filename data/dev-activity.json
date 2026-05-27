@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-27T00:27:41-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Tarik",
+    "agentModel": "codex",
+    "subject": "Combined injections: fix log preview, Today draw, and syringe copy",
+    "issueNumber": 514,
+    "note": "Managed coding, required review, merge, direct install build 1.0.813, and Project Done closeout."
+  },
+  {
     "timestamp": "2026-05-27T00:25:30-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -31,18 +42,6 @@
     "subject": "QA: Validate JSON restore sync with disposable data",
     "issueNumber": 497,
     "note": "#516 follow-up opened"
-  },
-  {
-    "timestamp": "2026-05-26T23:37:15-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Tarik",
-    "agentModel": "codex",
-    "subject": "Combined injections: fix log preview, Today draw, and syringe copy",
-    "issueNumber": 514,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-26T23:26:36-04:00",
