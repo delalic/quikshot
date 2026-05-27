@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-26T22:58:12-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Nejra",
+    "agentModel": "gpt-5 codex",
+    "subject": "Protocol cards: show dynamic supply status instead of stale linked inventory",
+    "issueNumber": 504,
+    "note": "Local coder started after #502 reached Done.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-26T22:56:09-04:00",
     "systemHealth": "partial",
     "role": "QA",
