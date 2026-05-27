@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T20:58:06-04:00",
+    "systemHealth": "ok",
+    "role": "Installer",
+    "result": "Installed",
+    "agentName": "Manager",
+    "agentModel": "GPT-5 Codex",
+    "subject": "Settings: Restore clear Data & Privacy action affordances",
+    "issueNumber": 500,
+    "note": "Installed build 1.0.780 on Haris' iPhone 13 Pro; PR #506 merged"
+  },
+  {
     "timestamp": "2026-05-26T20:51:11-04:00",
     "systemHealth": "ok",
     "role": "Integrator",
