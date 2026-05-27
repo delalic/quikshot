@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T22:21:02-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Lejla",
+    "agentModel": "Codex (GPT-5)",
+    "subject": "Logging: Combined injections must show and save injection site",
+    "issueNumber": 508,
+    "note": "Merged PR #509 on satellite Mac; Manager primary-Mac delivery and build-number closeout pending."
+  },
+  {
     "timestamp": "2026-05-26T22:14:51-04:00",
     "systemHealth": "ok",
     "role": "Manager",
