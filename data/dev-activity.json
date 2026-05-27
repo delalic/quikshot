@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-27T08:25:20-04:00",
+    "systemHealth": "ok",
+    "role": "Installer",
+    "result": "Installed",
+    "agentName": "Manager",
+    "agentModel": "GPT-5 Codex",
+    "subject": "Protocol stock: add visual fixture for fallback states",
+    "issueNumber": 520,
+    "note": "1.0.825"
+  },
+  {
     "timestamp": "2026-05-27T08:23:28-04:00",
     "systemHealth": "ok",
     "role": "QA",
