@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T21:48:46-04:00",
+    "systemHealth": "ok",
+    "role": "Remote Coder",
+    "result": "Code complete",
+    "agentName": "Einar",
+    "agentModel": "Codex (GPT-5)",
+    "subject": "Logging: Combined injections must show and save injection site",
+    "issueNumber": 508,
+    "note": "Implemented issue #508 and moved it to Build for Integrator pickup."
+  },
+  {
     "timestamp": "2026-05-26T21:45:32-04:00",
     "systemHealth": "ok",
     "role": "Coder",
