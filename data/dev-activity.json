@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T23:07:14-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Adnan",
+    "agentModel": "codex",
+    "subject": "Logging: Restrict inventory pickers by route and stock form",
+    "issueNumber": 502,
+    "note": "Verified PR #510 merged, installed build 1.0.797, Project Done, and worktree cleanup."
+  },
+  {
     "timestamp": "2026-05-26T23:01:04-04:00",
     "systemHealth": "ok",
     "role": "Process",
@@ -75,18 +86,6 @@
     "subject": "Logging: Combined injections must show and save injection site",
     "issueNumber": 508,
     "note": "Merged PR #509 on satellite Mac; Manager primary-Mac delivery and build-number closeout pending."
-  },
-  {
-    "timestamp": "2026-05-26T22:14:51-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Adnan",
-    "agentModel": "codex",
-    "subject": "Logging: Restrict inventory pickers by route and stock form",
-    "issueNumber": 502,
-    "note": "Review fix pass started after failed review.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-26T22:13:42-04:00",
