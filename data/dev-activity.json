@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-27T08:20:00-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Lejla",
+    "agentModel": "GPT-5 Codex high",
+    "subject": "Protocol stock: add visual fixture for fallback states",
+    "issueNumber": 520,
+    "note": "Merged PR #527; primary-Mac closeout pending"
+  },
+  {
     "timestamp": "2026-05-27T08:14:11-04:00",
     "systemHealth": "ok",
     "role": "Integrator",
