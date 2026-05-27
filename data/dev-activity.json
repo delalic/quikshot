@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-27T08:12:07-04:00",
+    "systemHealth": "ok",
+    "role": "Process",
+    "result": "Updated",
+    "agentName": "Codex",
+    "agentModel": "GPT-5",
+    "subject": "Process: Document Builder dispatch failure fallback",
+    "issueNumber": 521,
+    "note": "Documented no-run-created GitHub Builder dispatch fallback and exact-SHA substitute validation requirements."
+  },
+  {
     "timestamp": "2026-05-27T08:08:05-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
