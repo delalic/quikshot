@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-26T21:26:37-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Adnan",
+    "agentModel": "codex",
+    "subject": "Logging: Restrict inventory pickers by route and stock form",
+    "issueNumber": 502,
+    "note": "Local coder started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-26T21:23:19-04:00",
     "systemHealth": "ok",
     "role": "Manager",
@@ -75,18 +87,6 @@
     "subject": "iCloud sync: refresh active views and retry after connectivity returns",
     "issueNumber": 496,
     "note": "Verified PR #501 merged, installed build 1.0.779, Project Done."
-  },
-  {
-    "timestamp": "2026-05-26T20:24:02-04:00",
-    "systemHealth": "partial",
-    "role": "Manager",
-    "result": "Coding pending",
-    "agentName": "Adnan",
-    "agentModel": "codex",
-    "subject": "Logging: Restrict inventory pickers by route and stock form",
-    "issueNumber": 502,
-    "note": "Waiting for issue #503 to reach Done.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-26T20:20:41-04:00",
