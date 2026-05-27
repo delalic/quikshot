@@ -23,13 +23,13 @@
   {
     "timestamp": "2026-05-27T08:23:19-04:00",
     "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Done",
-    "agentName": "Codex",
-    "agentModel": "GPT-5",
+    "role": "Installer",
+    "result": "Installed",
+    "agentName": "Manager",
+    "agentModel": "GPT-5 Codex",
     "subject": "Add fake-cloud test for JSON restore propagation",
     "issueNumber": 516,
-    "note": "Installed build 1.0.824 on Haris' iPhone 13 Pro and completed remote-lane closeout."
+    "note": "1.0.824"
   },
   {
     "timestamp": "2026-05-27T08:20:00-04:00",
