@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T22:07:10-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Nermin",
+    "agentModel": "GPT-5 high",
+    "subject": "Injection prep: Remove split-blocking copy from combined cards",
+    "issueNumber": 505,
+    "note": "Merged PR #511; primary-Mac closeout pending."
+  },
+  {
     "timestamp": "2026-05-26T22:05:34-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
