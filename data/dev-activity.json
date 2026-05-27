@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T22:05:34-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Selma",
+    "agentModel": "Codex (GPT-5), high reasoning",
+    "subject": "Logging: Restrict inventory pickers by route and stock form",
+    "issueNumber": 502,
+    "note": "Failed review: quick-log commit fallback can still use stale route-incompatible protocol inventory when the picker has no eligible selection."
+  },
+  {
     "timestamp": "2026-05-26T21:53:27-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
