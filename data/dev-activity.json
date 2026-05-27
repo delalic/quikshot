@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T22:56:09-04:00",
+    "systemHealth": "partial",
+    "role": "QA",
+    "result": "Blocked",
+    "agentName": "Lejla",
+    "agentModel": "Codex xhigh",
+    "subject": "Manual validation: Mark taken notification action",
+    "issueNumber": 482,
+    "note": "Private/grouped live notification UI proof blocked; issue left open."
+  },
+  {
     "timestamp": "2026-05-26T22:52:24-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
