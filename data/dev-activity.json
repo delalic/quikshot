@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T20:30:27-04:00",
+    "systemHealth": "partial",
+    "role": "Remote Coder",
+    "result": "Code complete",
+    "agentName": "Gunnhild",
+    "agentModel": "GPT-5 Codex",
+    "subject": "Settings: Restore clear Data & Privacy action affordances",
+    "issueNumber": 500,
+    "note": "Hosted compile passed; Mac screenshots deferred."
+  },
+  {
     "timestamp": "2026-05-26T20:24:24-04:00",
     "systemHealth": "ok",
     "role": "Manager",
