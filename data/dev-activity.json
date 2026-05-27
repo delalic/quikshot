@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-26T22:14:51-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Adnan",
+    "agentModel": "codex",
+    "subject": "Logging: Restrict inventory pickers by route and stock form",
+    "issueNumber": 502,
+    "note": "Review fix pass started after failed review.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-26T22:13:42-04:00",
     "systemHealth": "ok",
     "role": "Installer",
