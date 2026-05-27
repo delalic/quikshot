@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T23:26:36-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Nejra",
+    "agentModel": "gpt-5 codex",
+    "subject": "Protocol cards: show dynamic supply status instead of stale linked inventory",
+    "issueNumber": 504,
+    "note": "Verified PR #513 merged, build 1.0.801 installed, Project Done, and issue worktree removed."
+  },
+  {
     "timestamp": "2026-05-26T23:22:58-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -40,18 +51,6 @@
     "agentModel": "codex",
     "subject": "Internal TestFlight",
     "note": "1.0.798"
-  },
-  {
-    "timestamp": "2026-05-26T22:58:12-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Nejra",
-    "agentModel": "gpt-5 codex",
-    "subject": "Protocol cards: show dynamic supply status instead of stale linked inventory",
-    "issueNumber": 504,
-    "note": "Local coder started after #502 reached Done.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-26T22:56:09-04:00",
