@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T23:48:16-04:00",
+    "systemHealth": "ok",
+    "role": "QA",
+    "result": "Done",
+    "agentName": "Lejla",
+    "agentModel": "Codex xhigh",
+    "subject": "QA: Validate JSON restore sync with disposable data",
+    "issueNumber": 497,
+    "note": "#516 follow-up opened"
+  },
+  {
     "timestamp": "2026-05-26T23:37:15-04:00",
     "systemHealth": "ok",
     "role": "Manager",
