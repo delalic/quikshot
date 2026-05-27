@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-27T08:14:11-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Nermin",
+    "agentModel": "GPT-5 Codex",
+    "subject": "Add fake-cloud test for JSON restore propagation",
+    "issueNumber": 516,
+    "note": "PR #526 merged; primary-Mac closeout pending"
+  },
+  {
     "timestamp": "2026-05-27T08:12:07-04:00",
     "systemHealth": "ok",
     "role": "Process",
