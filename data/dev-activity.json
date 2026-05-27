@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-27T07:14:52-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Adnan",
+    "agentModel": "Codex GPT-5",
+    "subject": "Injection Prep: reassign stale combined prepared syringes after event rebuilds",
+    "issueNumber": 518,
+    "note": "Managed through code, review, merge, and build 1.0.820."
+  },
+  {
     "timestamp": "2026-05-27T07:12:04-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -19,18 +30,6 @@
     "agentModel": "Codex (GPT-5), reasoning xhigh",
     "subject": "Injection Prep: reassign stale combined prepared syringes after event rebuilds",
     "issueNumber": 518
-  },
-  {
-    "timestamp": "2026-05-27T06:37:55-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Adnan",
-    "agentModel": "Codex GPT-5",
-    "subject": "Injection Prep: reassign stale combined prepared syringes after event rebuilds",
-    "issueNumber": 518,
-    "note": "Local xhigh coder starting.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-27T03:32:40-04:00",
