@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-26T20:24:02-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Coding pending",
+    "agentName": "Adnan",
+    "agentModel": "codex",
+    "subject": "Logging: Restrict inventory pickers by route and stock form",
+    "issueNumber": 502,
+    "note": "Waiting for issue #503 to reach Done.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-26T20:22:45-04:00",
     "systemHealth": "ok",
     "role": "Manager",
@@ -53,18 +65,6 @@
     "subject": "iCloud sync: refresh active views and retry after connectivity returns",
     "issueNumber": 496,
     "note": "PR #501; commit f8086cc"
-  },
-  {
-    "timestamp": "2026-05-26T19:29:27-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Hana",
-    "agentModel": "codex",
-    "subject": "iCloud sync: refresh active views and retry after connectivity returns",
-    "issueNumber": 496,
-    "note": "Local Codex coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-26T19:26:42-04:00",
