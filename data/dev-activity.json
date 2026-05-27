@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-26T23:22:58-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Mirsad",
+    "agentModel": "Codex",
+    "subject": "Protocol cards: show dynamic supply status instead of stale linked inventory",
+    "issueNumber": 504
+  },
+  {
     "timestamp": "2026-05-26T23:11:02-04:00",
     "systemHealth": "ok",
     "role": "Coder",
