@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-26T21:23:19-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Sara",
+    "agentModel": "codex",
+    "subject": "Modal sheets: require explicit save/cancel and fill QuikShot background",
+    "issueNumber": 503,
+    "note": "1.0.785"
+  },
+  {
     "timestamp": "2026-05-26T21:20:00-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -75,18 +86,6 @@
     "subject": "Logging: Restrict inventory pickers by route and stock form",
     "issueNumber": 502,
     "note": "Waiting for issue #503 to reach Done.",
-    "transient": true
-  },
-  {
-    "timestamp": "2026-05-26T20:22:45-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Sara",
-    "agentModel": "codex",
-    "subject": "Modal sheets: require explicit save/cancel and fill QuikShot background",
-    "issueNumber": 503,
-    "note": "Local coder started.",
     "transient": true
   },
   {
