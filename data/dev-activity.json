@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-27T00:57:00-04:00",
+    "systemHealth": "ok",
+    "role": "Process",
+    "result": "Updated",
+    "agentName": "Codex",
+    "agentModel": "GPT-5",
+    "subject": "Combined injections: fix log preview, Today draw, and syringe copy",
+    "issueNumber": 514,
+    "note": "Uploaded internal TestFlight build 1.0.814; App Store Connect processing state VALID."
+  },
+  {
     "timestamp": "2026-05-27T00:27:41-04:00",
     "systemHealth": "ok",
     "role": "Manager",
