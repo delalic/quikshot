@@ -1,5 +1,27 @@
 [
   {
+    "timestamp": "2026-05-27T23:52:18-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Mirela",
+    "agentModel": "Codex",
+    "subject": "iCloud sync: prevent stale-device maintenance from overwriting user actions",
+    "issueNumber": 530,
+    "note": "Re-review passed; PR #531 merged; TestFlight 1.0.845 uploaded and App Store Connect processing is VALID."
+  },
+  {
+    "timestamp": "2026-05-27T23:52:18-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Mirela",
+    "agentModel": "Codex",
+    "subject": "iCloud sync: prevent stale-device maintenance from overwriting user actions",
+    "issueNumber": 530,
+    "note": "Closed issue #530 after review pass, PR merge, TestFlight delivery, build notes, Project fields, and cleanup."
+  },
+  {
     "timestamp": "2026-05-27T23:38:45-04:00",
     "systemHealth": "ok",
     "role": "Coder",
@@ -9,18 +31,6 @@
     "subject": "iCloud sync: prevent stale-device maintenance from overwriting user actions",
     "issueNumber": 530,
     "note": "Failed-review fix pass pushed to PR #531."
-  },
-  {
-    "timestamp": "2026-05-27T23:25:29-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Sanela",
-    "agentModel": "Codex",
-    "subject": "iCloud sync: prevent stale-device maintenance from overwriting user actions",
-    "issueNumber": 530,
-    "note": "Review-fix coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-27T23:23:23-04:00",
