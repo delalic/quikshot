@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-28T17:03:38-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Today: Match Later today dose-row typography with shared rows",
+    "issueNumber": 543,
+    "note": "Merged PR #545 after Mac-side dark/light Today row visual validation and local Xcode build."
+  },
+  {
     "timestamp": "2026-05-28T17:02:14-04:00",
     "systemHealth": "ok",
     "role": "Installer",
