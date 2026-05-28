@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-28T18:05:42-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Belma",
+    "agentModel": "Codex",
+    "subject": "iCloud sync: require fresh cloud state before replacing local data",
+    "issueNumber": 549,
+    "note": "PR #550 merged; TestFlight 1.0.874 VALID; Project Done."
+  },
+  {
     "timestamp": "2026-05-28T18:03:35-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -52,18 +63,6 @@
     "subject": "Today: Match Later today dose-row typography with shared rows",
     "issueNumber": 543,
     "note": "1.0.867"
-  },
-  {
-    "timestamp": "2026-05-28T17:04:42-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Belma",
-    "agentModel": "Codex",
-    "subject": "iCloud sync: require fresh cloud state before replacing local data",
-    "issueNumber": 549,
-    "note": "Local xhigh coder started for TestFlight-bound closeout.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-28T17:03:38-04:00",
