@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-28T08:38:48-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding pending",
+    "agentName": "Jasmina",
+    "agentModel": "Codex",
+    "subject": "Reconstitution editor: Add calculator-state visual fixture",
+    "issueNumber": 535,
+    "note": "Waiting for local lane to clear; delivery intentionally skipped for test-only issue.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-28T08:26:58-04:00",
     "systemHealth": "ok",
     "role": "Manager",
