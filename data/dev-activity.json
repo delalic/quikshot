@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-28T03:40:49-04:00",
+    "systemHealth": "partial",
+    "role": "QA",
+    "result": "Failed",
+    "agentName": "Heather",
+    "agentModel": "Codex",
+    "subject": "Nightly QA sweep",
+    "note": "1 iPad regression; live-device checks blocked"
+  },
+  {
     "timestamp": "2026-05-28T02:10:39-04:00",
     "systemHealth": "ok",
     "role": "PM",
