@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-27T23:25:29-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Sanela",
+    "agentModel": "Codex",
+    "subject": "iCloud sync: prevent stale-device maintenance from overwriting user actions",
+    "issueNumber": 530,
+    "note": "Review-fix coder started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-27T23:23:23-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -20,18 +32,6 @@
     "subject": "iCloud sync: prevent stale-device maintenance from overwriting user actions",
     "issueNumber": 530,
     "note": "PR #531 opened with validation passing; issue moved to In review."
-  },
-  {
-    "timestamp": "2026-05-27T22:46:29-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Sanela",
-    "agentModel": "Codex",
-    "subject": "iCloud sync: prevent stale-device maintenance from overwriting user actions",
-    "issueNumber": 530,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-27T21:29:08-04:00",
