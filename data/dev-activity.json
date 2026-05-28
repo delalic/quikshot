@@ -1,15 +1,14 @@
 [
   {
-    "timestamp": "2026-05-28T08:38:48-04:00",
+    "timestamp": "2026-05-28T09:25:00-04:00",
     "systemHealth": "ok",
     "role": "Manager",
-    "result": "Coding pending",
+    "result": "Blocked",
     "agentName": "Jasmina",
     "agentModel": "Codex",
     "subject": "Reconstitution editor: Add calculator-state visual fixture",
     "issueNumber": 535,
-    "note": "Waiting for local lane to clear; delivery intentionally skipped for test-only issue.",
-    "transient": true
+    "note": "Did not start: local lane remains occupied by active issue #537 simulator run. Delivery intentionally skipped for this test-only issue."
   },
   {
     "timestamp": "2026-05-28T08:26:58-04:00",
