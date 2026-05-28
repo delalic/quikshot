@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-28T10:57:37-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Emir",
+    "agentModel": "Codex",
+    "subject": "Compound library: Remove empty Other category filter",
+    "issueNumber": 537,
+    "note": "PR #539 merged; TestFlight build 1.0.858 uploaded and VALID; visual QA screenshots saved under screenshots/issue-537."
+  },
+  {
     "timestamp": "2026-05-28T10:23:03-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -42,18 +53,6 @@
     "subject": "Today: Add site-conflict visual fixture",
     "issueNumber": 534,
     "note": "Merged; delivery skipped as test-only."
-  },
-  {
-    "timestamp": "2026-05-28T08:21:16-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Emir",
-    "agentModel": "Codex",
-    "subject": "Compound library: Remove empty Other category filter",
-    "issueNumber": 537,
-    "note": "Local Gemini coder started via Antigravity.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-28T08:21:03-04:00",
