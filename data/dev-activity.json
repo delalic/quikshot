@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T17:26:32-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Nermin",
+    "agentModel": "Codex",
+    "subject": "Injection prep: Reassign prepared syringes after generated schedule repairs",
+    "issueNumber": 561,
+    "note": "Failed re-review of PR #564: SwiftDataStore single prepared-syringe cloud relink still lacks profile/draw mismatch guards."
+  },
+  {
     "timestamp": "2026-05-29T17:12:54-04:00",
     "systemHealth": "ok",
     "role": "Manager",
