@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T13:45:40-04:00",
+    "systemHealth": "ok",
+    "role": "QA",
+    "result": "Passed",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "QA: Run deep iCloud sync data-integrity sweep",
+    "issueNumber": 555,
+    "note": "mac2 simulator/fake-cloud iCloud data-integrity sweep passed at 5933ea1; fixtures, full unit tests, selected UI tests, and generated-fixture smoke captured under .codex-runs/issue\u2026"
+  },
+  {
     "timestamp": "2026-05-29T11:52:27-04:00",
     "systemHealth": "ok",
     "role": "Manager",
