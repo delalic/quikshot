@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-29T09:58:47-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Naida",
+    "agentModel": "Codex",
+    "subject": "Scheduling/iCloud: Remove stale planned events after protocol schedule edits",
+    "issueNumber": 552,
+    "note": "Failed-review fix pass started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-29T09:56:41-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -30,18 +42,6 @@
     "subject": "Today: Show selected injection site instead of stale suggestion",
     "issueNumber": 551,
     "note": "1.0.880"
-  },
-  {
-    "timestamp": "2026-05-29T09:21:12-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Naida",
-    "agentModel": "Codex",
-    "subject": "Scheduling/iCloud: Remove stale planned events after protocol schedule edits",
-    "issueNumber": 552,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-29T09:02:01-04:00",
