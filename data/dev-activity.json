@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-29T09:21:12-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Naida",
+    "agentModel": "Codex",
+    "subject": "Scheduling/iCloud: Remove stale planned events after protocol schedule edits",
+    "issueNumber": 552,
+    "note": "Local coder started.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-29T09:02:01-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
