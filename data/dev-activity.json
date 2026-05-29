@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T19:12:55-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Compound Library: Stop showing legacy compound categories",
+    "issueNumber": 567,
+    "note": "Merged PR #569 on satellite Mac; primary-Mac closeout pending."
+  },
+  {
     "timestamp": "2026-05-29T19:06:31-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
