@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T10:32:44-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Naida",
+    "agentModel": "Codex",
+    "subject": "Scheduling/iCloud: Remove stale planned events after protocol schedule edits",
+    "issueNumber": 552,
+    "note": "PR #556 merged; TestFlight 1.0.888 delivered; follow-up #557 filed."
+  },
+  {
     "timestamp": "2026-05-29T10:27:05-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -20,18 +31,6 @@
     "subject": "Scheduling/iCloud: Remove stale planned events after protocol schedule edits",
     "issueNumber": 552,
     "note": "Fix-pass for PR #556: removed obsolete automatic future schedule rows during refresh; commit 438211a."
-  },
-  {
-    "timestamp": "2026-05-29T09:58:47-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Naida",
-    "agentModel": "Codex",
-    "subject": "Scheduling/iCloud: Remove stale planned events after protocol schedule edits",
-    "issueNumber": 552,
-    "note": "Failed-review fix pass started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-29T09:56:41-04:00",
