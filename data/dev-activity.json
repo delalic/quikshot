@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T19:29:08-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Damir",
+    "agentModel": "Codex",
+    "subject": "iCloud: Protect user-edited seeded records from fresh-device defaults",
+    "issueNumber": 560,
+    "note": "Managed #560 through coding, review, PR #568 merge, and TestFlight build 1.0.924 closeout."
+  },
+  {
     "timestamp": "2026-05-29T19:22:42-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -53,18 +64,6 @@
     "subject": "iCloud: Protect user-edited seeded records from fresh-device defaults",
     "issueNumber": 560,
     "note": "Commit 13142fc pushed to origin/issue-560; PR #568 opened for review; validation passed with focused fake-iCloud XCTest suite and generic iOS build."
-  },
-  {
-    "timestamp": "2026-05-29T18:15:45-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Damir",
-    "agentModel": "Codex",
-    "subject": "iCloud: Protect user-edited seeded records from fresh-device defaults",
-    "issueNumber": 560,
-    "note": "Local xhigh Codex coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-29T18:06:46-04:00",
