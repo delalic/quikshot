@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T09:02:01-04:00",
+    "systemHealth": "ok",
+    "role": "Remote Coder",
+    "result": "Code complete",
+    "agentName": "Leif",
+    "agentModel": "Codex",
+    "subject": "Today: Show selected injection site instead of stale suggestion",
+    "issueNumber": 551,
+    "note": "Implemented issue #551 and moved it to Build for Integrator pickup."
+  },
+  {
     "timestamp": "2026-05-28T19:40:54-04:00",
     "systemHealth": "ok",
     "role": "Process",
