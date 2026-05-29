@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T17:12:54-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Manager",
+    "agentModel": "Codex",
+    "subject": "Plan: Show current schedule and pooled supply on protocol cards",
+    "issueNumber": 562,
+    "note": "TestFlight 1.0.899"
+  },
+  {
     "timestamp": "2026-05-29T17:09:02-04:00",
     "systemHealth": "ok",
     "role": "Coder",
