@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-29T19:02:39-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Mirza",
+    "agentModel": "Codex",
+    "subject": "Calendar: Add Upcoming doses list",
+    "issueNumber": 566,
+    "note": "Local Codex coder started after issue #560 reached Done.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-29T18:44:02-04:00",
     "systemHealth": "ok",
     "role": "Coder",
