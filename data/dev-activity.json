@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T18:06:46-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Azra",
+    "agentModel": "Codex",
+    "subject": "Injection prep: Reassign prepared syringes after generated schedule repairs",
+    "issueNumber": 561,
+    "note": "Managed local code/review loop through PR #564, TestFlight 1.0.920, and Done closeout; no follow-ups needed."
+  },
+  {
     "timestamp": "2026-05-29T18:02:32-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -97,18 +108,6 @@
     "subject": "Injection prep: Reassign prepared syringes after generated schedule repairs",
     "issueNumber": 561,
     "note": "Commit 9f9b5c5 pushed to origin/issue-561; PR #564 opened and issue moved to In review."
-  },
-  {
-    "timestamp": "2026-05-29T15:29:59-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Azra",
-    "agentModel": "Codex",
-    "subject": "Injection prep: Reassign prepared syringes after generated schedule repairs",
-    "issueNumber": 561,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-29T13:45:40-04:00",
