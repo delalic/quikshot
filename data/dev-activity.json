@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T10:27:05-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Scheduling/iCloud: Remove stale planned events after protocol schedule edits",
+    "issueNumber": 552,
+    "note": "Reviewed fix-pass 438211a; merged PR #556; delivered internal TestFlight build 1.0.888."
+  },
+  {
     "timestamp": "2026-05-29T10:11:20-04:00",
     "systemHealth": "ok",
     "role": "Coder",
