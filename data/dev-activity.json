@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T11:52:27-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "iCloud: Make automatic stale schedule cleanup durable across cloud refreshes",
+    "issueNumber": 557,
+    "note": "PR #559 merged; TestFlight 1.0.898 delivered; no follow-up filed."
+  },
+  {
     "timestamp": "2026-05-29T11:47:44-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -74,18 +85,6 @@
     "subject": "QA tooling: Add iCloud sync sweep runbook and generated fixtures",
     "issueNumber": 554,
     "note": "PR #558 opened with generated iCloud QA fixtures and sweep runbook."
-  },
-  {
-    "timestamp": "2026-05-29T10:57:03-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Selma",
-    "agentModel": "Codex",
-    "subject": "iCloud: Make automatic stale schedule cleanup durable across cloud refreshes",
-    "issueNumber": 557,
-    "note": "Local coder Kant started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-29T10:32:44-04:00",
