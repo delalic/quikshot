@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T09:47:15-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Kenan",
+    "agentModel": "Codex",
+    "subject": "Scheduling/iCloud: Remove stale planned events after protocol schedule edits",
+    "issueNumber": 552,
+    "note": "Implemented tombstones for cleared generated planned events and same-slot stale schedule repair; PR #556 opened."
+  },
+  {
     "timestamp": "2026-05-29T09:27:12-04:00",
     "systemHealth": "ok",
     "role": "Integrator",
