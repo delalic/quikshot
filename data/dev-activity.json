@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T16:37:59-04:00",
+    "systemHealth": "ok",
+    "role": "Remote Coder",
+    "result": "Code complete",
+    "agentName": "Arne",
+    "agentModel": "Codex",
+    "subject": "Plan: Show current schedule and pooled supply on protocol cards",
+    "issueNumber": 562,
+    "note": "Implemented issue #562 and moved it to Build for Integrator pickup."
+  },
+  {
     "timestamp": "2026-05-29T16:20:18-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
