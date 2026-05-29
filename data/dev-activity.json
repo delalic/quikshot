@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T17:09:02-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Edina",
+    "agentModel": "Codex",
+    "subject": "Injection prep: Reassign prepared syringes after generated schedule repairs",
+    "issueNumber": 561,
+    "note": "Failed-review sync durability fix pushed to origin/issue-561 at 0d1a8bc; PR #564 returned to In review."
+  },
+  {
     "timestamp": "2026-05-29T16:47:55-04:00",
     "systemHealth": "ok",
     "role": "Integrator",
