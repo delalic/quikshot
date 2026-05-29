@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T11:13:12-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Emir",
+    "agentModel": "Codex",
+    "subject": "QA tooling: Add iCloud sync sweep runbook and generated fixtures",
+    "issueNumber": 554,
+    "note": "Review failed: sync setup conflict, recurrence coverage, fixture artifact freshness."
+  },
+  {
     "timestamp": "2026-05-29T11:05:13-04:00",
     "systemHealth": "ok",
     "role": "Coder",
