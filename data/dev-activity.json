@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T16:20:18-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Nermin",
+    "agentModel": "Codex",
+    "subject": "Injection prep: Reassign prepared syringes after generated schedule repairs",
+    "issueNumber": 561,
+    "note": "iCloud merge durability gap"
+  },
+  {
     "timestamp": "2026-05-29T16:07:14-04:00",
     "systemHealth": "ok",
     "role": "Coder",
