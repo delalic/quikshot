@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-29T10:47:22-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Coding pending",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "iCloud: Make automatic stale schedule cleanup durable across cloud refreshes",
+    "issueNumber": 557,
+    "note": "Waiting for local lane to clear (#554 in progress).",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-29T10:32:44-04:00",
     "systemHealth": "ok",
     "role": "Manager",
