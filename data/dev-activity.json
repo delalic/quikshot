@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-29T09:56:41-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Scheduling/iCloud: Remove stale planned events after protocol schedule edits",
+    "issueNumber": 552
+  },
+  {
     "timestamp": "2026-05-29T09:47:15-04:00",
     "systemHealth": "ok",
     "role": "Coder",
