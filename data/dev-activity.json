@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T20:17:22-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Miralem",
+    "agentModel": "Codex",
+    "subject": "Calendar: Add Upcoming doses list",
+    "issueNumber": 566,
+    "note": "Implemented Calendar-owned Upcoming destination, focused unit/UI validation passed, PR #570 opened for required review."
+  },
+  {
     "timestamp": "2026-05-29T20:01:40-04:00",
     "systemHealth": "ok",
     "role": "Manager",
