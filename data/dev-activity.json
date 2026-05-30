@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-30T09:18:57-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Done",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Compound library: Remove punctuation-only BPC-157 alias",
+    "issueNumber": 575,
+    "note": "Merged PR #578 and delivered TestFlight build 1.0.941."
+  },
+  {
     "timestamp": "2026-05-30T08:57:24-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
