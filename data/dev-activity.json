@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-30T13:39:03-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Nedim",
+    "agentModel": "Codex",
+    "subject": "Protocol names: show protocol display name on protocol-backed dose surfaces",
+    "issueNumber": 580
+  },
+  {
     "timestamp": "2026-05-30T13:09:47-04:00",
     "systemHealth": "ok",
     "role": "Manager",
