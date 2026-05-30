@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T20:38:42-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Mirza",
+    "agentModel": "Codex",
+    "subject": "Calendar: Add Upcoming doses list",
+    "issueNumber": 566,
+    "note": "Waited for issue #560 to reach Done, routed #566 to Codex coding and Claude review, verified PR #570 merge, TestFlight build 1.0.927, Project Done, and local cleanup."
+  },
+  {
     "timestamp": "2026-05-29T20:35:22-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -85,18 +96,6 @@
     "subject": "Compound Library: Stop showing legacy compound categories",
     "issueNumber": 567,
     "note": "Implemented issue #567 and moved it to Build for Integrator pickup."
-  },
-  {
-    "timestamp": "2026-05-29T19:02:39-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Mirza",
-    "agentModel": "Codex",
-    "subject": "Calendar: Add Upcoming doses list",
-    "issueNumber": 566,
-    "note": "Local Codex coder started after issue #560 reached Done.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-29T18:44:02-04:00",
