@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T22:21:42-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Amina",
+    "agentModel": "Codex",
+    "subject": "Calendar: Fix Upcoming doses card summary and icon",
+    "issueNumber": 572,
+    "note": "Managed local high-reasoning coding and review through Done; TestFlight build 1.0.940 delivered."
+  },
+  {
     "timestamp": "2026-05-29T22:19:26-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
