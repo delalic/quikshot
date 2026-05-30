@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T21:08:16-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Amila",
+    "agentModel": "Codex",
+    "subject": "Inventory: Group identical prepared syringe rows",
+    "issueNumber": 563,
+    "note": "Failed PR #571 review: grouped-detail member archive leaves stale sheet state after repository reload."
+  },
+  {
     "timestamp": "2026-05-29T20:58:24-04:00",
     "systemHealth": "ok",
     "role": "Coder",
