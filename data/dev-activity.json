@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-29T22:19:26-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Calendar: Fix Upcoming doses card summary and icon",
+    "issueNumber": 572,
+    "note": "Reviewed, merged, TestFlight 1.0.940"
+  },
+  {
     "timestamp": "2026-05-29T22:04:19-04:00",
     "systemHealth": "ok",
     "role": "Coder",
