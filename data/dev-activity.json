@@ -10,18 +10,6 @@
     "issueNumber": 580
   },
   {
-    "timestamp": "2026-05-30T13:09:47-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Codex issue manager",
-    "agentModel": "Codex",
-    "subject": "Protocol names: show protocol display name on protocol-backed dose surfaces",
-    "issueNumber": 580,
-    "note": "Local Codex coder started; Claude review requested after coding.",
-    "transient": true
-  },
-  {
     "timestamp": "2026-05-30T11:04:53-04:00",
     "systemHealth": "ok",
     "role": "Manager",
