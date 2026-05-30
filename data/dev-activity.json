@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-30T13:55:45-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Lutvija",
+    "agentModel": "Opus",
+    "subject": "Protocol names: show protocol display name on protocol-backed dose surfaces",
+    "issueNumber": 580,
+    "note": "Two QuikShotLoggingRepositoryTests fail after PR #583 because combined-prep assertions still expect compound names; new protocol-display-name behavior is correct per issue. Moved\u2026"
+  },
+  {
     "timestamp": "2026-05-30T13:39:03-04:00",
     "systemHealth": "ok",
     "role": "Coder",
