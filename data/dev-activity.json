@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-30T13:56:59-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Codex issue manager",
+    "agentModel": "Codex",
+    "subject": "Protocol names: show protocol display name on protocol-backed dose surfaces",
+    "issueNumber": 580,
+    "note": "Failed-review fix pass started on existing PR #583.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-30T13:55:45-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
