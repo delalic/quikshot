@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-30T14:17:30-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Codex issue manager",
+    "agentModel": "Codex",
+    "subject": "Protocol names: show protocol display name on protocol-backed dose surfaces",
+    "issueNumber": 580,
+    "note": "Managed Codex implementation, Claude review/fix loop, PR #583 merge, TestFlight build 1.0.965 delivery, Project Done closeout, and local branch/worktree cleanup."
+  },
+  {
     "timestamp": "2026-05-30T14:12:55-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
