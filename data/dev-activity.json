@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-31T16:26:58-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Dino",
+    "agentModel": "Codex",
+    "subject": "Bug: Preserve wrapping for long protocol schedule summaries with daypart icons",
+    "issueNumber": 603,
+    "note": "Managed coding, independent review, TestFlight delivery, project closeout, and cleanup for build 1.0.1015."
+  },
+  {
     "timestamp": "2026-05-31T16:25:03-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
