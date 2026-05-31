@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-05-31T08:39:13-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Coding pending",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "UI: Color daypart markers and add schedule-summary icons",
+    "issueNumber": 597,
+    "note": "Waiting for local lane to clear.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-05-31T03:55:24-04:00",
     "systemHealth": "partial",
     "role": "QA",
