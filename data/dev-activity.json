@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-31T11:15:34-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Merged",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "UI: Color daypart markers and add schedule-summary icons",
+    "issueNumber": 597,
+    "note": "TestFlight 1.0.1000"
+  },
+  {
     "timestamp": "2026-05-31T11:00:55-04:00",
     "systemHealth": "ok",
     "role": "Manager",
@@ -9,18 +20,6 @@
     "subject": "Calendar: Add responsive navigation feedback and speed up Upcoming/History",
     "issueNumber": 598,
     "note": "Local coder started after issue #597 reached Done.",
-    "transient": true
-  },
-  {
-    "timestamp": "2026-05-31T09:40:52-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Selma",
-    "agentModel": "Codex",
-    "subject": "UI: Color daypart markers and add schedule-summary icons",
-    "issueNumber": 597,
-    "note": "Local coder started.",
     "transient": true
   },
   {
