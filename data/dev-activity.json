@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-31T12:18:09-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Kenan",
+    "agentModel": "Codex",
+    "subject": "Calendar: Add responsive navigation feedback and speed up Upcoming/History",
+    "issueNumber": 598,
+    "note": "PR #602 merged; TestFlight 1.0.1006 valid; Project Done with BuildNumber/Completed set."
+  },
+  {
     "timestamp": "2026-05-31T12:14:40-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -53,18 +64,6 @@
     "subject": "UI: Color daypart markers and add schedule-summary icons",
     "issueNumber": 597,
     "note": "TestFlight 1.0.1000"
-  },
-  {
-    "timestamp": "2026-05-31T11:00:55-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Kenan",
-    "agentModel": "Codex",
-    "subject": "Calendar: Add responsive navigation feedback and speed up Upcoming/History",
-    "issueNumber": 598,
-    "note": "Local coder started after issue #597 reached Done.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-31T09:06:54-04:00",
