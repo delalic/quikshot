@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-30T22:48:13-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Kenan",
+    "agentModel": "Codex",
+    "subject": "Notifications: Complete notification action handlers on the main actor",
+    "issueNumber": 574,
+    "note": "PR #589 merged; TestFlight build 1.0.986 uploaded; closeout repaired after reviewer stall."
+  },
+  {
     "timestamp": "2026-05-30T22:46:07-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -8,7 +19,7 @@
     "agentModel": "Codex",
     "subject": "Notifications: Complete notification action handlers on the main actor",
     "issueNumber": 574,
-    "note": "Passed review, merged PR #589, and delivered internal TestFlight build 1.0.985."
+    "note": "Passed review and merged PR #589; manager delivered internal TestFlight build 1.0.986."
   },
   {
     "timestamp": "2026-05-30T22:39:33-04:00",
