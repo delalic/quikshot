@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-31T03:55:24-04:00",
+    "systemHealth": "partial",
+    "role": "QA",
+    "result": "Failed",
+    "agentName": "Heather",
+    "agentModel": "Codex",
+    "subject": "Nightly QA sweep",
+    "note": "1 regression (#595); #587 left Ready; simulator-only limits"
+  },
+  {
     "timestamp": "2026-05-31T02:09:26-04:00",
     "systemHealth": "partial",
     "role": "PM",
