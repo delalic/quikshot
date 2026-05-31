@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-31T17:01:19-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Merged",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Archive actions: Explain reversibility and side effects",
+    "issueNumber": 600,
+    "note": "Merged PR #607; Manager primary-Mac closeout pending."
+  },
+  {
     "timestamp": "2026-05-31T16:44:48-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
