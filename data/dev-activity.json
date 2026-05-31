@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-30T23:40:44-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "Today: Add daypart time marker to scheduled dose cards",
+    "issueNumber": 592,
+    "note": "Merged; TestFlight 1.0.991"
+  },
+  {
     "timestamp": "2026-05-30T23:29:17-04:00",
     "systemHealth": "ok",
     "role": "Coder",
