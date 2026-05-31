@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-30T23:14:35-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Kevin",
+    "agentModel": "Codex",
+    "subject": "Calendar: Use requested clockwise clock icon for Upcoming doses",
+    "issueNumber": 588,
+    "note": "Merged PR #590, delivered TestFlight build 1.0.988, set Project closeout fields, and cleaned the local worktree."
+  },
+  {
     "timestamp": "2026-05-30T23:09:08-04:00",
     "systemHealth": "ok",
     "role": "Manager",
