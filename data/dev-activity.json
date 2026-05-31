@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-31T15:49:08-04:00",
+    "systemHealth": "ok",
+    "role": "Integrator",
+    "result": "Done",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Levels: Move estimated active amount into card header",
+    "issueNumber": 604,
+    "note": "Merged PR #605, delivered internal TestFlight build 1.0.1007, and completed primary-Mac remote-lane closeout."
+  },
+  {
     "timestamp": "2026-05-31T14:49:56-04:00",
     "systemHealth": "ok",
     "role": "Remote Coder",
