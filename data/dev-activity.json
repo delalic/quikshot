@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-31T09:06:54-04:00",
+    "systemHealth": "ok",
+    "role": "QA",
+    "result": "Passed",
+    "agentName": "Heather",
+    "agentModel": "Codex",
+    "subject": "QA: Smoke quick-log prepared syringe detach flow",
+    "issueNumber": 587,
+    "note": "Simulator PASS; #587 closed"
+  },
+  {
     "timestamp": "2026-05-31T08:47:57-04:00",
     "systemHealth": "partial",
     "role": "Manager",
