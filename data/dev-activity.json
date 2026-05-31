@@ -33,18 +33,6 @@
     "note": "Implemented issue #604 and prepared Build handoff for Integrator pickup."
   },
   {
-    "timestamp": "2026-05-31T14:39:21-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Dino",
-    "agentModel": "Codex",
-    "subject": "Bug: Preserve wrapping for long protocol schedule summaries with daypart icons",
-    "issueNumber": 603,
-    "note": "Local coder started.",
-    "transient": true
-  },
-  {
     "timestamp": "2026-05-31T12:18:09-04:00",
     "systemHealth": "ok",
     "role": "Manager",
