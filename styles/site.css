@@ -32,6 +32,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .site-nav-inner {
   display: flex; align-items: center; justify-content: space-between;
   padding: 14px 0;
+  gap: 18px;
 }
 .site-brand {
   display: flex; align-items: center; gap: 12px;
@@ -183,6 +184,18 @@ section { padding: 64px 0; }
 /* ───────── Responsive ───────── */
 @media (max-width: 720px) {
   .page-header h1 { font-size: 38px; }
-  .site-links { display: none; }
+  .site-nav-inner {
+    flex-wrap: wrap;
+    gap: 10px 0;
+  }
+  .site-links {
+    order: 3;
+    flex: 0 0 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 13px;
+  }
+  .nav-cta { display: none; }
   section { padding: 48px 0; }
 }

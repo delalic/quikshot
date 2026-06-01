@@ -59,27 +59,23 @@
   }
   .device {
     position: relative; z-index: 1;
-    width: 300px; height: 612px;
+    width: 320px;
+    max-width: min(100%, 340px);
     background: var(--ink);
     border-radius: 56px;
-    padding: 14px;
+    padding: 10px;
     box-shadow:
       0 40px 80px rgba(11,16,32,.18),
       0 8px 24px rgba(11,16,32,.10),
       inset 0 0 0 2px #2A3148;
   }
-  .device .screen {
-    width: 100%; height: 100%;
-    background: var(--bg);
-    border-radius: 44px;
-    padding: 44px 14px 14px;
-    overflow: hidden;
-    position: relative;
+  .device-screenshot {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 46px;
   }
-  .device .notch {
-    position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
-    width: 96px; height: 28px; background: var(--ink); border-radius: 16px;
-  }
+  .device picture { display: block; }
   .today-card {
     background: var(--bg-elevated);
     border-radius: 20px;
@@ -325,6 +321,7 @@
     .hero { grid-template-columns: 1fr; gap: 48px; padding: 56px 0 64px; }
     .hero h1 { font-size: 44px; }
     .hero .device-stage { order: -1; }
+    .device { width: min(300px, 82vw); }
     .strip-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .feature-grid { grid-template-columns: 1fr; }
     .lane-grid { grid-template-columns: repeat(2, 1fr); }
@@ -346,6 +343,7 @@
     </a>
     <nav class="site-links">
       <a href="#features">Features</a>
+      <a href="journey.html">Journey</a>
       <a href="privacy.html">Privacy</a>
       <a href="release-notes.html">Release notes</a>
     </nav>
@@ -365,7 +363,7 @@
           <svg class="app-store-mark" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.05 12.6c-.03-2.5 2.05-3.7 2.15-3.76-1.18-1.72-3-1.96-3.63-1.98-1.53-.16-3.02.92-3.8.92-.8 0-2.01-.9-3.31-.88-1.7.03-3.28 1-4.16 2.54-1.8 3.12-.46 7.7 1.27 10.22.86 1.23 1.86 2.6 3.17 2.55 1.28-.05 1.76-.82 3.3-.82 1.53 0 1.96.82 3.31.79 1.38-.02 2.24-1.24 3.07-2.49.99-1.41 1.39-2.8 1.41-2.87-.03-.01-2.75-1.05-2.78-4.22ZM14.56 5.23c.7-.88 1.18-2.07 1.04-3.27-1.02.04-2.3.7-3.03 1.55-.65.75-1.24 1.99-1.08 3.14 1.15.09 2.34-.57 3.07-1.42Z"/></svg>
           Download on the App Store
         </a>
-        <a href="privacy.html" class="btn btn-ghost btn-lg">Read privacy policy</a>
+        <a href="journey.html" class="btn btn-ghost btn-lg">See the user journey</a>
       </div>
       <div class="meta">
         Free<span class="dot"></span>iPhone<span class="dot"></span>iOS 17+<span class="dot"></span>No account required
@@ -374,50 +372,10 @@
 
     <div class="device-stage">
       <div class="device">
-        <div class="screen">
-          <div class="notch"></div>
-
-          <div class="today-card">
-            <div class="eyebrow">Next dose</div>
-            <div class="num-row">
-              <span class="num-big">0.25</span>
-              <span class="unit">mg</span>
-            </div>
-            <div class="compound">Semaglutide</div>
-            <div class="due">Due today at 8:00 PM.</div>
-            <div class="actions">
-              <button class="log">Log dose</button>
-              <button class="skip">Skip</button>
-            </div>
-          </div>
-
-          <div class="dose-row">
-            <span class="lane" style="background: var(--lane-moss)"></span>
-            <div class="body">
-              <div class="title">BPC-157 250 µg</div>
-              <div class="sub">Logged 8:04 AM</div>
-            </div>
-            <span class="badge badge-taken">Taken</span>
-          </div>
-
-          <div class="dose-row">
-            <span class="lane" style="background: var(--lane-ochre)"></span>
-            <div class="body">
-              <div class="title">Metformin 500 mg</div>
-              <div class="sub">Skipped today</div>
-            </div>
-            <span class="badge badge-skip">Skip</span>
-          </div>
-
-          <div class="dose-row">
-            <span class="lane" style="background: var(--lane-teal)"></span>
-            <div class="body">
-              <div class="title">Tirzepatide 5 mg</div>
-              <div class="sub">Due Sat at 9:00 AM</div>
-            </div>
-            <span class="badge badge-due">Due</span>
-          </div>
-        </div>
+        <picture>
+          <source srcset="assets/screenshots/today-dashboard-dark-iphone-17-pro-max.png" media="(prefers-color-scheme: dark)">
+          <img class="device-screenshot" src="assets/screenshots/today-dashboard-light-iphone-17-pro-max.png" width="1320" height="2868" alt="QuikShot Today view showing upcoming doses, supply context, and logged history">
+        </picture>
       </div>
     </div>
   </section>
@@ -571,6 +529,7 @@
       <span>Quik<span class="brand-accent">Shot</span></span>
     </div>
     <div class="foot-links">
+      <a href="journey.html">Journey</a>
       <a href="release-notes.html">Release notes</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
