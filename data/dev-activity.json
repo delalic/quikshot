@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-06-01T17:02:23-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Emina",
+    "agentModel": "Codex",
+    "subject": "First launch: restore welcome and orientation empty state",
+    "issueNumber": 621,
+    "note": "Local coder started for the primary Mac lane.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-06-01T09:23:31-04:00",
     "systemHealth": "ok",
     "role": "Manager",
