@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-01T19:11:27-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Nadia",
+    "agentModel": "Codex",
+    "subject": "First launch: restore original brand-dot and compact orientation card treatment",
+    "issueNumber": 623,
+    "note": "Implemented brand-dot first-launch polish, compact orientation card, privacy-card placement, docs updates, focused onboarding validation, and preserved light/dark screenshots."
+  },
+  {
     "timestamp": "2026-06-01T17:41:01-04:00",
     "systemHealth": "ok",
     "role": "Manager",
