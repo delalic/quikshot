@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>QuikShot — Track peptides, GLP-1s, and every shot in between.</title>
-<meta name="description" content="QuikShot is a private, Apple-native protocol tracker for peptides, GLP-1s, and custom compounds. Calm, precise, and built for the way you actually run your stack.">
+<meta name="description" content="QuikShot is a private iPhone tracker for peptides, GLP-1s, oral routines, supplies, reminders, and dose history. Local-first, calm, and built for real routines.">
 <link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
 <link rel="stylesheet" href="styles/tokens.css">
 <link rel="stylesheet" href="styles/site.css">
@@ -16,6 +16,12 @@
     grid-template-columns: 1.15fr 1fr;
     gap: 64px;
     align-items: center;
+  }
+  .hero-kicker {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--mineral);
+    margin: 0 0 14px;
   }
   .hero h1 {
     font-size: 68px;
@@ -340,11 +346,10 @@
     </a>
     <nav class="site-links">
       <a href="#features">Features</a>
-      <a href="journey.html">Journey</a>
       <a href="privacy.html">Privacy</a>
       <a href="release-notes.html">Release notes</a>
     </nav>
-    <a href="#download" class="nav-cta">Download</a>
+    <a href="https://apps.apple.com/us/app/quikshot/id6765561668" class="nav-cta">Download</a>
   </div>
 </header>
 
@@ -352,14 +357,18 @@
 <div class="container">
   <section class="hero">
     <div>
+      <p class="hero-kicker">Lose the spreadsheet.</p>
       <h1>Track peptides, GLP-1s, and every shot in between<span class="accent-dot">.</span></h1>
-      <p class="lede">A private, Apple-native protocol tracker. Calm, precise, and built for the way you actually run your stack.</p>
+      <p class="lede">Keep schedules, dose history, site rotation, and vial math in one private iPhone app.</p>
       <div class="cta-row">
-        <a href="#download" class="btn btn-primary btn-lg">Download for iPhone</a>
-        <a href="journey.html" class="btn btn-ghost btn-lg">See the user journey</a>
+        <a href="https://apps.apple.com/us/app/quikshot/id6765561668" class="btn btn-primary btn-lg" aria-label="Download QuikShot on the App Store">
+          <svg class="app-store-mark" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.05 12.6c-.03-2.5 2.05-3.7 2.15-3.76-1.18-1.72-3-1.96-3.63-1.98-1.53-.16-3.02.92-3.8.92-.8 0-2.01-.9-3.31-.88-1.7.03-3.28 1-4.16 2.54-1.8 3.12-.46 7.7 1.27 10.22.86 1.23 1.86 2.6 3.17 2.55 1.28-.05 1.76-.82 3.3-.82 1.53 0 1.96.82 3.31.79 1.38-.02 2.24-1.24 3.07-2.49.99-1.41 1.39-2.8 1.41-2.87-.03-.01-2.75-1.05-2.78-4.22ZM14.56 5.23c.7-.88 1.18-2.07 1.04-3.27-1.02.04-2.3.7-3.03 1.55-.65.75-1.24 1.99-1.08 3.14 1.15.09 2.34-.57 3.07-1.42Z"/></svg>
+          Download on the App Store
+        </a>
+        <a href="privacy.html" class="btn btn-ghost btn-lg">Read privacy policy</a>
       </div>
       <div class="meta">
-        Free<span class="dot"></span>iPhone<span class="dot"></span>iOS 16+<span class="dot"></span>No account required
+        Free<span class="dot"></span>iPhone<span class="dot"></span>iOS 17+<span class="dot"></span>No account required
       </div>
     </div>
 
@@ -417,10 +426,10 @@
 <!-- ───────── Stats strip ───────── -->
 <section class="strip">
   <div class="container strip-grid">
-    <div class="stat"><div class="num-big">100%</div>Local-first storage</div>
     <div class="stat"><div class="num-big">0</div>Required accounts</div>
     <div class="stat"><div class="num-big">0</div>Ads, ever</div>
-    <div class="stat"><div class="num-big">iOS 16+</div>iPhone-first</div>
+    <div class="stat"><div class="num-big">iCloud</div>Optional sync</div>
+    <div class="stat"><div class="num-big">iOS 17+</div>iPhone-first</div>
   </div>
 </section>
 
@@ -428,18 +437,18 @@
 <section class="features" id="features">
   <div class="container">
     <h2 class="section-title">Built for protocol clarity, not gamification<span class="accent-dot">.</span></h2>
-    <p class="section-lede">QuikShot is the spreadsheet you wish you'd kept — finally given a calm, Apple-native home. Every screen answers a question you actually have.</p>
+    <p class="section-lede">QuikShot turns scattered schedules, dose history, vial math, and site rotation into a simple daily view.</p>
 
     <div class="feature-grid">
       <div class="f-card">
         <div class="ic ic--mineral"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></div>
-        <h3>Today, not yesterday</h3>
-        <p>One screen answers what's due, what's logged, and where you should inject next. Advanced fields stay tucked away until you need them.</p>
+        <h3>Forget the shot log.</h3>
+        <p>Log taken, skipped, and missed doses in seconds. Today shows what's due, what's logged, and the next suggested site in one place.</p>
       </div>
       <div class="f-card">
         <div class="ic ic--moss"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6L4 19a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-6-10V3"/><path d="M6.5 14h11"/></svg></div>
-        <h3>Reconstitution math</h3>
-        <p>Save vial amount and BAC water. QuikShot calculates concentration and draw amount from your saved values — no mental arithmetic at the bench.</p>
+        <h3>No more manual math.</h3>
+        <p>Save vial amount, reconstitution volume, and target dose. QuikShot calculates concentration and draw amount from the values you enter.</p>
       </div>
       <div class="f-card">
         <div class="ic ic--ochre"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13c2 0 3-6 5-6s2 12 4 12 3-9 5-9 2 4 4 4"/></svg></div>
@@ -454,12 +463,12 @@
       <div class="f-card">
         <div class="ic ic--teal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/></svg></div>
         <h3>Inventory & schedules</h3>
-        <p>Recurring doses, vial-level inventory, and overdue states that warn without alarming.</p>
+        <p>Recurring doses, vial-level inventory, prepared syringes, and supply forecasts that warn without alarming.</p>
       </div>
       <div class="f-card">
         <div class="ic ic--clay"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
         <h3>Yours, locally</h3>
-        <p>Your data lives on your device. No required account. No ads. No analytics. Optional iCloud sync, when you want it.</p>
+        <p>Your data lives on your device by default. No required account, no ads, optional iCloud sync, and JSON backup when you want it.</p>
       </div>
     </div>
   </div>
@@ -468,29 +477,29 @@
 <!-- ───────── Lanes ───────── -->
 <section class="lanes">
   <div class="container">
-    <h2 class="section-title">Four lanes. One calm home<span class="accent-dot">.</span></h2>
-    <p class="section-lede">Whether you're on a single weekly GLP-1 or running six concurrent peptides, the same app meets you where you are.</p>
+    <h2 class="section-title">Compound library. Flexible routines<span class="accent-dot">.</span></h2>
+    <p class="section-lede">Start from common peptides, GLP-1s, oral routines, brand names, or custom compounds, then shape the plan around your real schedule.</p>
 
     <div class="lane-grid">
       <div class="lane-card">
         <div class="swatch" style="background: var(--lane-mineral)"></div>
-        <h4>Peptides</h4>
-        <p>BPC-157, TB-500, ipamorelin, and friends — with reconstitution profiles saved per vial.</p>
+        <h4>Peptides & GLP-1s</h4>
+        <p>Common injectable routines with reconstitution profiles, draw calculations, and prepared syringe support.</p>
       </div>
       <div class="lane-card">
         <div class="swatch" style="background: var(--lane-moss)"></div>
-        <h4>GLP-1s</h4>
-        <p>Semaglutide and tirzepatide titration with simple, recurring weekly schedules.</p>
+        <h4>Oral routines</h4>
+        <p>Capsules, tablets, and liquids can sit next to injections in the same Today, Calendar, and History flow.</p>
       </div>
       <div class="lane-card">
         <div class="swatch" style="background: var(--lane-ochre)"></div>
-        <h4>Oral compounds</h4>
-        <p>Metformin, NAD+ precursors, anything else you take by mouth on a recurring cadence.</p>
+        <h4>Names you recognize</h4>
+        <p>Supported aliases help familiar names like Mounjaro, Ozempic, Zepbound, and Rybelsus point to the right compound.</p>
       </div>
       <div class="lane-card">
         <div class="swatch" style="background: var(--lane-plum)"></div>
-        <h4>Custom</h4>
-        <p>Your own compounds with your own parameters. QuikShot does arithmetic, not recommendations.</p>
+        <h4>Custom compounds</h4>
+        <p>Your own names, routes, units, lane colors, and half-life inputs when the built-in library is not enough.</p>
       </div>
     </div>
   </div>
@@ -511,7 +520,7 @@
         </div>
         <div class="faq-item">
           <h4>Where is my data stored?</h4>
-          <p>On your device, by default. Optional iCloud sync mirrors across your own Apple devices. Nothing leaves the Apple ecosystem.</p>
+          <p>On your device, by default. Optional iCloud sync keeps a copy in your own Apple account so QuikShot can stay in sync across your Apple devices.</p>
         </div>
         <div class="faq-item">
           <h4>Do I need an account?</h4>
@@ -519,7 +528,7 @@
         </div>
         <div class="faq-item">
           <h4>Is there an Android version?</h4>
-          <p>Not planned. QuikShot is built natively on Apple platforms — iPhone first, with iPad and Watch following.</p>
+          <p>No Android version is planned. QuikShot is built for Apple platforms and is iPhone-first at launch.</p>
         </div>
         <div class="faq-item">
           <h4>What does it cost?</h4>
@@ -540,11 +549,15 @@
       <li><span class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Local-first storage</li>
       <li><span class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>No required account</li>
       <li><span class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>No ads, no analytics</li>
-      <li><span class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>No third-party SDKs</li>
+      <li><span class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Optional iCloud sync</li>
+      <li><span class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>JSON backup & restore</li>
     </ul>
 
     <div class="footer-cta" id="download">
-      <a href="#" class="btn btn-lg btn-ink-on-dark">Download for iPhone</a>
+      <a href="https://apps.apple.com/us/app/quikshot/id6765561668" class="btn btn-lg btn-ink-on-dark" aria-label="Download QuikShot on the App Store">
+        <svg class="app-store-mark" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.05 12.6c-.03-2.5 2.05-3.7 2.15-3.76-1.18-1.72-3-1.96-3.63-1.98-1.53-.16-3.02.92-3.8.92-.8 0-2.01-.9-3.31-.88-1.7.03-3.28 1-4.16 2.54-1.8 3.12-.46 7.7 1.27 10.22.86 1.23 1.86 2.6 3.17 2.55 1.28-.05 1.76-.82 3.3-.82 1.53 0 1.96.82 3.31.79 1.38-.02 2.24-1.24 3.07-2.49.99-1.41 1.39-2.8 1.41-2.87-.03-.01-2.75-1.05-2.78-4.22ZM14.56 5.23c.7-.88 1.18-2.07 1.04-3.27-1.02.04-2.3.7-3.03 1.55-.65.75-1.24 1.99-1.08 3.14 1.15.09 2.34-.57 3.07-1.42Z"/></svg>
+        Download on the App Store
+      </a>
       <a href="privacy.html" class="btn btn-lg btn-ghost-on-dark">Read privacy policy</a>
     </div>
   </div>
@@ -558,7 +571,6 @@
       <span>Quik<span class="brand-accent">Shot</span></span>
     </div>
     <div class="foot-links">
-      <a href="journey.html">Journey</a>
       <a href="release-notes.html">Release notes</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>

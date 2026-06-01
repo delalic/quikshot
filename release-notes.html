@@ -185,11 +185,10 @@
     </a>
     <nav class="site-links">
       <a href="index.html#features">Features</a>
-      <a href="journey.html">Journey</a>
       <a href="privacy.html">Privacy</a>
       <a href="release-notes.html" class="is-current">Release notes</a>
     </nav>
-    <a href="index.html#download" class="nav-cta">Download</a>
+    <a href="https://apps.apple.com/us/app/quikshot/id6765561668" class="nav-cta">Download</a>
   </div>
 </header>
 
@@ -197,7 +196,7 @@
   <div class="page-header">
     <p class="eyebrow">Release notes</p>
     <h1>What changed, what's new<span class="accent-dot">.</span></h1>
-    <p class="lede">A running log of every QuikShot build. Versions follow <span class="num">major.minor.patch</span>; dates are when the build cleared TestFlight review.</p>
+    <p class="lede">Launch notes for QuikShot 1.0, focused on the user-facing features available in the first App Store release.</p>
   </div>
 </div>
 
@@ -207,202 +206,49 @@
     <aside class="notes-toc">
       <p class="label">Versions</p>
       <ul>
-        <li><a href="#v1-2-0"><span class="ver">1.2.0</span><span>Reconstitution profiles</span></a></li>
-        <li><a href="#v1-1-1"><span class="ver">1.1.1</span><span>Stability</span></a></li>
-        <li><a href="#v1-1-0"><span class="ver">1.1.0</span><span>Site rotation</span></a></li>
-        <li><a href="#v1-0-2"><span class="ver">1.0.2</span><span>Notification fix</span></a></li>
-        <li><a href="#v1-0-1"><span class="ver">1.0.1</span><span>Calendar polish</span></a></li>
-        <li><a href="#v1-0-0"><span class="ver">1.0.0</span><span>Launch</span></a></li>
+        <li><a href="#v1-0"><span class="ver">1.0</span><span>Launch</span></a></li>
       </ul>
     </aside>
 
     <main>
 
-      <!-- ───────── 1.2.0 ───────── -->
-      <article class="release" id="v1-2-0">
+      <article class="release" id="v1-0">
         <div class="release-head">
-          <span class="release-version">1.2.0</span>
+          <span class="release-version">1.0</span>
           <span class="release-tag tag-current">Current</span>
-          <span class="release-date">April 22, 2026</span>
-        </div>
-        <h2>Reconstitution profiles, saved per vial.</h2>
-        <p class="summary">Save vial amount and BAC water once; QuikShot calculates concentration and draw amount from your saved values. Plus a quieter calendar and a new estimated-level chart.</p>
-
-        <div class="changes">
-          <div class="change-group">
-            <div class="change-label label-new">New</div>
-            <ul class="change-list">
-              <li><strong>Reconstitution profiles.</strong> Save vial mg and BAC water mL per compound. Draw amount is computed live from your last saved values.</li>
-              <li><strong>Estimated active level.</strong> A confidence-aware curve on the Levels tab. Always labeled as an estimate, never a measurement.</li>
-              <li><strong>Compound lanes.</strong> Six muted lane colors (mineral, moss, ochre, plum, teal, clay) for visual differentiation in dose rows.</li>
-            </ul>
-          </div>
-
-          <div class="change-group">
-            <div class="change-label label-improved">Improved</div>
-            <ul class="change-list">
-              <li>Calendar dots are now lane-colored. Past dates fade to silver; future scheduled doses sit at full opacity.</li>
-              <li>Tabular numerics across every dose row, time, and draw-amount column. No more jitter when numbers change.</li>
-              <li>The Today hero card now uses a single radial halo behind the active-level glyph — the only gradient anywhere in the app.</li>
-            </ul>
-          </div>
-
-          <div class="change-group">
-            <div class="change-label label-fixed">Fixed</div>
-            <ul class="change-list">
-              <li>Reminders no longer fire twice when iCloud sync resolves a conflict during the notification window.</li>
-              <li>Logging a dose at exactly midnight no longer assigns it to the previous day.</li>
-              <li>Custom-compound rows respect the long-press menu on iPad.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <!-- ───────── 1.1.1 ───────── -->
-      <article class="release" id="v1-1-1">
-        <div class="release-head">
-          <span class="release-version">1.1.1</span>
-          <span class="release-date">March 9, 2026</span>
-        </div>
-        <h2>Stability and small polish.</h2>
-        <p class="summary">A maintenance release. No new features — just fewer rough edges.</p>
-
-        <div class="changes">
-          <div class="change-group">
-            <div class="change-label label-fixed">Fixed</div>
-            <ul class="change-list">
-              <li>The body-map view occasionally rendered with the wrong rotation on iPhone SE.</li>
-              <li>Pull-to-refresh on the Today tab no longer overshoots into the status bar.</li>
-              <li>Inventory counts updated correctly when a dose was edited from the Calendar view.</li>
-            </ul>
-          </div>
-          <div class="change-group">
-            <div class="change-label label-improved">Improved</div>
-            <ul class="change-list">
-              <li>Cold-launch time reduced by roughly 110 ms on A14 and newer.</li>
-              <li>VoiceOver labels for dose rows now read state, compound, and dose in that order.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <!-- ───────── 1.1.0 ───────── -->
-      <article class="release" id="v1-1-0">
-        <div class="release-head">
-          <span class="release-version">1.1.0</span>
-          <span class="release-date">February 18, 2026</span>
-        </div>
-        <h2>Injection-site rotation and inventory.</h2>
-        <p class="summary">QuikShot now suggests the least-recently-used site, tracks vial-level inventory, and adds an overdue state that warns without alarming.</p>
-
-        <div class="changes">
-          <div class="change-group">
-            <div class="change-label label-new">New</div>
-            <ul class="change-list">
-              <li><strong>Body-map history.</strong> Tap a region on the body map to see when you last used it. Suggested next site appears as a soft mineral chip.</li>
-              <li><strong>Vial inventory.</strong> Track stock per compound; QuikShot estimates days remaining from your active schedule.</li>
-              <li><strong>Overdue state.</strong> A warm-ochre badge for doses past their window — never bright red, never alarming.</li>
-            </ul>
-          </div>
-          <div class="change-group">
-            <div class="change-label label-improved">Improved</div>
-            <ul class="change-list">
-              <li>The Skip flow now records a reason (optional, never required) so future runs can show patterns without judgment.</li>
-              <li>Reduced motion users get instant state changes; everyone else gets the 240 ms mineral fill.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <!-- ───────── 1.0.2 ───────── -->
-      <article class="release" id="v1-0-2">
-        <div class="release-head">
-          <span class="release-version">1.0.2</span>
-          <span class="release-date">January 27, 2026</span>
-        </div>
-        <h2>Notification reliability.</h2>
-        <p class="summary">A targeted fix for users on iOS 17.4+ whose reminders occasionally drifted by a few minutes.</p>
-
-        <div class="changes">
-          <div class="change-group">
-            <div class="change-label label-fixed">Fixed</div>
-            <ul class="change-list">
-              <li>Local reminders now schedule against the wall clock instead of a relative interval, so DST transitions and Focus changes no longer shift the time.</li>
-              <li>Editing a recurring schedule cancels and re-schedules notifications atomically.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <!-- ───────── 1.0.1 ───────── -->
-      <article class="release" id="v1-0-1">
-        <div class="release-head">
-          <span class="release-version">1.0.1</span>
-          <span class="release-date">January 14, 2026</span>
-        </div>
-        <h2>Calendar polish.</h2>
-        <p class="summary">First post-launch refinement. Small things, in the right places.</p>
-
-        <div class="changes">
-          <div class="change-group">
-            <div class="change-label label-improved">Improved</div>
-            <ul class="change-list">
-              <li>The week strip on Today now scrolls smoothly between months without flashing.</li>
-              <li>Long-press on a calendar dot opens the dose detail sheet (previously required two taps).</li>
-              <li>Empty states use sentence-case labels everywhere. No more stray ALL CAPS.</li>
-            </ul>
-          </div>
-          <div class="change-group">
-            <div class="change-label label-fixed">Fixed</div>
-            <ul class="change-list">
-              <li>Dragging a recurring schedule across the daylight-saving boundary preserved the time-of-day correctly.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <!-- ───────── 1.0.0 ───────── -->
-      <article class="release" id="v1-0-0">
-        <div class="release-head">
-          <span class="release-version">1.0.0</span>
-          <span class="release-tag tag-tested">Launch</span>
-          <span class="release-date">January 6, 2026</span>
+          <span class="release-date">May 31, 2026</span>
         </div>
         <h2>QuikShot is live on the App Store.</h2>
-        <p class="summary">The first public release. A calm, Apple-native protocol tracker for peptides, GLP-1s, custom compounds, and recurring oral routines.</p>
+        <p class="summary">The first public release of QuikShot: a private, iPhone-first tracker for peptides, GLP-1s, oral routines, supplies, reminders, and dose history.</p>
 
         <div class="changes">
           <div class="change-group">
             <div class="change-label label-new">New</div>
             <ul class="change-list">
-              <li><strong>Today.</strong> Next dose, what's logged, what's overdue — at a glance.</li>
-              <li><strong>Protocol.</strong> Recurring schedules per compound with simple and advanced lanes.</li>
-              <li><strong>Calendar.</strong> A monthly view showing logged, due, skipped, and missed doses.</li>
-              <li><strong>Local reminders.</strong> Per-compound notification timing, fully on-device.</li>
-              <li><strong>Local-first storage.</strong> No account, no sync requirement, no analytics.</li>
+              <li><strong>Today.</strong> See what is due, what is overdue, what was logged today, the next suggested injection site, and the supply context for the next dose.</li>
+              <li><strong>Plan.</strong> Build flexible protocols with one-time, daily, weekly, fixed-interval, multi-time, and phase-based schedules.</li>
+              <li><strong>Calendar and history.</strong> Review upcoming doses, logged doses, skipped doses, missed doses, and past corrections by date.</li>
+              <li><strong>Compound library.</strong> Start from common compounds, supported route/unit defaults, familiar aliases and brand names, or your own custom compounds.</li>
+              <li><strong>Injection and oral logging.</strong> Track injections, capsules, tablets, and liquids in one daily flow.</li>
+              <li><strong>Reminders.</strong> Use privacy-safe notification defaults, optional detailed reminder copy, snooze, grouped simultaneous reminders, and Mark taken for detailed single-dose notifications.</li>
+              <li><strong>Site rotation.</strong> Keep injection-site history and suggestions close to the dose that needs them.</li>
+              <li><strong>Supplies.</strong> Track inventory, supply forecasts, reconstitution profiles, draw/IU calculations, prepared syringes, and injection prep.</li>
+              <li><strong>Combined injection prep.</strong> Prepare compatible injections together when that matches the real routine.</li>
+              <li><strong>Estimated levels.</strong> View per-compound estimates from your logged history, with editable half-life inputs where useful.</li>
+              <li><strong>Private by default.</strong> No required account, no ads, no third-party analytics, optional iCloud sync, and JSON backup/restore.</li>
+            </ul>
+          </div>
+
+          <div class="change-group">
+            <div class="change-label label-improved">Improved</div>
+            <ul class="change-list">
+              <li><strong>Calm daily flow.</strong> QuikShot keeps high-signal details visible while keeping deeper setup and correction tools out of the way until they are needed.</li>
+              <li><strong>User-controlled data.</strong> Data starts local, iCloud sync is optional, and JSON backup/restore gives you another way to keep a copy.</li>
+              <li><strong>Plain-language safety boundaries.</strong> The app performs arithmetic on values you enter; it does not recommend doses or replace clinical judgment.</li>
             </ul>
           </div>
         </div>
       </article>
-
-      <!-- ───────── On deck ───────── -->
-      <aside class="ondeck">
-        <p class="eyebrow">On deck</p>
-        <h3>What's next.</h3>
-        <p>Approximate roadmap for the next two minor releases. Order and scope can shift.</p>
-        <ul class="ondeck-grid">
-          <li><span class="dot"></span>HealthKit (read-only, opt-in)</li>
-          <li><span class="dot"></span>iPad three-pane workspace</li>
-          <li><span class="dot"></span>Apple Watch quick-log complication</li>
-          <li><span class="dot"></span>iCloud sync (optional)</li>
-          <li><span class="dot"></span>Home-screen widgets</li>
-          <li><span class="dot"></span>CSV export for personal records</li>
-        </ul>
-      </aside>
-
-      <p style="margin-top: 48px; font-size: 13px; color: var(--fg-tertiary); text-align: center;">
-        Looking for the per-build merge log? See <a href="dev-build-notes.html">dev build notes</a>.
-      </p>
 
     </main>
   </div>
@@ -415,7 +261,6 @@
       <span>Quik<span class="brand-accent">Shot</span></span>
     </div>
     <div class="foot-links">
-      <a href="journey.html">Journey</a>
       <a href="release-notes.html">Release notes</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>

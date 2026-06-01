@@ -164,11 +164,10 @@
     </a>
     <nav class="site-links">
       <a href="index.html#features">Features</a>
-      <a href="journey.html">Journey</a>
       <a href="privacy.html" class="is-current">Privacy</a>
       <a href="release-notes.html">Release notes</a>
     </nav>
-    <a href="index.html#download" class="nav-cta">Download</a>
+    <a href="https://apps.apple.com/us/app/quikshot/id6765561668" class="nav-cta">Download</a>
   </div>
 </header>
 
@@ -177,7 +176,7 @@
     <p class="eyebrow">Privacy policy</p>
     <h1>What QuikShot stores, and what it doesn't<span class="accent-dot">.</span></h1>
     <p class="lede">QuikShot is built so it cannot leak data it does not collect. This page explains, in plain language, what's on your device, what isn't, and the boundaries of what the app does.</p>
-    <p class="updated">Last updated April 22, 2026 · Effective April 22, 2026</p>
+    <p class="updated">Last updated May 31, 2026 · Effective May 31, 2026</p>
   </div>
 </div>
 
@@ -225,7 +224,7 @@
           </li>
           <li>
             <span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
-            Delete the app and your data goes with it.
+            In-app delete controls explain what happens locally and in iCloud.
           </li>
           <li>
             <span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
@@ -260,7 +259,7 @@
             </div>
             <div>
               <dt>App preferences</dt>
-              <dd>Reminder times, theme, units, and other settings you've chosen.</dd>
+              <dd>Reminder preferences, notification privacy, haptics, units, and other settings you've chosen.</dd>
             </div>
             <div>
               <dt>Crash diagnostics</dt>
@@ -284,11 +283,12 @@
       <section class="priv-section" id="sync">
         <p class="section-num">04</p>
         <h2>iCloud sync (optional).</h2>
-        <p>If you turn on iCloud sync in Settings, QuikShot uses Apple's built-in iCloud service to keep your data consistent across your iPhone, iPad, and Mac. All syncing happens through your personal Apple account.</p>
+        <p>If you turn on iCloud sync in Settings, QuikShot uses Apple's built-in iCloud service to keep your data consistent across Apple devices where QuikShot is installed. All syncing happens through your personal Apple account.</p>
         <ul>
           <li>Data sits in <strong>your</strong> private iCloud container — not a developer-controlled one.</li>
           <li>Apple controls access; the QuikShot developer cannot read this data.</li>
           <li>Sync can be turned off at any time. Existing local data remains on each device.</li>
+          <li>If iCloud sync is on, using QuikShot's delete-all control can remove local data, the synced iCloud copy, and data on other synced devices.</li>
           <li>Removing QuikShot from iCloud (Settings → Apple ID → iCloud → Manage) deletes the synced copy.</li>
         </ul>
       </section>
@@ -314,9 +314,10 @@
         <p>Because the developer never receives your data, the standard "data subject" requests (access, correction, deletion) are answered by the app itself rather than a customer service queue:</p>
         <ul>
           <li><strong>Access.</strong> Open the app — you have the full record.</li>
-          <li><strong>Export.</strong> Settings → Export creates a CSV of your dose log for your own records.</li>
+          <li><strong>Export.</strong> Data & Privacy → Export backup creates a JSON backup for your own records.</li>
+          <li><strong>Restore.</strong> Data & Privacy → Restore backup imports a QuikShot JSON backup and keeps a rollback backup when possible.</li>
           <li><strong>Correction.</strong> Edit any compound, schedule, or logged dose directly in the app.</li>
-          <li><strong>Deletion.</strong> Uninstall the app. Local data is removed with it. Disable iCloud sync first if you also want to clear the cloud copy.</li>
+          <li><strong>Deletion.</strong> Data & Privacy includes a delete-all control. If iCloud sync is on, it can also delete the synced iCloud copy and affect other synced devices. Uninstalling the app removes local app data from that device, but it is not the same as clearing iCloud data.</li>
         </ul>
         <p>If you live in a jurisdiction that grants formal rights under laws like the GDPR or CCPA, those rights still apply. Because no personal data leaves your device through QuikShot, requests directed at the developer will be answered by pointing you to these in-app controls.</p>
       </section>
@@ -339,7 +340,7 @@
       <section class="priv-section" id="contact">
         <p class="section-num">09</p>
         <h2>Contact.</h2>
-        <p>Questions about this policy, the app, or anything else: <a href="mailto:quikshot@delalic.com">quikshot@delalic.com</a>.</p>
+        <p>Questions about this policy: <a href="mailto:quikshot@delalic.com">quikshot@delalic.com</a>. For app support and product feedback, use <a href="mailto:quikshot-support@delalic.com">quikshot-support@delalic.com</a>.</p>
       </section>
 
       <!-- ───────── 10 Disclaimer ───────── -->
@@ -362,7 +363,6 @@
       <span>Quik<span class="brand-accent">Shot</span></span>
     </div>
     <div class="foot-links">
-      <a href="journey.html">Journey</a>
       <a href="release-notes.html">Release notes</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>

@@ -34,7 +34,7 @@ The original website source was archived at `/Users/haris/Documents/shots_tracke
 ## Files
 
 - `index.html` — landing page (hero, features, lanes, FAQ, privacy callout)
-- `release-notes.html` — version history and roadmap
+- `release-notes.html` — public launch release notes
 - `privacy.html` — privacy policy and medical disclaimer
 - `styles/tokens.css` — QuikShot design tokens
 - `styles/site.css` — shared site layout

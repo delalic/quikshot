@@ -84,6 +84,12 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .btn-ink:hover { background: var(--fg-secondary); }
 .btn-ghost { background: transparent; color: var(--fg); }
 .btn-ghost:hover { background: var(--bg-tinted); }
+.app-store-mark {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  flex: 0 0 auto;
+}
 
 /* ───────── Footer ───────── */
 .site-foot {
