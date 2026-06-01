@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-05-31T20:46:08-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Zerina",
+    "agentModel": "Codex",
+    "subject": "UI tests: Repair dark Calendar row screenshot fixture waits",
+    "issueNumber": 611,
+    "note": "Verified PR #613 merged, Project Done, predicted build 1.0.1029, and mac2 worktree cleanup."
+  },
+  {
     "timestamp": "2026-05-31T20:44:15-04:00",
     "systemHealth": "ok",
     "role": "Coder",
@@ -9,18 +20,6 @@
     "subject": "UI tests: Repair dark Calendar row screenshot fixture waits",
     "issueNumber": 611,
     "note": "PR #613 merged; focused Calendar screenshot UI tests passed; delivery skipped because this was test-harness-only."
-  },
-  {
-    "timestamp": "2026-05-31T20:28:04-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Zerina",
-    "agentModel": "Codex",
-    "subject": "UI tests: Repair dark Calendar row screenshot fixture waits",
-    "issueNumber": 611,
-    "note": "Local mac2 coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-05-31T20:15:54-04:00",
