@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — QuikShot</title>
+<meta name="description" content="Get support for QuikShot, including troubleshooting steps and what to include when contacting support.">
+<link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<style>
+  /* ───────── Support layout ───────── */
+  .support-wrap {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 64px;
+    padding: 16px 0 96px;
+  }
+  .support-panel {
+    position: sticky;
+    top: 80px;
+    align-self: start;
+    background: var(--bg-elevated);
+    border: 1px solid var(--separator);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow-1);
+  }
+  .support-panel .label,
+  .support-section .section-num,
+  .support-card .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    color: var(--fg-tertiary);
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  .support-panel h2 {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    margin: 0 0 12px;
+  }
+  .support-panel p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--fg-secondary);
+    margin: 0 0 18px;
+    text-wrap: pretty;
+  }
+  .support-email {
+    display: block;
+    overflow-wrap: anywhere;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 18px;
+  }
+  .response-note {
+    border-top: 1px solid var(--separator);
+    padding-top: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--fg-secondary);
+  }
+
+  .support-section {
+    border-top: 1px solid var(--separator);
+    padding: 36px 0;
+  }
+  .support-section:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .support-section .section-num {
+    font-family: var(--font-mono);
+    font-feature-settings: 'tnum' 1;
+    font-weight: 500;
+    color: var(--fg-tertiary);
+  }
+  .support-section h2 {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.014em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .support-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--fg);
+    margin: 0 0 14px;
+    text-wrap: pretty;
+  }
+  .support-section a {
+    color: var(--mineral);
+  }
+  .support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .support-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--separator);
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .support-card .label {
+    color: var(--mineral);
+  }
+  .support-card h3 {
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: -0.008em;
+    margin: 0 0 8px;
+  }
+  .support-card p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--fg-secondary);
+    margin: 0;
+  }
+  .support-list {
+    margin: 18px 0 0;
+    padding-left: 22px;
+  }
+  .support-list li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    text-wrap: pretty;
+  }
+  .support-list strong {
+    font-weight: 600;
+  }
+  .developer-note {
+    background: var(--bg-elevated);
+    border: 1px solid var(--separator);
+    border-radius: 20px;
+    padding: 24px;
+    margin-top: 18px;
+  }
+  .developer-note p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 880px) {
+    .support-wrap {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .support-panel {
+      position: static;
+      order: -1;
+    }
+    .support-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container site-nav-inner">
+    <a href="index.html" class="site-brand">
+      <img src="assets/logo.svg" width="28" height="28" alt="">
+      <span>Quik<span class="brand-accent">Shot</span></span>
+    </a>
+    <nav class="site-links">
+      <a href="index.html#features">Features</a>
+      <a href="journey.html">Journey</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="release-notes.html">Release notes</a>
+    </nav>
+    <a href="index.html#download" class="nav-cta">Download</a>
+  </div>
+</header>
+
+<div class="container-narrow">
+  <div class="page-header">
+    <p class="eyebrow">Support</p>
+    <h1>Get help with QuikShot<span class="accent-dot">.</span></h1>
+    <p class="lede">Questions, bug reports, and feature feedback are handled by email. A clear description and a few device details help make the first reply more useful.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="support-wrap">
+    <aside class="support-panel">
+      <p class="label">Contact</p>
+      <h2>Email support.</h2>
+      <p>Use this address for technical issues, feature questions, and product feedback.</p>
+      <a class="support-email" href="mailto:quikshot-support@delalic.com">quikshot-support@delalic.com</a>
+      <a href="mailto:quikshot-support@delalic.com" class="btn btn-primary btn-md">Send email</a>
+      <div class="response-note">We aim to respond to all support inquiries within 48 hours.</div>
+    </aside>
+
+    <main>
+      <section class="support-section" id="help">
+        <p class="section-num">01</p>
+        <h2>How to get help.</h2>
+        <p>If QuikShot is not behaving as expected, send a short note describing what happened and what you expected to happen. Screenshots are helpful when the issue is visual, but the most useful reports include the steps that led to the problem.</p>
+      </section>
+
+      <section class="support-section" id="troubleshooting">
+        <p class="section-num">02</p>
+        <h2>Quick troubleshooting.</h2>
+        <p>Before emailing, these checks often resolve routine app behavior or make the issue easier to narrow down.</p>
+
+        <div class="support-grid">
+          <div class="support-card">
+            <p class="label">Step 1</p>
+            <h3>Check for updates.</h3>
+            <p>Make sure you are using the latest version of QuikShot from the App Store.</p>
+          </div>
+          <div class="support-card">
+            <p class="label">Step 2</p>
+            <h3>Restart the app.</h3>
+            <p>Force-close QuikShot, then reopen it to refresh local app state.</p>
+          </div>
+          <div class="support-card">
+            <p class="label">Step 3</p>
+            <h3>Check iOS.</h3>
+            <p>Confirm that your device is running a compatible iOS version.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="support-section" id="include">
+        <p class="section-num">03</p>
+        <h2>What to include.</h2>
+        <p>For faster support, include the details that let the issue be reproduced or understood without a long back-and-forth.</p>
+        <ul class="support-list">
+          <li><strong>Problem summary.</strong> A brief description of what went wrong.</li>
+          <li><strong>Steps to reproduce.</strong> The taps or settings that led to the issue, if applicable.</li>
+          <li><strong>Device model.</strong> For example, iPhone 17 Pro Max.</li>
+          <li><strong>iOS version.</strong> The version shown in Settings.</li>
+          <li><strong>QuikShot version.</strong> The app version shown in the App Store or QuikShot settings, when available.</li>
+        </ul>
+      </section>
+
+      <section class="support-section" id="developer">
+        <p class="section-num">04</p>
+        <h2>Developer information.</h2>
+        <div class="developer-note">
+          <p>QuikShot is developed and supported by Haris Delalic.</p>
+          <p>Support requests are handled through <a href="mailto:quikshot-support@delalic.com">quikshot-support@delalic.com</a>.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="container site-foot-inner">
+    <div class="site-brand" style="font-size: 14px; color: var(--fg-secondary)">
+      <img src="assets/logo.svg" width="20" height="20" alt="">
+      <span>Quik<span class="brand-accent">Shot</span></span>
+    </div>
+    <div class="foot-links">
+      <a href="journey.html">Journey</a>
+      <a href="release-notes.html">Release notes</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html#disclaimer">Disclaimer</a>
+      <span>© 2026 QuikShot</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
