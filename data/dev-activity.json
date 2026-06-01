@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-01T17:41:01-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Emina",
+    "agentModel": "Codex",
+    "subject": "First launch: restore welcome and orientation empty state",
+    "issueNumber": 621,
+    "note": "Verified PR #622 merged, issue Done, TestFlight build 1.0.1037 delivered, and reviewer light/dark onboarding screenshots preserved."
+  },
+  {
     "timestamp": "2026-06-01T17:36:24-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -20,18 +31,6 @@
     "subject": "First launch: restore welcome and orientation empty state",
     "issueNumber": 621,
     "note": "Updated first-launch onboarding copy, Plan-root secondary routing, compact orientation labels, docs, screenshots, and PR handoff."
-  },
-  {
-    "timestamp": "2026-06-01T17:02:23-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Emina",
-    "agentModel": "Codex",
-    "subject": "First launch: restore welcome and orientation empty state",
-    "issueNumber": 621,
-    "note": "Local coder started for the primary Mac lane.",
-    "transient": true
   },
   {
     "timestamp": "2026-06-01T09:23:31-04:00",
