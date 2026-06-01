@@ -31,7 +31,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .site-nav-inner {
   display: flex; align-items: center; justify-content: space-between;
-  padding: 14px 0;
+  padding: 14px 24px;
   gap: 18px;
 }
 .site-brand {
@@ -63,6 +63,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   border: 0; cursor: pointer;
   background: var(--fg); color: var(--bg);
   transition: background var(--dur-1) var(--ease);
+  display: inline-flex; align-items: center; justify-content: center;
 }
 .nav-cta:hover { background: var(--fg-secondary); }
 
@@ -106,7 +107,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .site-foot a { color: var(--fg-secondary); }
 .site-foot a:hover { color: var(--fg); }
-.foot-links { display: flex; gap: 20px; }
+.foot-links { display: flex; flex-wrap: wrap; gap: 14px 20px; }
 
 /* ───────── Page header (release notes / privacy) ───────── */
 .page-header {
@@ -193,9 +194,27 @@ section { padding: 64px 0; }
     flex: 0 0 100%;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 14px;
     font-size: 13px;
+    min-width: 0;
   }
-  .nav-cta { display: none; }
+  .nav-cta {
+    display: inline-flex;
+    padding: 7px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .site-foot-inner { justify-content: flex-start; }
+  .foot-links { gap: 12px 16px; }
   section { padding: 48px 0; }
+}
+
+@media (max-width: 360px) {
+  .container,
+  .container-narrow { padding: 0 20px; }
+  .site-nav-inner { padding: 14px 20px; }
+  .site-brand { font-size: 22px; gap: 10px; }
+  .site-links { gap: 12px; font-size: 12px; }
 }
