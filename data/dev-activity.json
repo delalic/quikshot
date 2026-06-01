@@ -1,5 +1,26 @@
 [
   {
+    "timestamp": "2026-05-31T20:02:41-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "D\u017eenan",
+    "agentModel": "Codex",
+    "subject": "Settings: Seed iCloud sync toggle before refresh",
+    "issueNumber": 609
+  },
+  {
+    "timestamp": "2026-05-31T20:02:38-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Tarik",
+    "agentModel": "Codex",
+    "subject": "Settings: Apply approved About and Data & Privacy copy",
+    "issueNumber": 251,
+    "note": "Managed mac2 local coder/reviewer flow to Done; TestFlight build 1.0.1025 delivered."
+  },
+  {
     "timestamp": "2026-05-31T19:59:56-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
