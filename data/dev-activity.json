@@ -43,18 +43,6 @@
     "note": "Reviewed PR #610, merged to main, and delivered internal TestFlight build 1.0.1025."
   },
   {
-    "timestamp": "2026-05-31T19:53:51-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Adnan",
-    "agentModel": "Codex",
-    "subject": "Settings: Seed iCloud sync toggle before refresh",
-    "issueNumber": 609,
-    "note": "Local mac2 coder started.",
-    "transient": true
-  },
-  {
     "timestamp": "2026-05-31T19:44:18-04:00",
     "systemHealth": "ok",
     "role": "Coder",
