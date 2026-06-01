@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-01T19:59:24-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Nadia",
+    "agentModel": "Codex",
+    "subject": "First launch: restore original brand-dot and compact orientation card treatment",
+    "issueNumber": 623,
+    "note": "Verified PR #624 merged, issue Done, TestFlight build 1.0.1040 delivered, and Haris visual acceptance was honored before code review."
+  },
+  {
     "timestamp": "2026-06-01T19:39:16-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
