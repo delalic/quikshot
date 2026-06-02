@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-06-01T23:14:19-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Coding pending",
+    "agentName": "Lana",
+    "agentModel": "Codex",
+    "subject": "Update Data & Privacy layout to compact grouped settings style",
+    "issueNumber": 625,
+    "note": "Waiting for primary local lane to clear; issue #601 is active on coder-host:primary.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-06-01T23:11:30-04:00",
     "systemHealth": "ok",
     "role": "Manager",
