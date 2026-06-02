@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-02T17:28:50-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Nedim",
+    "agentModel": "Codex",
+    "subject": "History: Load recent 30 days by default",
+    "issueNumber": 638,
+    "note": "Merged PR #640, delivered internal TestFlight build 1.0.1077, updated project fields, and cleaned issue worktrees."
+  },
+  {
     "timestamp": "2026-06-02T17:10:14-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -20,18 +31,6 @@
     "subject": "History: Load recent 30 days by default",
     "issueNumber": 638,
     "note": "PR #640 opened from issue-638; focused History render tests passed."
-  },
-  {
-    "timestamp": "2026-06-02T16:36:00-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Nedim",
-    "agentModel": "Codex",
-    "subject": "History: Load recent 30 days by default",
-    "issueNumber": 638,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-06-02T16:12:53-04:00",
