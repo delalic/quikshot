@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-06-02T18:06:35-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Updated",
+    "agentName": "Nedim",
+    "agentModel": "Codex",
+    "subject": "Today: Add subtle completion feedback after Log now",
+    "issueNumber": 636,
+    "note": "Interim TestFlight build 1.0.1080 is valid; run paused for Haris visual review before review.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-06-02T17:57:12-04:00",
     "systemHealth": "ok",
     "role": "Coder",
@@ -9,18 +21,6 @@
     "subject": "Today: Add subtle completion feedback after Log now",
     "issueNumber": 636,
     "note": "Implemented Today large-card Log now completion cue, pushed issue-636, opened PR #641, and moved issue to In review for interim TestFlight visual review."
-  },
-  {
-    "timestamp": "2026-06-02T17:36:10-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Nedim",
-    "agentModel": "Codex",
-    "subject": "Today: Add subtle completion feedback after Log now",
-    "issueNumber": 636,
-    "note": "Local coder started; manager will deliver an interim TestFlight build for Haris visual review before review.",
-    "transient": true
   },
   {
     "timestamp": "2026-06-02T17:28:50-04:00",
