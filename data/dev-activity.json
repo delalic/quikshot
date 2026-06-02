@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-02T08:16:22-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Kemal",
+    "agentModel": "Codex",
+    "subject": "Data & Privacy: Offer automatic rollback for destructive changes",
+    "issueNumber": 608,
+    "note": "PR #633 review failed: docs/codebase.md stale"
+  },
+  {
     "timestamp": "2026-06-02T08:05:43-04:00",
     "systemHealth": "ok",
     "role": "Coder",
