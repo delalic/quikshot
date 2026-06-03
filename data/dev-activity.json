@@ -1,15 +1,14 @@
 [
   {
-    "timestamp": "2026-06-02T18:06:35-04:00",
+    "timestamp": "2026-06-02T20:51:31-04:00",
     "systemHealth": "ok",
     "role": "Manager",
-    "result": "Updated",
+    "result": "Blocked",
     "agentName": "Nedim",
     "agentModel": "Codex",
     "subject": "Today: Add subtle completion feedback after Log now",
     "issueNumber": 636,
-    "note": "Interim TestFlight build 1.0.1080 is valid; run paused for Haris visual review before review.",
-    "transient": true
+    "note": "Visual review rejected interim TestFlight build 1.0.1080; saved origin/issue-636 and closed PR #641, moved issue to Icebox, and stopped review."
   },
   {
     "timestamp": "2026-06-02T17:57:12-04:00",
