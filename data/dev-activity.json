@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-03T12:54:07-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Nermin",
+    "agentModel": "Codex",
+    "subject": "iCloud: Wake on remote changes and refresh widgets",
+    "issueNumber": 645,
+    "note": "Failed review on enabled-but-unavailable iCloud background no-op acceptance gap."
+  },
+  {
     "timestamp": "2026-06-03T12:41:41-04:00",
     "systemHealth": "ok",
     "role": "Coder",
