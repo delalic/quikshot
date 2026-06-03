@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-03T01:10:16-04:00",
+    "systemHealth": "partial",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Emina",
+    "agentModel": "Codex",
+    "subject": "Widgets: Add Home Screen Next dose widget (small and medium)",
+    "issueNumber": 626,
+    "note": "Re-review passed and PR #643 merged. TestFlight delivery attempted after merge but blocked by Apple provisioning/App Group profile support for group.com.had.QuikShot; Project uses\u2026"
+  },
+  {
     "timestamp": "2026-06-03T00:58:45-04:00",
     "systemHealth": "ok",
     "role": "Coder",
