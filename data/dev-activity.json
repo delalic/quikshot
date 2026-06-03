@@ -22,18 +22,6 @@
     "note": "Failed review on enabled-but-unavailable iCloud background no-op gap."
   },
   {
-    "timestamp": "2026-06-03T12:58:03-04:00",
-    "systemHealth": "partial",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Nermin",
-    "agentModel": "Codex",
-    "subject": "iCloud: Wake on remote changes and refresh widgets",
-    "issueNumber": 645,
-    "note": "Fixing review blocker in PR #646.",
-    "transient": true
-  },
-  {
     "timestamp": "2026-06-03T12:54:07-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
