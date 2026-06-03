@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-03T17:59:41-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Mirela",
+    "agentModel": "Codex",
+    "subject": "Widgets: Align medium Next dose widget with Today dose context",
+    "issueNumber": 647,
+    "note": "Manager verified review closeout, TestFlight build 1.0.1.15, Project fields, cleanup, and product acceptance gates."
+  },
+  {
     "timestamp": "2026-06-03T17:52:19-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -19,18 +30,6 @@
     "agentModel": "Codex",
     "subject": "Widgets: Align medium Next dose widget with Today dose context",
     "issueNumber": 647
-  },
-  {
-    "timestamp": "2026-06-03T16:39:12-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Mirela",
-    "agentModel": "Codex",
-    "subject": "Widgets: Align medium Next dose widget with Today dose context",
-    "issueNumber": 647,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-06-03T13:56:00-04:00",
