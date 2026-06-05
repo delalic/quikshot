@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-06-04T21:54:22-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Coding started",
+    "agentName": "Hana",
+    "agentModel": "Codex",
+    "subject": "Scheduling: Align oral and injection state/reminder timing windows",
+    "issueNumber": 650,
+    "note": "Local xhigh coder started under the tightened product acceptance gates.",
+    "transient": true
+  },
+  {
     "timestamp": "2026-06-03T17:59:41-04:00",
     "systemHealth": "ok",
     "role": "Manager",
