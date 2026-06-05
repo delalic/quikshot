@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-04T23:21:54-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "Scheduling: Align oral and injection state/reminder timing windows",
+    "issueNumber": 650,
+    "note": "PR #651 opened from issue-650; commit b954e1e."
+  },
+  {
     "timestamp": "2026-06-04T21:54:22-04:00",
     "systemHealth": "ok",
     "role": "Manager",
