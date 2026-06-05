@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-05T01:22:39-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Hana",
+    "agentModel": "Codex",
+    "subject": "Scheduling: Align oral and injection state/reminder timing windows",
+    "issueNumber": 650,
+    "note": "Manager closeout verified PR #651 merged, TestFlight build 1.0.1.22 valid, Project fields set, and product acceptance gates checked."
+  },
+  {
     "timestamp": "2026-06-05T01:22:00-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -42,18 +53,6 @@
     "subject": "Scheduling: Align oral and injection state/reminder timing windows",
     "issueNumber": 650,
     "note": "PR #651 opened from issue-650; commit b954e1e."
-  },
-  {
-    "timestamp": "2026-06-04T21:54:22-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Hana",
-    "agentModel": "Codex",
-    "subject": "Scheduling: Align oral and injection state/reminder timing windows",
-    "issueNumber": 650,
-    "note": "Local xhigh coder started under the tightened product acceptance gates.",
-    "transient": true
   },
   {
     "timestamp": "2026-06-03T17:59:41-04:00",
