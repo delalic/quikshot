@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-05T01:22:00-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Dunja",
+    "agentModel": "Codex",
+    "subject": "Scheduling: Align oral and injection state/reminder timing windows",
+    "issueNumber": 650,
+    "note": "Passed focused re-review, merged PR #651, and delivered internal TestFlight build 1.0.1.22. Widget static overdue anchors now use T+60m."
+  },
+  {
     "timestamp": "2026-06-04T23:55:17-04:00",
     "systemHealth": "ok",
     "role": "Coder",
