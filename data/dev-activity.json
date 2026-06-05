@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-04T23:36:14-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Dunja",
+    "agentModel": "Codex",
+    "subject": "Scheduling: Align oral and injection state/reminder timing windows",
+    "issueNumber": 650,
+    "note": "Failed review on PR #651: widget extension placeholder/preview overdue anchors still use T+60s while #650 requires T+60m; issue returned to Ready with review:failed."
+  },
+  {
     "timestamp": "2026-06-04T23:21:54-04:00",
     "systemHealth": "ok",
     "role": "Coder",
