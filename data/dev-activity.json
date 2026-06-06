@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-06T18:46:05-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "P0: Fix production SwiftUI crashes from Stepper and tab switching",
+    "issueNumber": 656,
+    "note": "Coding complete on issue-656; draft PR #666 open; awaiting PM visual approval before review."
+  },
+  {
     "timestamp": "2026-06-06T18:44:55-04:00",
     "systemHealth": "ok",
     "role": "Manager",
@@ -21,18 +32,6 @@
     "subject": "A",
     "issueNumber": 663,
     "note": "Implemented large Log Next Dose widget with rendered artifact proof; PR #665 opened."
-  },
-  {
-    "timestamp": "2026-06-06T17:45:04-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Kevin",
-    "agentModel": "Codex",
-    "subject": "P0: Fix production SwiftUI crashes from Stepper and tab switching",
-    "issueNumber": 656,
-    "note": "Local Codex coder starting; manager will pause after custom stepper visual proof before review.",
-    "transient": true
   },
   {
     "timestamp": "2026-06-06T15:56:35-04:00",
