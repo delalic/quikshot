@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roadmap — QuikShot</title>
+<meta name="description" content="A preview of the larger QuikShot features planned after launch, including widgets, setup improvements, Apple Watch, Apple Health, iPad, and site readiness.">
+<link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<style>
+  .roadmap-wrap {
+    padding: 16px 0 96px;
+  }
+  .roadmap-note {
+    border: 1px solid var(--separator);
+    border-radius: 20px;
+    background: var(--bg-elevated);
+    padding: 22px 24px;
+    margin-bottom: 32px;
+    max-width: 760px;
+  }
+  .roadmap-note p {
+    margin: 0;
+    color: var(--fg-secondary);
+    font-size: 15px;
+    line-height: 1.55;
+    text-wrap: pretty;
+  }
+  .roadmap-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 18px;
+  }
+  .roadmap-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 24px;
+    padding: 28px;
+    border: 1px solid var(--separator);
+    border-radius: 24px;
+    background: var(--bg-elevated);
+    box-shadow: var(--shadow-1);
+  }
+  .roadmap-step {
+    font-family: var(--font-mono);
+    font-feature-settings: 'tnum' 1, 'lnum' 1;
+    color: var(--fg-tertiary);
+    font-size: 13px;
+    padding-top: 4px;
+  }
+  .roadmap-content h2 {
+    margin: 0 0 8px;
+    color: var(--fg);
+    font-size: 24px;
+    line-height: 1.18;
+    letter-spacing: -0.014em;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+  .roadmap-content p {
+    margin: 0;
+    color: var(--fg-secondary);
+    font-size: 16px;
+    line-height: 1.55;
+    max-width: 720px;
+    text-wrap: pretty;
+  }
+  .roadmap-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .roadmap-tag {
+    color: var(--fg-secondary);
+    background: var(--bg);
+    border: 1px solid var(--separator);
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .feedback-card {
+    margin-top: 32px;
+    padding: 28px;
+    border-radius: 24px;
+    border: 1px solid var(--separator);
+    background:
+      linear-gradient(135deg, var(--mineral-soft), transparent 60%),
+      var(--bg-elevated);
+  }
+  .feedback-card h2 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 1.18;
+    letter-spacing: -0.014em;
+  }
+  .feedback-card p {
+    margin: 0 0 18px;
+    color: var(--fg-secondary);
+    font-size: 16px;
+    line-height: 1.55;
+    max-width: 680px;
+    text-wrap: pretty;
+  }
+  @media (max-width: 720px) {
+    .roadmap-item {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 24px;
+    }
+    .roadmap-step {
+      padding-top: 0;
+    }
+    .roadmap-content h2,
+    .feedback-card h2 {
+      font-size: 22px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container site-nav-inner">
+    <a href="index.html" class="site-brand">
+      <img src="assets/logo.svg" width="28" height="28" alt="">
+      <span>Quik<span class="brand-accent">Shot</span></span>
+    </a>
+    <nav class="site-links">
+      <a href="index.html#features">Features</a>
+      <a href="journey.html">Journey</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="release-notes.html">Release notes</a>
+    </nav>
+    <a href="https://apps.apple.com/us/app/quikshot/id6765561668" class="nav-cta">Download</a>
+  </div>
+</header>
+
+<div class="container-narrow">
+  <div class="page-header">
+    <p class="eyebrow">Roadmap</p>
+    <h1>What is coming next<span class="accent-dot">.</span></h1>
+    <p class="lede">QuikShot is growing from a private iPhone tracker into a broader Apple-native routine companion. This roadmap is directional and will evolve as the app, platform, and user feedback evolve.</p>
+  </div>
+</div>
+
+<main class="container roadmap-wrap">
+  <div class="roadmap-note">
+    <p>The order below reflects the current plan for larger user-facing features. It does not include every smaller improvement, and it may change as we learn which workflows matter most in daily use.</p>
+  </div>
+
+  <ol class="roadmap-list">
+    <li class="roadmap-item">
+      <div class="roadmap-step">Next</div>
+      <div class="roadmap-content">
+        <h2>Widgets for the next dose</h2>
+        <p>Home Screen and Lock Screen widgets will make the next dose, due state, and privacy-safe context visible without opening QuikShot. The goal is a calm glanceable surface that stays honest about freshness and opens the right place when more review is needed.</p>
+        <div class="roadmap-tags">
+          <span class="roadmap-tag">Home Screen</span>
+          <span class="roadmap-tag">Lock Screen</span>
+          <span class="roadmap-tag">Privacy controls</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="roadmap-item">
+      <div class="roadmap-step">Next</div>
+      <div class="roadmap-content">
+        <h2>Faster setup for new routines</h2>
+        <p>A guided setup flow will start from the user's natural questions: what do I take, when do I take it, do I want reminders, and do I need sites or supplies? Advanced tools like reconstitution and inventory will stay available without making first setup feel like a database form.</p>
+        <div class="roadmap-tags">
+          <span class="roadmap-tag">First setup</span>
+          <span class="roadmap-tag">Reminders</span>
+          <span class="roadmap-tag">Supplies handoff</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="roadmap-item">
+      <div class="roadmap-step">Next</div>
+      <div class="roadmap-content">
+        <h2>More resilient sync and recovery</h2>
+        <p>iCloud sync will keep getting clearer, safer, and more responsive across devices. Planned work focuses on stronger data-integrity checks, better recovery paths for risky actions, and clearer status when the local copy and iCloud copy are not yet caught up.</p>
+        <div class="roadmap-tags">
+          <span class="roadmap-tag">iCloud</span>
+          <span class="roadmap-tag">Recovery</span>
+          <span class="roadmap-tag">Data confidence</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="roadmap-item">
+      <div class="roadmap-step">Next</div>
+      <div class="roadmap-content">
+        <h2>Guided supply and reconstitution actions</h2>
+        <p>Supply workflows will become more intentional, including a guided reconstitute action for unopened vials. QuikShot will keep the posture focused on recording what the user did and calculating from entered values, not giving preparation or dosing advice.</p>
+        <div class="roadmap-tags">
+          <span class="roadmap-tag">Inventory</span>
+          <span class="roadmap-tag">Reconstitution</span>
+          <span class="roadmap-tag">Draw calculations</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="roadmap-item">
+      <div class="roadmap-step">After</div>
+      <div class="roadmap-content">
+        <h2>Blend and multi-compound support</h2>
+        <p>QuikShot will better support real-world blend names while still keeping ingredient-level history, inventory math, and estimated levels separate. The intended experience is one visible routine or dose when the real action is one shot, with details available when the user wants to inspect the components.</p>
+        <div class="roadmap-tags">
+          <span class="roadmap-tag">Blends</span>
+          <span class="roadmap-tag">Component history</span>
+          <span class="roadmap-tag">Estimated levels</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="roadmap-item">
+      <div class="roadmap-step">After</div>
+      <div class="roadmap-content">
+        <h2>Apple Watch and smarter reminders</h2>
+        <p>The Apple Watch companion is planned as a fast action surface, not a full protocol editor. It should help users see what is due, log safely when the choice is clear, use complications for next-dose status, and recover from snoozed or overdue reminders without adding noise.</p>
+        <div class="roadmap-tags">
+          <span class="roadmap-tag">Apple Watch</span>
+          <span class="roadmap-tag">Complications</span>
+          <span class="roadmap-tag">Reminder recovery</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="roadmap-item">
+      <div class="roadmap-step">Later</div>
+      <div class="roadmap-content">
+        <h2>Apple Health context</h2>
+        <p>Apple Health integration will be optional and permission-based. The aim is to bring useful health context, such as relevant body metrics or medication data where the platform supports it, into QuikShot without turning the app into a recommendation engine.</p>
+        <div class="roadmap-tags">
+          <span class="roadmap-tag">Apple Health</span>
+          <span class="roadmap-tag">User permission</span>
+          <span class="roadmap-tag">Context only</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="roadmap-item">
+      <div class="roadmap-step">Later</div>
+      <div class="roadmap-content">
+        <h2>iPad workspace and advanced site readiness</h2>
+        <p>Full iPad support is planned as a real workspace for planning, review, inventory, levels, and exports, not a stretched iPhone layout. Advanced site rotation can then grow into richer body-map and readiness views that explain why a site is suggested.</p>
+        <div class="roadmap-tags">
+          <span class="roadmap-tag">iPad</span>
+          <span class="roadmap-tag">Planning workspace</span>
+          <span class="roadmap-tag">Site readiness</span>
+        </div>
+      </div>
+    </li>
+  </ol>
+
+  <section class="feedback-card" aria-labelledby="roadmap-feedback">
+    <h2 id="roadmap-feedback">Tell us what would help.</h2>
+    <p>Roadmap feedback is welcome, especially if a planned feature would change how you use QuikShot day to day. Send feature ideas, workflow notes, or priority feedback to <a href="mailto:quikshot-support@delalic.com">quikshot-support@delalic.com</a>.</p>
+    <a href="mailto:quikshot-support@delalic.com?subject=QuikShot%20roadmap%20feedback" class="btn btn-md btn-primary">Email roadmap feedback</a>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="container site-foot-inner">
+    <div class="site-brand" style="font-size: 14px; color: var(--fg-secondary)">
+      <img src="assets/logo.svg" width="20" height="20" alt="">
+      <span>Quik<span class="brand-accent">Shot</span></span>
+    </div>
+    <div class="foot-links">
+      <a href="journey.html">Journey</a>
+      <a href="release-notes.html">Release notes</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html#disclaimer">Disclaimer</a>
+      <span>© 2026 QuikShot</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

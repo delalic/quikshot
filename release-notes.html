@@ -39,6 +39,30 @@
     font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
     font-size: 12px; color: var(--fg-tertiary); flex: 0 0 36px;
   }
+  .roadmap-callout {
+    margin-top: 28px;
+    padding: 18px 20px;
+    border: 1px solid var(--separator);
+    border-radius: 20px;
+    background: var(--bg-elevated);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+  }
+  .roadmap-callout p {
+    margin: 0;
+    color: var(--fg-secondary);
+    font-size: 15px;
+    line-height: 1.45;
+  }
+  .roadmap-callout strong {
+    color: var(--fg);
+    font-weight: 600;
+  }
+  .roadmap-callout .btn {
+    flex: 0 0 auto;
+  }
 
   /* ───────── A single release ───────── */
   .release {
@@ -172,6 +196,10 @@
     .change-group { grid-template-columns: 1fr; gap: 8px; }
     .release-date { margin-left: 0; }
     .ondeck-grid { grid-template-columns: 1fr; }
+    .roadmap-callout {
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
 </style>
 </head>
@@ -198,6 +226,10 @@
     <p class="eyebrow">Release notes</p>
     <h1>What changed, what's new<span class="accent-dot">.</span></h1>
     <p class="lede">Meet QuikShot 1.0: private planning, logging, reminders, supplies, and long-term routine history in one calm iPhone app.</p>
+    <div class="roadmap-callout">
+      <p><strong>See what is coming next.</strong> The QuikShot roadmap highlights the larger features planned after launch.</p>
+      <a href="roadmap.html" class="btn btn-md btn-primary">View roadmap</a>
+    </div>
   </div>
 </div>
 
@@ -264,6 +296,7 @@
     <div class="foot-links">
       <a href="journey.html">Journey</a>
       <a href="release-notes.html">Release notes</a>
+      <a href="roadmap.html">Roadmap</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
       <a href="privacy.html#disclaimer">Disclaimer</a>
