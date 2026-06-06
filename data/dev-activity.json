@@ -10,18 +10,6 @@
     "issueNumber": 658
   },
   {
-    "timestamp": "2026-06-06T15:33:27-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Meliha",
-    "agentModel": "Codex",
-    "subject": "Widgets: Rename widget gallery entries to Next Dose and Log Next Dose",
-    "issueNumber": 658,
-    "note": "Local coder started.",
-    "transient": true
-  },
-  {
     "timestamp": "2026-06-06T11:49:44-04:00",
     "systemHealth": "ok",
     "role": "Manager",
