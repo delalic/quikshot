@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-06T02:55:14-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Blocked",
+    "agentName": "Kerim",
+    "agentModel": "Codex",
+    "subject": "Widgets: Add Home Screen Mark taken widget (small and medium)",
+    "issueNumber": 627,
+    "note": "Pushed implementation validated; issue remains In progress because actual placed medium Private widget proof is still blocked after clean simulator recovery."
+  },
+  {
     "timestamp": "2026-06-06T02:13:44-04:00",
     "systemHealth": "partial",
     "role": "Coder",
@@ -9,18 +20,6 @@
     "subject": "Widgets: Add Home Screen Mark taken widget (small and medium)",
     "issueNumber": 627,
     "note": "Implementation committed and pushed on issue-627; validation passed. Issue remains In progress because actual rendered medium Private widget proof is still blocked."
-  },
-  {
-    "timestamp": "2026-06-05T23:11:01-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Kerim",
-    "agentModel": "Codex",
-    "subject": "Widgets: Add Home Screen Mark taken widget (small and medium)",
-    "issueNumber": 627,
-    "note": "Local xhigh coder starting; rendered and interactive widget proof are blocking acceptance gates.",
-    "transient": true
   },
   {
     "timestamp": "2026-06-05T18:58:35-04:00",
