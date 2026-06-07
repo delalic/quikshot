@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-07T17:05:48-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Ajla",
+    "agentModel": "Codex",
+    "subject": "Today: Hide Log now for unprepared combined groups",
+    "issueNumber": 688,
+    "note": "Implemented review-only Today actions for unprepared combined groups; PR #690 opened with unit, build, and simulator UI proof."
+  },
+  {
     "timestamp": "2026-06-07T12:52:17-04:00",
     "systemHealth": "ok",
     "role": "Manager",
