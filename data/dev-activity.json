@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-07T03:29:29-04:00",
+    "systemHealth": "partial",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "Widgets: Align Log Next Dose medium header with Next Dose medium",
+    "issueNumber": 674,
+    "note": "Reviewed and merged PR #679; delivered internal TestFlight build 1.1.84. CoreSimulator focused test execution remained blocked at install/launch, but reproducible rendered artifac\u2026"
+  },
+  {
     "timestamp": "2026-06-07T03:15:56-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
