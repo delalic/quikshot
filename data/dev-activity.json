@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-07T03:10:53-04:00",
+    "systemHealth": "partial",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Azra",
+    "agentModel": "Codex",
+    "subject": "Widgets: Align Log Next Dose medium header with Next Dose medium",
+    "issueNumber": 674,
+    "note": "Medium Log Next Dose header parity implemented; iOS 26.5 build passed, CoreSimulator test runner blocked."
+  },
+  {
     "timestamp": "2026-06-07T02:47:51-04:00",
     "systemHealth": "ok",
     "role": "Manager",
