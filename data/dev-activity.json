@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-07T02:30:37-04:00",
+    "systemHealth": "partial",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "P0: Stabilize tab navigation and same-tab scroll-to-top",
+    "issueNumber": 669,
+    "note": "Pushed issue-669 at 7e52677 and opened PR #672. Local generic iOS build and build-for-testing passed; focused coordinator unit tests passed on iOS 26.5; root-on-return UI proof pa\u2026"
+  },
+  {
     "timestamp": "2026-06-07T02:26:26-04:00",
     "systemHealth": "partial",
     "role": "Coder",
