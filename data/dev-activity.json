@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-06T21:05:56-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Widgets: Update Log Next Dose medium layout",
+    "issueNumber": 661,
+    "note": "Managed local coding, review, TestFlight delivery, and closeout for build 1.1.58."
+  },
+  {
     "timestamp": "2026-06-06T21:02:12-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
@@ -19,18 +30,6 @@
     "agentModel": "Codex",
     "subject": "Widgets: Update Log Next Dose medium layout",
     "issueNumber": 661
-  },
-  {
-    "timestamp": "2026-06-06T20:31:46-04:00",
-    "systemHealth": "ok",
-    "role": "Manager",
-    "result": "Coding started",
-    "agentName": "Lejla",
-    "agentModel": "Codex",
-    "subject": "Widgets: Update Log Next Dose medium layout",
-    "issueNumber": 661,
-    "note": "Local coder started.",
-    "transient": true
   },
   {
     "timestamp": "2026-06-06T20:05:03-04:00",
