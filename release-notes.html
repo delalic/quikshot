@@ -90,6 +90,7 @@
   .tag-current { background: var(--mineral-soft); color: var(--mineral); }
   .tag-beta    { background: var(--state-overdue-soft); color: var(--state-overdue); }
   .tag-tested  { background: var(--state-taken-soft); color: var(--state-taken); }
+  .tag-previous { background: var(--bg-elevated); color: var(--fg-secondary); border: 1px solid var(--separator); }
   .release-date {
     font-family: var(--font-mono); font-feature-settings: 'tnum' 1;
     font-size: 13px; color: var(--fg-tertiary);
@@ -225,9 +226,9 @@
   <div class="page-header">
     <p class="eyebrow">Release notes</p>
     <h1>What changed, what's new<span class="accent-dot">.</span></h1>
-    <p class="lede">Meet QuikShot 1.0: private planning, logging, reminders, supplies, and long-term routine history in one calm iPhone app.</p>
+    <p class="lede">QuikShot 1.1 brings your routine to the Home Screen and Lock Screen, with faster next-dose logging and stability fixes for iOS 18 and Mac compatibility mode.</p>
     <div class="roadmap-callout">
-      <p><strong>See what is coming next.</strong> The QuikShot roadmap highlights the larger features planned after launch.</p>
+      <p><strong>See what is coming next.</strong> The QuikShot roadmap highlights larger features and workflow improvements planned after this release.</p>
       <a href="roadmap.html" class="btn btn-md btn-primary">View roadmap</a>
     </div>
   </div>
@@ -239,16 +240,45 @@
     <aside class="notes-toc">
       <p class="label">Versions</p>
       <ul>
+        <li><a href="#v1-1"><span class="ver">1.1</span><span>Widgets</span></a></li>
         <li><a href="#v1-0"><span class="ver">1.0</span><span>Launch</span></a></li>
       </ul>
     </aside>
 
     <main>
 
+      <article class="release" id="v1-1">
+        <div class="release-head">
+          <span class="release-version">1.1</span>
+          <span class="release-tag tag-current">Current</span>
+          <span class="release-date">June 7, 2026</span>
+        </div>
+        <h2>QuikShot comes to your widgets.</h2>
+        <p class="summary">QuikShot 1.1 brings your routine to the Home Screen and Lock Screen, with glanceable next-dose widgets, faster safe logging, and stability fixes for iOS 18 and Mac compatibility mode.</p>
+
+        <div class="changes">
+          <div class="change-group">
+            <div class="change-label label-new">New</div>
+            <ul class="change-list">
+              <li><strong>Next Dose Home Screen widgets.</strong> Keep the next scheduled dose visible without opening QuikShot.</li>
+              <li><strong>Log Next Dose Home Screen widgets.</strong> Log faster when QuikShot can safely identify one clear next dose.</li>
+              <li><strong>Lock Screen Next Dose widgets.</strong> See scheduled time and a progress gauge at a glance.</li>
+            </ul>
+          </div>
+
+          <div class="change-group">
+            <div class="change-label label-fixed">Fixed</div>
+            <ul class="change-list">
+              <li><strong>iOS 18 and Mac compatibility stability.</strong> This release includes stability fixes for newer iOS versions and Mac compatibility mode.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
       <article class="release" id="v1-0">
         <div class="release-head">
           <span class="release-version">1.0</span>
-          <span class="release-tag tag-current">Current</span>
+          <span class="release-tag tag-previous">Launch</span>
           <span class="release-date">June 3, 2026</span>
         </div>
         <h2>QuikShot is live on the App Store.</h2>
