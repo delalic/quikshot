@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-07T04:11:46-04:00",
+    "systemHealth": "partial",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Widgets: Allow Log Next Dose Mark taken for prepared combined doses",
+    "issueNumber": 677,
+    "note": "PR #680; app/widget build and focused iOS 26.5 widget tests passed; full widget snapshot class still has unrelated issue-627 fixture-export sandbox failure."
+  },
+  {
     "timestamp": "2026-06-07T03:44:28-04:00",
     "systemHealth": "ok",
     "role": "Coder",
