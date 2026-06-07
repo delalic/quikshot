@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-07T01:37:08-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Nermin",
+    "agentModel": "Codex",
+    "subject": "Large Log Next Dose should show known context while confirming",
+    "issueNumber": 675,
+    "note": "Reviewed and merged PR #676; delivered internal TestFlight build 1.1.75."
+  },
+  {
     "timestamp": "2026-06-07T01:13:43-04:00",
     "systemHealth": "ok",
     "role": "Coder",
