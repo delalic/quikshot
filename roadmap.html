@@ -36,13 +36,17 @@
   }
   .roadmap-item {
     display: grid;
-    grid-template-columns: 70px 1fr;
+    grid-template-columns: 70px minmax(0, 1fr);
     gap: 24px;
     padding: 28px;
     border: 1px solid var(--separator);
     border-radius: 24px;
     background: var(--bg-elevated);
     box-shadow: var(--shadow-1);
+    position: relative;
+  }
+  .roadmap-item.is-done {
+    grid-template-columns: 70px minmax(0, 1fr) 44px;
   }
   .roadmap-step {
     font-family: var(--font-mono);
@@ -50,6 +54,30 @@
     color: var(--fg-tertiary);
     font-size: 13px;
     padding-top: 4px;
+  }
+  .roadmap-complete {
+    align-self: center;
+    justify-self: end;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--hairline);
+    border-radius: 50%;
+    color: var(--fg);
+    opacity: 0.62;
+    background: rgba(11, 16, 32, 0.03);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .roadmap-complete svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
   }
   .roadmap-content h2 {
     margin: 0 0 8px;
@@ -106,14 +134,42 @@
     max-width: 680px;
     text-wrap: pretty;
   }
+  @media (prefers-color-scheme: dark) {
+    .roadmap-complete {
+      color: var(--fg-secondary);
+      background: rgba(255, 255, 255, 0.04);
+    }
+  }
+  [data-theme="dark"] .roadmap-complete {
+    color: var(--fg-secondary);
+    background: rgba(255, 255, 255, 0.04);
+  }
+  [data-theme="light"] .roadmap-complete {
+    color: var(--fg);
+    background: rgba(11, 16, 32, 0.03);
+  }
   @media (max-width: 720px) {
     .roadmap-item {
       grid-template-columns: 1fr;
       gap: 10px;
       padding: 24px;
     }
+    .roadmap-item.is-done {
+      grid-template-columns: 1fr;
+    }
     .roadmap-step {
       padding-top: 0;
+    }
+    .roadmap-complete {
+      position: absolute;
+      top: 21px;
+      right: 24px;
+      width: 32px;
+      height: 32px;
+    }
+    .roadmap-complete svg {
+      width: 16px;
+      height: 16px;
     }
     .roadmap-content h2,
     .feedback-card h2 {
@@ -154,7 +210,7 @@
   </div>
 
   <ol class="roadmap-list">
-    <li class="roadmap-item">
+    <li class="roadmap-item is-done">
       <div class="roadmap-step">Done</div>
       <div class="roadmap-content">
         <h2>Widgets for the next dose</h2>
@@ -165,6 +221,11 @@
           <span class="roadmap-tag">Privacy controls</span>
         </div>
       </div>
+      <span class="roadmap-complete" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M5 12.5l4.2 4.2L19 7"></path>
+        </svg>
+      </span>
     </li>
 
     <li class="roadmap-item">
