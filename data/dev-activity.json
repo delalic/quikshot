@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-07T03:15:56-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Naida",
+    "agentModel": "Codex",
+    "subject": "P0: Stabilize tab navigation and same-tab scroll-to-top",
+    "issueNumber": 669,
+    "note": "Focused local UI validation failed for nested root-on-return; PR not merged."
+  },
+  {
     "timestamp": "2026-06-07T03:10:53-04:00",
     "systemHealth": "partial",
     "role": "Coder",
