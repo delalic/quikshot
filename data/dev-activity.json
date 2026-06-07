@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-07T01:07:41-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Kerim",
+    "agentModel": "Opus",
+    "subject": "Large Log Next Dose should show known context while confirming",
+    "issueNumber": 675,
+    "note": "Independent local review (mac2). Blocking: large widget invents site+supply context for ambiguous open-to-confirm doses; new test testLargeMarkTakenContextOmittedWhenEligibilityRe\u2026"
+  },
+  {
     "timestamp": "2026-06-07T00:41:30-04:00",
     "systemHealth": "partial",
     "role": "Coder",
