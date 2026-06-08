@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-08T00:26:18-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "Today: Show per-component draw and supply for unprepared combined cards",
+    "issueNumber": 689,
+    "note": "Review passed; PR #696 merged; internal TestFlight 1.2.135 uploaded and valid."
+  },
+  {
     "timestamp": "2026-06-08T00:12:32-04:00",
     "systemHealth": "ok",
     "role": "Coder",
