@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-06-08T00:28:53-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "Today: Show per-component draw and supply for unprepared combined cards",
+    "issueNumber": 689
+  },
+  {
     "timestamp": "2026-06-08T00:26:18-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
