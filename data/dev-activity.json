@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-09T19:41:21-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Done",
+    "agentName": "Adna",
+    "agentModel": "Codex",
+    "subject": "Inventory: Stop showing primary-compound data for combined prepared syringes",
+    "issueNumber": 714,
+    "note": "Reviewed PR #722, merged, and delivered internal TestFlight build 1.2.233."
+  },
+  {
     "timestamp": "2026-06-09T19:16:53-04:00",
     "systemHealth": "ok",
     "role": "Coder",
