@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-09T11:46:47-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Husein",
+    "agentModel": "Codex",
+    "subject": "Injection prep: Allow detaching prepared syringe from scheduled dose",
+    "issueNumber": 706,
+    "note": "Managed reopened UI scope, review, TestFlight delivery 1.2.195, project Done, and cleanup."
+  },
+  {
     "timestamp": "2026-06-09T11:43:25-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
