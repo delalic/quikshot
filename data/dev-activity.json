@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-12T11:39:28-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "Make widget render snapshot tests CI-safe on hosted runners",
+    "issueNumber": 740,
+    "note": "Hosted widget path passed; unrelated full-unit red"
+  },
+  {
     "timestamp": "2026-06-12T11:18:44-04:00",
     "systemHealth": "ok",
     "role": "Manager",
