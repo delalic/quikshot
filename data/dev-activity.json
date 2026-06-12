@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-12T15:56:31-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Selma",
+    "agentModel": "Codex",
+    "subject": "Calendar: Make lane dots use protocol colors and time order",
+    "issueNumber": 745,
+    "note": "TestFlight 2.0.50"
+  },
+  {
     "timestamp": "2026-06-12T15:44:00-04:00",
     "systemHealth": "ok",
     "role": "Coder",
