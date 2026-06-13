@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-13T07:36:34-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Blocked",
+    "agentName": "Emina",
+    "agentModel": "Codex",
+    "subject": "Watch complications: render corner family as native arc instead of circular gauge",
+    "issueNumber": 750,
+    "note": "Awaiting explicit acceptance of no physical Watch-face proof boundary"
+  },
+  {
     "timestamp": "2026-06-13T07:34:10-04:00",
     "systemHealth": "partial",
     "role": "Reviewer",
