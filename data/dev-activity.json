@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-12T22:50:56-04:00",
+    "systemHealth": "partial",
+    "role": "Reviewer",
+    "result": "Blocked",
+    "agentName": "Naida",
+    "agentModel": "Codex",
+    "subject": "Watch complications: redundant background snapshot delivery and freshness hardening",
+    "issueNumber": 747,
+    "note": "Code review passed for PR #749; issue remains In review pending paired iPhone + Apple Watch smoke evidence or explicit Haris waiver. Focused Watch tests and watchOS build passed;\u2026"
+  },
+  {
     "timestamp": "2026-06-12T22:30:13-04:00",
     "systemHealth": "partial",
     "role": "Coder",
