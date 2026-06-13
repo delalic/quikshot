@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-12T22:52:37-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Blocked",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Watch complications: redundant background snapshot delivery and freshness hardening",
+    "issueNumber": 747,
+    "note": "Physical Watch smoke or waiver required"
+  },
+  {
     "timestamp": "2026-06-12T22:50:56-04:00",
     "systemHealth": "partial",
     "role": "Reviewer",
