@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-14T15:51:42-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Adnan",
+    "agentModel": "Codex",
+    "subject": "Watch: Let each displayed dose card act when its own logging data is resolved",
+    "issueNumber": 775,
+    "note": "TestFlight skipped at request"
+  },
+  {
     "timestamp": "2026-06-14T15:48:38-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
