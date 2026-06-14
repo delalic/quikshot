@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-14T10:27:32-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Done",
+    "agentName": "Vedad",
+    "agentModel": "Codex",
+    "subject": "Watch complications: Keep rendering overdue doses after the due-now window",
+    "issueNumber": 767,
+    "note": "Review passed; PR #771 merged; internal TestFlight build 2.0.106 delivered."
+  },
+  {
     "timestamp": "2026-06-14T10:10:12-04:00",
     "systemHealth": "ok",
     "role": "Coder",
