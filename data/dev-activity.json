@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-14T16:29:23-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Manager",
+    "agentModel": "Codex",
+    "subject": "Widgets/complications: Clarify Detailed and Private descriptions",
+    "issueNumber": 776,
+    "note": "Delivered TestFlight build 2.0.110"
+  },
+  {
     "timestamp": "2026-06-14T16:20:56-04:00",
     "systemHealth": "ok",
     "role": "Coder",
