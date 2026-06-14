@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-14T15:48:38-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Done",
+    "agentName": "Sead",
+    "agentModel": "Codex",
+    "subject": "Watch: Let each displayed dose card act when its own logging data is resolved",
+    "issueNumber": 775,
+    "note": "Review passed, PR #777 merged, and #775 closed. TestFlight delivery skipped at Haris' request; Project BuildNumber set to predicted 2.0.0110 from latest recorded 2.0.109. Dev buil\u2026"
+  },
+  {
     "timestamp": "2026-06-14T15:39:06-04:00",
     "systemHealth": "ok",
     "role": "Coder",
