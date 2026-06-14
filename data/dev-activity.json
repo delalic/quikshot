@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-14T11:27:57-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Done",
+    "agentName": "Aida",
+    "agentModel": "Codex",
+    "subject": "Watch: Include future schedule horizon in snapshots",
+    "issueNumber": 768,
+    "note": "TestFlight 2.0.108"
+  },
+  {
     "timestamp": "2026-06-14T11:20:28-04:00",
     "systemHealth": "ok",
     "role": "Manager",
