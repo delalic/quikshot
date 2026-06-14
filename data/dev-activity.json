@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-13T20:46:24-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Sanela",
+    "agentModel": "Codex",
+    "subject": "Widgets: Recompute Mark taken availability for timeline entries",
+    "issueNumber": 759,
+    "note": "Review failed PR #763: missing time-dependent inventory effective-date withdrawal in dated widget Mark taken timeline."
+  },
+  {
     "timestamp": "2026-06-13T20:39:35-04:00",
     "systemHealth": "ok",
     "role": "Coder",
