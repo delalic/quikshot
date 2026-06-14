@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-06-14T12:20:27-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Done",
+    "agentName": "Mira",
+    "agentModel": "Opus",
+    "subject": "Watch: Proactively refresh aging snapshots without hiding usable data",
+    "issueNumber": 769
+  },
+  {
     "timestamp": "2026-06-14T11:58:34-04:00",
     "systemHealth": "ok",
     "role": "Coder",
