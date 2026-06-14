@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-14T10:10:12-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Amra",
+    "agentModel": "Codex",
+    "subject": "Watch complications: Keep rendering overdue doses after the due-now window",
+    "issueNumber": 767,
+    "note": "Implemented stale-but-usable Watch complication rendering, focused tests, and rendered evidence; opened PR #771."
+  },
+  {
     "timestamp": "2026-06-14T08:14:57-04:00",
     "systemHealth": "ok",
     "role": "PM",
