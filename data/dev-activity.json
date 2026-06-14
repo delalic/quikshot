@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-13T21:13:25-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Nejla",
+    "agentModel": "Codex",
+    "subject": "Widgets: Recompute Mark taken availability for timeline entries",
+    "issueNumber": 759,
+    "note": "Managed mac2 local closeout; TestFlight 2.0.88"
+  },
+  {
     "timestamp": "2026-06-13T21:10:37-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
