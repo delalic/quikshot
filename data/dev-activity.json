@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-18T09:18:58-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Amir",
+    "agentModel": "Codex",
+    "subject": "Injection prep: prefer protocol-selected supply vial",
+    "issueNumber": 783,
+    "note": "Managed coding and review to merge; TestFlight archive fallback used with follow-up #786."
+  },
+  {
     "timestamp": "2026-06-18T09:14:38-04:00",
     "systemHealth": "partial",
     "role": "Reviewer",
