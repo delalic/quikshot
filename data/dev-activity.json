@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-18T10:15:25-04:00",
+    "systemHealth": "ok",
+    "role": "Installer",
+    "result": "Installed",
+    "agentName": "Amir",
+    "agentModel": "Codex",
+    "subject": "Injection prep: prefer protocol-selected supply vial",
+    "issueNumber": 783,
+    "note": "Delivered internal TestFlight build 2.0.118; App Store Connect processing VALID; delivery UUID 783c8ccb-c6c1-4a01-be98-83cc6554aada."
+  },
+  {
     "timestamp": "2026-06-18T09:18:58-04:00",
     "systemHealth": "partial",
     "role": "Manager",
