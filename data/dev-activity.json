@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-19T11:25:59-04:00",
+    "systemHealth": "partial",
+    "role": "Reviewer",
+    "result": "Merged",
+    "agentName": "Merima",
+    "agentModel": "Codex",
+    "subject": "App Intents: Add entity and query foundation",
+    "issueNumber": 782,
+    "note": "Review passed and PR merged; TestFlight export blocked by PLA update and missing iOS Distribution certificate; Project BuildNumber 2.0.0127 fallback."
+  },
+  {
     "timestamp": "2026-06-19T11:11:02-04:00",
     "systemHealth": "ok",
     "role": "Coder",
