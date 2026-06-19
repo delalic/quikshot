@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-19T10:43:33-04:00",
+    "systemHealth": "partial",
+    "role": "Reviewer",
+    "result": "Merged",
+    "agentName": "Merima",
+    "agentModel": "Codex",
+    "subject": "App Intents: Add dependency and open-routing foundation",
+    "issueNumber": 781,
+    "note": "TestFlight export blocked; predicted 2.0.122"
+  },
+  {
     "timestamp": "2026-06-19T10:29:37-04:00",
     "systemHealth": "ok",
     "role": "Coder",
