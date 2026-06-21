@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-21T18:49:50-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Done",
+    "agentName": "Pascal",
+    "agentModel": "Codex",
+    "subject": "Let widgets mark the displayed next dose taken when other nearby doses exist",
+    "issueNumber": 806,
+    "note": "Implemented display-bound widget mark-taken semantics with represented event IDs, rendered evidence, PR #809, and full QuikShotTests passing."
+  },
+  {
     "timestamp": "2026-06-21T18:16:52-04:00",
     "systemHealth": "ok",
     "role": "Manager",
