@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-21T17:04:55-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Done",
+    "agentName": "Amina",
+    "agentModel": "Codex",
+    "subject": "Reconcile same-day unresolved scheduled dose when protocol schedule time is edited",
+    "issueNumber": 804,
+    "note": "PR #807 merged; TestFlight build 2.0.156 uploaded and valid."
+  },
+  {
     "timestamp": "2026-06-21T16:03:26-04:00",
     "systemHealth": "partial",
     "role": "Coder",
