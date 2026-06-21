@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-21T16:03:26-04:00",
+    "systemHealth": "partial",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Zlata",
+    "agentModel": "Codex",
+    "subject": "Reconcile same-day unresolved scheduled dose when protocol schedule time is edited",
+    "issueNumber": 804,
+    "note": "PR #807 opened; build-for-testing passed; local XCTest execution blocked before assertions by simulator launch/materialization; reviewer full-suite gate required."
+  },
+  {
     "timestamp": "2026-06-20T11:12:46-04:00",
     "systemHealth": "ok",
     "role": "Manager",
