@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-21T17:43:05-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Samira",
+    "agentModel": "Codex",
+    "subject": "Fix supply forecast to count combined prepared syringes for each component compound",
+    "issueNumber": 805,
+    "note": "Review failed PR #808: combined syringe item coverage is overwritten across component forecast rows; issue returned to Ready."
+  },
+  {
     "timestamp": "2026-06-21T17:33:37-04:00",
     "systemHealth": "ok",
     "role": "Coder",
