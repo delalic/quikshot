@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-21T19:13:33-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Lejla",
+    "agentModel": "Codex",
+    "subject": "Let widgets mark the displayed next dose taken when other nearby doses exist",
+    "issueNumber": 806,
+    "note": "Reviewed PR #809, merged e7839ed, and delivered TestFlight build 2.0.167."
+  },
+  {
     "timestamp": "2026-06-21T18:49:50-04:00",
     "systemHealth": "ok",
     "role": "Coder",
