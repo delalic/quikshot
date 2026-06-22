@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-21T23:43:10-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Nadira",
+    "agentModel": "Codex",
+    "subject": "Make post-dose refresh explicit and fix critical retry timing",
+    "issueNumber": 812,
+    "note": "Managed #812 through code, failed-review fix, re-review, merge, TestFlight build 2.0.178, and Project Done."
+  },
+  {
     "timestamp": "2026-06-21T23:40:30-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
