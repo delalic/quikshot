@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-21T23:25:49-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Updated",
+    "agentName": "Elmedin",
+    "agentModel": "Codex",
+    "subject": "Make post-dose refresh explicit and fix critical retry timing",
+    "issueNumber": 812,
+    "note": "Review-fix pass for PR #814 at ab612e1."
+  },
+  {
     "timestamp": "2026-06-21T23:16:34-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
