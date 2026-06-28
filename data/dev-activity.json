@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-28T18:41:52-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Adnan",
+    "agentModel": "Codex",
+    "subject": "Widgets: Use one resolved dose context across sizes",
+    "issueNumber": 820,
+    "note": "Managed #820 through local coding, independent review, merge, TestFlight build 2.0.198, Project BuildNumber 2.0.0198, Completed 2026-06-28, rendered WidgetKit-style evidence, and\u2026"
+  },
+  {
     "timestamp": "2026-06-28T18:37:59-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
