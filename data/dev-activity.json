@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-29T16:57:55-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Nejra",
+    "agentModel": "Codex",
+    "subject": "Add pending-state and idempotency guards to slow user actions",
+    "issueNumber": 824,
+    "note": "Closed after failed-review repair, hosted full QuikShotTests gate, TestFlight build 2.0.247, Project BuildNumber 2.0.0247, and cleanup verification."
+  },
+  {
     "timestamp": "2026-06-29T16:56:38-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
