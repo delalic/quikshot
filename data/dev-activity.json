@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-29T13:57:51-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Ismet",
+    "agentModel": "Codex",
+    "subject": "Deduplicate app-open surface refresh snapshot rebuilds",
+    "issueNumber": 830,
+    "note": "Implemented app-open semantic refresh dedupe; PR #832; commit 0d627de."
+  },
+  {
     "timestamp": "2026-06-29T13:33:44-04:00",
     "systemHealth": "ok",
     "role": "Manager",
