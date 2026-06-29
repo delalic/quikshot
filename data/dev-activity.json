@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-06-29T04:15:09-04:00",
+    "systemHealth": "partial",
+    "role": "QA",
+    "result": "Passed",
+    "agentName": "Heather",
+    "agentModel": "Codex",
+    "subject": "Nightly QA sweep",
+    "note": "0 regressions; stale tests fixed in PR #826; iPad landscape blocked"
+  },
+  {
     "timestamp": "2026-06-29T02:05:01-04:00",
     "systemHealth": "partial",
     "role": "PM",
