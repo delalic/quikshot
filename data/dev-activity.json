@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-06-29T19:28:56-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Mahir",
+    "agentModel": "Codex",
+    "subject": "Levels: Short half-life charts stop plotting recent logged doses",
+    "issueNumber": 834,
+    "note": "Managed coding, independent review, TestFlight delivery, Project Done, and cleanup for build 2.0.256."
+  },
+  {
     "timestamp": "2026-06-29T19:24:27-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
