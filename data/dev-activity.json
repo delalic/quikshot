@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-06-29T14:06:12-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Lamija",
+    "agentModel": "Codex",
+    "subject": "Deduplicate app-open surface refresh snapshot rebuilds",
+    "issueNumber": 830
+  },
+  {
     "timestamp": "2026-06-29T13:57:51-04:00",
     "systemHealth": "ok",
     "role": "Coder",
