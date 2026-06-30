@@ -1,5 +1,27 @@
 [
   {
+    "timestamp": "2026-06-30T09:25:15-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Mahir",
+    "agentModel": "Codex",
+    "subject": "Levels: Fix short half-life charts using live backup reproduction",
+    "issueNumber": 836,
+    "note": "Managed code, review, merge, TestFlight build 2.0.260, Project Done, and cleanup."
+  },
+  {
+    "timestamp": "2026-06-30T09:00:10-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Amra",
+    "agentModel": "Codex",
+    "subject": "Levels: Fix short half-life charts using live backup reproduction",
+    "issueNumber": 836,
+    "note": "Fixed short half-life level chart NaN contribution boundary; PR #837 opened with exact-backup, focused, full-suite, and rendered UI evidence."
+  },
+  {
     "timestamp": "2026-06-30T07:38:35-04:00",
     "systemHealth": "partial",
     "role": "QA",
