@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-06-30T07:38:35-04:00",
+    "systemHealth": "partial",
+    "role": "QA",
+    "result": "Passed",
+    "agentName": "Heather",
+    "agentModel": "Codex",
+    "subject": "Nightly QA sweep",
+    "note": "iPhone pass; iPad auto-nav blocked by sim contention"
+  },
+  {
     "timestamp": "2026-06-30T06:35:14-04:00",
     "systemHealth": "partial",
     "role": "PM",
