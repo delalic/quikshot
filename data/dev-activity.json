@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-07-10T15:43:55-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Codex Manager",
+    "agentModel": "Codex",
+    "subject": "Fix iCloud recombining of split prep groups and unprepared combined-dose dead end",
+    "issueNumber": 845,
+    "note": "Merged PR #846, delivered internal TestFlight build 2.0.279, set Project Done/Completed/BuildNumber, and cleaned manager state."
+  },
+  {
     "timestamp": "2026-07-10T15:31:30-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
