@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-11T19:08:15-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Samir",
+    "agentModel": "Codex",
+    "subject": "Quick log: show draw amount for reconstituted injection protocols",
+    "issueNumber": 851,
+    "note": "Second review fix: replace saved prepared snapshots with explicit quick choices. Full unit suite: 1350 tests, 2 optional skips, zero failures."
+  },
+  {
     "timestamp": "2026-09-11T19:00:42-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
