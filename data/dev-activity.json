@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-11T19:00:42-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Faruk",
+    "agentModel": "Codex",
+    "subject": "Quick log: show draw amount for reconstituted injection protocols",
+    "issueNumber": 851,
+    "note": "Re-review failed: prepared scheduled events retain profile/draw and Supply link after explicit None. 7 quick-draw tests passed; full 1346-test evidence checked."
+  },
+  {
     "timestamp": "2026-09-11T18:54:03-04:00",
     "systemHealth": "ok",
     "role": "Coder",
