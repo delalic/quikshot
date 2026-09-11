@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-11T18:45:49-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Faruk",
+    "agentModel": "Codex",
+    "subject": "Quick log: show draw amount for reconstituted injection protocols",
+    "issueNumber": 851,
+    "note": "206 focused unit tests passed on mac2; independent profile-None commit diagnostic failed. Returned for correction; no merge or TestFlight upload."
+  },
+  {
     "timestamp": "2026-09-11T18:33:20-04:00",
     "systemHealth": "partial",
     "role": "Coder",
