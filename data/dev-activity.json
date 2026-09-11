@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-11T19:20:24-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Done",
+    "agentName": "Faruk",
+    "agentModel": "Codex",
+    "subject": "Quick log: show draw amount for reconstituted injection protocols",
+    "issueNumber": 851,
+    "note": "Reviewed and merged; TestFlight 2.0.297 VALID and available internally. Full 1350-test gate plus 12 independent checks passed on mac2."
+  },
+  {
     "timestamp": "2026-09-11T19:08:15-04:00",
     "systemHealth": "ok",
     "role": "Coder",
