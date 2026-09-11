@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-11T19:27:56-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Nadira",
+    "agentModel": "Codex",
+    "subject": "Quick log: show draw amount for reconstituted injection protocols",
+    "issueNumber": 851,
+    "note": "TestFlight 2.0.297 verified; candidate 285 preserved. Full unit suite and three-role retro complete. Followups 853-855 triaged."
+  },
+  {
     "timestamp": "2026-09-11T19:20:24-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
