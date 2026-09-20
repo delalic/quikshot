@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-19T23:00:34-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Merged",
+    "agentName": "Mirnes",
+    "agentModel": "Opus",
+    "subject": "Persistence: Use compact JSON for internal snapshot storage",
+    "issueNumber": 850,
+    "note": "Independent spec-first review passed; merged PR #858 and delivered internal TestFlight 2.0.300."
+  },
+  {
     "timestamp": "2026-09-19T22:31:14-04:00",
     "systemHealth": "ok",
     "role": "Coder",
