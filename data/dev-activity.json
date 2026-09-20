@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-19T23:05:50-04:00",
+    "systemHealth": "partial",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Amela",
+    "agentModel": "Codex",
+    "subject": "Persistence: Use compact JSON for internal snapshot storage",
+    "issueNumber": 850,
+    "note": "Delivered TestFlight 2.0.300; VALID and IN_BETA_TESTING verified. Coder, Opus reviewer, and manager retros completed; follow-ups #859, #860, #861 track setup, inspection, and test\u2026"
+  },
+  {
     "timestamp": "2026-09-19T23:00:34-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
