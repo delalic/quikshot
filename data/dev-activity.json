@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-25T13:39:06-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Suada",
+    "agentModel": "Codex",
+    "subject": "Persistence: Serialize local mutations and move snapshot commits off the main actor",
+    "issueNumber": 869,
+    "note": "Astra re-review found the coupled half-life write still overwrites newer settings; entity admission corrections pass."
+  },
+  {
     "timestamp": "2026-09-25T13:31:02-04:00",
     "systemHealth": "ok",
     "role": "Coder",
