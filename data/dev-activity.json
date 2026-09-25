@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-25T13:15:00-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Suada",
+    "agentModel": "Codex",
+    "subject": "Persistence: Serialize local mutations and move snapshot commits off the main actor",
+    "issueNumber": 869,
+    "note": "Astra re-review found stale editor inputs can restore consumed stock or archived entities. Returned for focused correction."
+  },
+  {
     "timestamp": "2026-09-25T13:05:04-04:00",
     "systemHealth": "ok",
     "role": "Coder",
