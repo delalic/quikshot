@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-25T00:02:17-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Amela",
+    "agentModel": "Codex",
+    "subject": "Persistence: Enforce main-actor isolation and exclude UI-test fixtures",
+    "issueNumber": 868,
+    "note": "Delivered internal TestFlight 2.0 (347); independently verified availability, restored Watch footer, validation, followups and task-owned cleanup. Sol xhigh coding; Claude Opus 5.\u2026"
+  },
+  {
     "timestamp": "2026-09-24T23:58:25-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
