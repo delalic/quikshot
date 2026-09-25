@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-24T23:58:25-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Passed",
+    "agentName": "Belma",
+    "agentModel": "Opus",
+    "subject": "Persistence: Enforce main-actor isolation and exclude UI-test fixtures",
+    "issueNumber": 868,
+    "note": "Internal TestFlight 2.0.347"
+  },
+  {
     "timestamp": "2026-09-24T23:27:23-04:00",
     "systemHealth": "ok",
     "role": "Coder",
