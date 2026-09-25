@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-25T14:03:50-04:00",
+    "systemHealth": "ok",
+    "role": "Manager",
+    "result": "Done",
+    "agentName": "Amela",
+    "agentModel": "Codex",
+    "subject": "Persistence: Serialize local mutations and move snapshot commits off the main actor",
+    "issueNumber": 869,
+    "note": "PR #872 merged; independently verified internal TestFlight 2.0 (402), final full-suite and ownership gates, product evidence, and parent H6 completion. Coder and reviewer retros i\u2026"
+  },
+  {
     "timestamp": "2026-09-25T14:02:56-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
