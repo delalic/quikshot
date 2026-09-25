@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-09-25T10:53:42-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "\u0160ejla",
+    "agentModel": "Opus",
+    "subject": "Persistence: Serialize local mutations and move snapshot commits off the main actor",
+    "issueNumber": 869,
+    "note": "Review failed on PR #872: serialized commit boundary is sound; stale-reminder cleanup regression, archive guards, Watch Taken live-path test, enable-sync intent, direct-log eviden\u2026"
+  },
+  {
     "timestamp": "2026-09-25T10:25:57-04:00",
     "systemHealth": "ok",
     "role": "Coder",
