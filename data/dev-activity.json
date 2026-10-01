@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-10-01T18:47:00-04:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Belma",
+    "agentModel": "Codex",
+    "subject": "iCloud: Move sync work off main and coalesce local changes",
+    "issueNumber": 874,
+    "note": "R1 fixed: preserve arriving deletion and repair intent across merge retries. Full suite and concurrency checks passed; PR 879 ready for re-review."
+  },
+  {
     "timestamp": "2026-10-01T18:28:54-04:00",
     "systemHealth": "ok",
     "role": "Reviewer",
