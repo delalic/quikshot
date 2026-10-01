@@ -1,5 +1,16 @@
 [
   {
+    "timestamp": "2026-10-01T18:28:54-04:00",
+    "systemHealth": "ok",
+    "role": "Reviewer",
+    "result": "Failed",
+    "agentName": "Mirsada",
+    "agentModel": "Codex",
+    "subject": "iCloud: Move sync work off main and coalesce local changes",
+    "issueNumber": 874,
+    "note": "Deletion during sync preparation is resurrected."
+  },
+  {
     "timestamp": "2026-10-01T18:20:40-04:00",
     "systemHealth": "ok",
     "role": "Coder",
