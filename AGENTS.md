@@ -25,6 +25,12 @@ The parent folder `/Users/haris/Documents/shots_tracker` is only a workspace con
 
 The original website source was archived at `/Users/haris/Documents/shots_tracker/archive/original-site-source` for reference only. Do not use it for ongoing website updates, GitHub Pages publishing, issues, commits, or pushes.
 
+## Shared Memory routing
+
+Primary memory space: quikshot
+
+Follow the existing common Shared Memory policy in `$CODEX_HOME/AGENTS.md` (default `~/.codex/AGENTS.md`), including an applicable global override. Clients that do not load it automatically must read its Shared Memory section; report missing policy or tool access.
+
 ## Local Agent Notes
 
 This repository may have an ignored `local-agent-notes/` folder on the user's machine.
