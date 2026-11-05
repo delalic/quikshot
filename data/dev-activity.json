@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-11-05T13:53:18-05:00",
+    "systemHealth": "ok",
+    "role": "Coder",
+    "result": "Code complete",
+    "agentName": "Faruk",
+    "agentModel": "Codex",
+    "subject": "Dose entry: preserve decimal input and select existing value on focus",
+    "issueNumber": 902
+  },
+  {
     "timestamp": "2026-10-30T16:12:22-04:00",
     "systemHealth": "partial",
     "role": "Installer",
